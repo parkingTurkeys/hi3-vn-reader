@@ -6,7 +6,7 @@ $percent_each = 100/$image_urls.length
 $percent = 0
 
 for ($i = 0; $i -lt $image_urls.length; $i++) {
-    $percent = $i * $percent_each
+    $percent = ((($i * $percent_each) * 100) - ((($i * $percent_each) * 100) % 1))/100
     switch ($i % 3) {
         0 {Write-Progress -Activity "Adding up strings.  " -Status "$percent% Complete:" -PercentComplete $percent}
         1 {Write-Progress -Activity "Adding up strings.. " -Status "$percent% Complete:" -PercentComplete $percent}
@@ -16,3 +16,11 @@ for ($i = 0; $i -lt $image_urls.length; $i++) {
     $image_urls[$i] = "https://act-webstatic.mihoyo.com/event_bh3_com/avg-anti-entropy/static_CN/resources/chara/" + "$image_urls[$i][1]"
 }
 echo $image_urls
+
+for ($i = 0; $i -lt $image_urls.length; $i++) {
+    $percent = ((($i * $percent_each) * 100) - ((($i * $percent_each) * 100) % 1))/100
+    Write-Progress -Activity "Downloading files..." -Status "$percent% Complete:" -PercentComplete $percent
+    $split_url = $image_urls[$i] -split "/"
+    $file_name = $split_url[$split_url.length - 1]
+    (new-object System.Net.WebClient).DownloadFile( "$image_urls[$i]", ".\$split_url")
+}
