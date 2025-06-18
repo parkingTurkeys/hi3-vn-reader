@@ -1,10 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <root>
     <characters>
-        <character name='test' color='rgb(255, 0, 183)' id='test' src='' />
-        <character name='Deep male voice' color='#8F8F8F' id='0' src='' />
-        <character name='Emotionless female voice' color='rgb(181,233,247)' id='einNoFaceNoName' src='' />
-        <character name='Girl' color='rgb(181,233,247)' id='einNormalCloseNoName' src='einNormalClose.png' />
         <character name='Girl' color='rgb(181,233,247)' id='einSmileCloseNoName' src='einSmileClose.png' />
     </characters>
 </root>
