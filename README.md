@@ -14,10 +14,7 @@ it's different from the other ones because it is:
 - useable on mobile
 - __not trying to get the layout of the original__ 
 
-this is because the original layout wouldn't really work too well with mobile and is hard to do. also, this uses plain html/css/js, which means you can load it onto an android device offline using a weird workaround.
-
-## how to use it on android
-open it as a file:// link instead of a content:// link (so like file:///storage/emulated/0/Download/hi3-vn-reader/index.html)
+this is because the original layout wouldn't really work too well with mobile and is hard to do. also, this uses plain html/css/js. 
 
 ## progress
 nothing. :3c
