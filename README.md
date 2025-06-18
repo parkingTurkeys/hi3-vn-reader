@@ -1,8 +1,9 @@
 # HI3 VN reader
 
+this is a viewer for translations of visual novels made for the game honkai impact 3rd. 
 you can load the hi3 visual novels from the fanmade translations with this.
 translations from [here](https://github.com/RaytheonThunder/honkai-vns)
-images and text are copyright of miHoYo
+images and original text are copyright of miHoYo
 
 please report any issues!
 
