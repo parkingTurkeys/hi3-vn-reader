@@ -1,6 +1,10 @@
 # HI3 VN reader
 
 you can load the hi3 visual novels from the fanmade translations with this.
+translations from [here](https://github.com/RaytheonThunder/honkai-vns)
+images and text are copyright of miHoYo
+
+please report any issues!
 
 it's different from the other ones because it is:
 
@@ -12,4 +16,4 @@ it's different from the other ones because it is:
 this is because the original layout wouldn't really work too well with mobile. also, it uses plain html/css/js, which means you can load it onto an android device offline using a weird workaround.
 
 ## how to use it on android
-open it as a file:// link instead of a content:// link (so like file:///storage/emulated/0/Download/index.html)
+open it as a file:// link instead of a content:// link (so like file:///storage/emulated/0/Download/hi3-vn-reader/index.html)
