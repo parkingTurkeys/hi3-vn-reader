@@ -1,4 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE character [ 
+   <!ATTLIST character id ID #IMPLIED > 
+]>
 <root>
     <characters>
         <character name='Girl' color='rgb(181,233,247)' id='einSmileCloseNoName' src='einSmileClose.png' />

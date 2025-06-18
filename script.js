@@ -1,15 +1,23 @@
+let loaded = []
+
 function generateBoxes(start, end) {
     for (i = start; i <= end; i++) {
         //for each box
-        boxId = "ch" + i + "-box"
-        boxHTML = "<p><i>Part 1</i>" + /*put flavor text here*/ "<button onclick = ''>Go</button><button onclick = ''></button><button onclick = ''></button>"
-        //add a div with id boxId and innerHTML boxHTML :)
+        box_Id = "ch" + i + "-box"
+        box_XML_Id = i + 9
+        box_XML_Id += "01"
+        dbg(box_XML_Id)
+        box_HTML = "<p><i>Part 1</i>" + catalog_list.xml.getElementById(box_XML_Id).quotationOne + "<button onclick = ''>Go</button><button onclick = ''></button><button onclick = ''></button>"
+        document.getElementById("chapter-list").appendChild(elementify(box_HTML))
     }
 }
 
-generateBoxes(1,6)
 
 
+function on_XML_load() {
+    dbg("xml loaded!")
+    generateBoxes(1,6)
+}
 
 
 
@@ -34,10 +42,17 @@ cg_list.send()
 
 catalog_list = new XMLHttpRequest()
 catalog_list.addEventListener("load", save_XML)
-catalog_list.open("GET", "xml/ae/cg_list.xml")
+catalog_list.open("GET", "xml/ae/catalog_list.xml")
 catalog_list.send()
 
 function save_XML(event) {
     this.xml = this.responseXML
-    console.log(this.xml)
+    //dbg(this.xml)
+    loaded.push(1)
+    //dbg(loaded)
+    if (loaded.length == /*replace with as many as you're loading*/ 3) {
+        on_XML_load()
+    }
 }
+
+
