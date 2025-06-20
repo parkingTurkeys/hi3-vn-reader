@@ -5,9 +5,10 @@ function generateBoxes(start, end) {
         //for each box
         box_Id = "ch" + i + "-box"
         box_XML_Id = i + 9
-        box_XML_Id += "01"
-        dbg(box_XML_Id)
-        box_HTML = "<p><i>Part 1</i>" + catalog_list.xml.getElementById(box_XML_Id).quotationOne + "<button onclick = ''>Go</button><button onclick = ''></button><button onclick = ''></button>"
+        box_XML_Id = "log" + box_XML_Id + "01"
+        dbg(catalog_list.xml.getElementById(box_XML_Id.attributes))
+        // <div id = 'box_Id'><h2>Chapter i</h2><p><i>Part 1 </i>quotationOne<button
+        box_HTML = "<div id = '" + box_Id + "'><h2>Chapter " + i + "</h2><p><i>Part 1 </i>" + catalog_list.xml.getElementById(box_XML_Id).attributes["quotationOne"].value + "<button onclick = ''>Go</button>" + "</div>"
         document.getElementById("chapter-list").appendChild(elementify(box_HTML))
     }
 }
@@ -29,7 +30,7 @@ function on_XML_load() {
 
 
 
-//sily xml things
+//silly xml things
 character_data = new XMLHttpRequest()
 character_data.addEventListener("load", save_XML)
 character_data.open("GET", "xml/ae/character_data.xml")
@@ -50,7 +51,7 @@ function save_XML(event) {
     //dbg(this.xml)
     loaded.push(1)
     //dbg(loaded)
-    if (loaded.length == /*replace with as many as you're loading*/ 3) {
+    if (loaded.length == /*replace with as many as i'm loading*/ 3) {
         on_XML_load()
     }
 }

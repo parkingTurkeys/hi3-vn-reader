@@ -534,7 +534,7 @@
         <character name='Energy ball' color='#ea6cd5' id='energyballSchroBackLeftClose' src='05_18_energyballSchroBackLeftClose.png' />
         <character name='???' color='#9dbff8' id='edisonAngelNoNameNoFace' src='' />
         <character name='Nancy (?)' color='#9dbff8' id='edisonAngelNoFace' src='' />
-        <character name='Franklin（？）' color='#a6a79c' id='dollarFranklinNoFace' src='' />
+        <character name='Franklin (?)' color='#a6a79c' id='dollarFranklinNoFace' src='' />
         <character name='Reanna' color='#fff2c4' id='reaLaughArmedNoLanceClose-up' src='05_31_reaLaughArmedNoLanceClose-up.png' />
         <character name='Reanna' color='#fff2c4' id='reaEmbarraArmedNoLanceClose-up' src='05_31_reaEmbarraArmedNoLanceClose-up.png' />
         <character name='Reanna' color='#fff2c4' id='reaSeriousArmedNoLanceClose-up' src='05_31_reaSeriousArmedNoLanceClose-up.png' />
@@ -550,8 +550,8 @@
         <character name='Nancy (?)' color='#9dbff8' id='edisonAngelQuestionFar' src='05_31_edisonAngelQuestionFar.png' />
         <character name='Nancy (?)' color='#9dbff8' id='edisonAngelSeriousFar' src='05_31_edisonAngelSeriousFar.png' />
         <character name='Nancy (?)' color='#9dbff8' id='edisonAngelSmileFar' src='05_31_edisonAngelSmileFar.png' />
-        <character name='Franklin（？）' color='#a6a79c' id='dollarFranklinAhFar' src='05_31_dollarFranklinAhFar.png' />
-        <character name='Franklin（？）' color='#a6a79c' id='dollarFranklinEmFar' src='05_31_dollarFranklinEmFar.png' />
+        <character name='Franklin (?)' color='#a6a79c' id='dollarFranklinAhFar' src='05_31_dollarFranklinAhFar.png' />
+        <character name='Franklin (?)' color='#a6a79c' id='dollarFranklinEmFar' src='05_31_dollarFranklinEmFar.png' />
         <character name='???' color='#9dbff8' id='edisonNoNameNoFace' src='' />
         <character name='Tesla' color='#ffffff' id='edisonTeslaNoFace' src='' />
         <character name='Radio' color='#ffffff' id='radioNoNameNoFace' src='' />

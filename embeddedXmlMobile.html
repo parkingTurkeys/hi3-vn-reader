@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Anti-Entropy Visual Novel | Offline Version</title>
+        <link rel="icon" href="imgs/favicon.ico" type="image/x-icon"/>
+        <script src = "useful.js"></script>
+    </head>
+    <body>
+        <div id = "menu">
+            <div id = "chapter-list"></div>
+        </div>
+        <div id = "vn" class = "hide">
+            <div id = "char_imgs">
+                <div id = "left"></div>
+                <div id = "center"></div>
+                <div id = "right"></div>
+            </div>
+            <div id = "char_name"></div>
+            <div id = "note_icon"></div>
+            <div id = "dialogue"></div>
+            <div id = "full_page_dialogue" class = "scroll"></div>
+        </div>
+        <div id = "xml" style = "display:none;">
+            <div id = "cg_list">
+                <cg id="cg1001">CG1.jpg</cg>
+                <cg id="cg1101">CG2.jpg</cg>
+                <cg id="cg1201">CG3.jpg</cg>
+                <cg id="cg1251">Memory2.jpg</cg>
+                <cg id="cg1301">CG4.jpg</cg>
+                <cg id="cg1401">CG5.jpg</cg>
+                <cg id="cg1451">CG5_2.jpg</cg>
+                <cg id="cg1501">CG6-1.jpg</cg>
+                <cg id="cg1551">CG6-2.jpg</cg>
+                <cg id="cg1581">CG6-3.jpg</cg>
+                <cg id="cg1601">CG7-1.jpg</cg>
+                <cg id="cg1651">CG7-2.jpg</cg>
+                <cg id="cg1701">CG8.jpg</cg>
+                <cg id="cg1801">CG9-1.jpg</cg>
+                <cg id="cg1851">CG9-2.jpg</cg>
+                <cg id="cg1901">CG10-1.jpg</cg>
+                <cg id="cg1951">CG10-2.jpg</cg>
+                <cg id="cg2001">CG11-1.jpg</cg>
+                <cg id="cg2101">CG12-1.jpg</cg>
+                <cg id="cg2201">CG13-1.jpg</cg>
+                <cg id="cg2301">CG14-1.jpg</cg>
+                <cg id="cg2351">CG14-2.jpg</cg>
+                <cg id="cg2401">CG15-5.jpg</cg>
+                <cg id="cg2451">CG15-II.jpg</cg>
+                <cg id="cg2501">CG16-1-3.jpg</cg>
+                <cg id="cg2551">CG16-2.jpg</cg>
+                <cg id="cg2601">CG17-1.jpg</cg>
+                <cg id="cg2651">CG17-2.jpg</cg>
+                <cg id="cg2701">CG18-1.jpg</cg>
+                <cg id="cg2801">CG19.jpg</cg>
+                <cg id="cg2901">CG20-1.jpg</cg>
+                <cg id="cg3001">CG21.jpg</cg>
+                <cg id="cg3101">CG22-1.jpg</cg>
+                <cg id="cg3111">CG22-1-3.jpg</cg>
+                <cg id="cg3121">CG22-2.jpg</cg>
+                <cg id="cg3131">CG22-3-1.jpg</cg>
+                <cg id="cg3201">CG23-1.jpg</cg>
+                <cg id="cg3251">CG23-2.jpg</cg>
+                <cg id="cg3301">CG24-1.jpg</cg>
+                <cg id="cg3321">CG24-2.jpg</cg>
+                <cg id="cg3341">CG24-3.jpg</cg>
+                <cg id="cg3361">CG24-4.jpg</cg>
+                <cg id="cg3401">CG25-1.jpg</cg>
+                <cg id="cg3421">CG25-2.jpg</cg>
+                <cg id="cg3441">CG25-3.jpg</cg>
+                <cg id="cg3461">CG25-7.jpg</cg>
+                <cg id="cg3481">CG25-9.jpg</cg>
+                <cg id="cg3501">CG26-2.jpg</cg>
+                <cg id="cg3511">CG26-3-2.jpg</cg>
+                <cg id="cg3521">CG26-4-1.jpg</cg>
+                <cg id="cg3531">CG26-5.jpg</cg>
+                <cg id="cg3541">CG26-7.jpg</cg>
+            </div>
+            <div id="character_data">
+                <character name='test' color='rgb(255, 0, 183)' id='test' src='' > </character>
+                <character name='Deep male voice' color='#8F8F8F' id='0' src='' > </character>
+                <character name='Emotionless female voice' color='rgb(181,233,247)' id='einNoFaceNoName' src='' > </character>
+                <character name='Girl' color='rgb(181,233,247)' id='einNormalCloseNoName' src='einNormalClose.png' > </character>
+                <character name='Girl' color='rgb(181,233,247)' id='einSmileCloseNoName' src='einSmileClose.png' > </character>
+                <character name='Girl' color='rgb(181,233,247)' id='einSeriousAhCloseNoName' src='einSeriousAhClose.png' > </character>
+                <character name='I' color='#ffffff' id='5' src='' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einNormalClose' src='einNormalClose.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einSmileClose' src='einSmileClose.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einSeriousAhClose' src='einSeriousAhClose.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einSeriousEmClose' src='einSeriousEmClose.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltSurpriseClose' src='weltSurpriseClose.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltShameClose' src='weltShameClose.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltNormalClose' src='weltNormalClose.png' > </character>
+                <character name='???' color='rgb(237,118,114)' id='teslaNoFaceNoName' src='' > </character>
+                <character name='Young woman' color='rgb(237,118,114)' id='teslaEmbarraCloseNoName' src='teslaEmbarraClose.png' > </character>
+                <character name='Young woman' color='rgb(237,118,114)' id='teslaAngryCloseNoName' src='teslaAngryClose.png' > </character>
+                <character name='Young woman' color='rgb(237,118,114)' id='teslaSnickerCloseNoName' src='teslaSnickerClose.png' > </character>
+                <character name='Young woman' color='rgb(237,118,114)' id='teslaBoringCloseNoName' src='teslaBoringClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaEmbarraClose' src='teslaEmbarraClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaEmbarraGlassClose' src='teslaEmbarraGlassClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaAngryClose' src='teslaAngryClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaSnickerClose' src='teslaSnickerClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaSnickerGlassClose' src='teslaSnickerGlassClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaBoringClose' src='teslaBoringClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaNormalClose' src='teslaNormalClose.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einNoFace' src='' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaNoFace' src='' > </character>
+                <character name='Welt' color='#ffffff' id='weltNoFace' src='' > </character>
+                <character name='Welt' color='#ffffff' id='weltShySweaterClose-up' src='weltShySweaterClose-up.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltNormalSweaterClose-up' src='weltNormalSweaterClose-up.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltTiredSweaterClose-up' src='weltTiredSweaterClose-up.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltScaredSweaterClose-up' src='weltScaredSweaterClose-up.png' > </character>
+                <character name='Librarian' color='rgb(201,164,109)' id='nokiaNoNameNoFace' src='' > </character>
+                <character name='Librarian' color='rgb(201,164,109)' id='nokiaNoNameSmileClose' src='nokiaSmileClose.png' > </character>
+                <character name='Librarian' color='rgb(201,164,109)' id='nokiaNoNameSeriousClose' src='nokiaSeriousClose.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einSmileCoatClose' src='einSmileCoatClose.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einNormalCoatClose-up' src='einNormalCoatClose-up.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einFoolCoatClose-up' src='einFoolCoatClose-up.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einSmileCoatClose-up' src='einSmileCoatClose-up.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='0einNormalVestClose-up' src='0einNormalVestClose-up.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='0einSmileVestClose-up' src='0einSmileVestClose-up.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='0einSeriousAhVestClose-up' src='0einSeriousAhVestClose-up.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='0einSlyVestClose-up' src='0einSlyVestClose-up.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='0einFoolVestClose-up' src='0einFoolVestClose-up.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einNormalCoatClose' src='einNormalCoatClose.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einSeriousCoatClose' src='einSeriousCoatClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaBlackDressClose-up' src='8_24_teslaBlackDressClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaEmbarraNightyClose' src='8_24_teslaEmbarraNightyClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaBoringNightyClose' src='8_24_teslaBoringNightyClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaNormalNightyClose' src='8_24_teslaNormalNightyClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaAngryDressClose-up' src='8_24_teslaAngryDressClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaBoringDressClose-up' src='8_24_teslaBoringDressClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaNormalDressClose-up' src='8_24_teslaNormalDressClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaEmbarraDressClose-up' src='8_24_teslaEmbarraDressClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaSmileDressClose-up' src='8_24_teslaSmileDressClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaSnickerDressClose-up' src='8_24_teslaSnickerDressClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaShameDressClose-up' src='8_24_teslaShameDressClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaEmbarraNightyQ' src='8_24_teslaNightyQ3.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaBoringNightyQ' src='8_24_teslaNightyQ2.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaAngryNightyQ' src='8_24_teslaNightyQ1.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaNormalDressFar' src='8_24_teslaNormalDressFar.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaSnickerDressFar' src='8_24_teslaSnickerDressFar.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaBoringDressFar' src='8_24_teslaBoringDressFar.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaEmbarraDressFar' src='8_24_teslaEmbarraDressFar.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaAngryDressFar' src='8_24_teslaAngryDressFar.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltBlackClose-up' src='8_24_weltBlackClose-up.png' > </character>
+                <character name='Finn' color='rgb(201,164,109)' id='nokiaNoFace' src='' > </character>
+                <character name='Finn' color='rgb(201,164,109)' id='nokiaSeriousFar' src='8_24_nokiaSeriousFar.png' > </character>
+                <character name='Finn' color='rgb(201,164,109)' id='nokiaSmileHandUpClose-up' src='8_24_nokiaSmileClose-up.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einSeriousCoatFar' src='8_24_einSeriousCoatFar.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einSmileVestClose-up' src='8_24_einSmileVestClose-up.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einBlackVestClose-up' src='8_24_einBlackVestClose-up.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einLveCoatClose-up' src='8_24_einLveCoatClose-up.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einNormalCoatFar' src='8_24_einNormalCoatFar.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einSmileCoatFar' src='8_24_einSmileCoatFar.png' > </character>
+                <character name='Man in black' color='#8F8F8F' id='blackNoFace' src='' > </character>
+                <character name='Man in black' color='#8F8F8F' id='blackTwo' src='8_24_leader.png' > </character>
+                <character name='Female' color='rgb(180,60,65)' id='redNoFace' src='' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaShameDressFar' src='8_30_teslaShameDressFar.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaGreenDressClose-up' src='8_30_teslaGreenDressClose-up.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltTiredClose' src='8_30_weltTiredClose.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltSurpriseSweaterClose-up' src='8_30_weltSurpriseSweaterClose-up.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltShyClose' src='8_30_weltShyClose.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltNormalFar' src='8_30_weltNormalFar.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltShyWinterFar' src='9_04_weltShyWinterFar.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltShameWinterFar' src='9_04_weltShameWinterFar.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltNormalWinterFar' src='9_04_weltNormalWinterFar.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltSurpriseWinterFar' src='9_04_weltSurpriseWinterFar.png' > </character>
+                <character name='Finn' color='rgb(201,164,109)' id='nokiaSmileClose-up' src='8_30_nokiaSmileClose-up.png' > </character>
+                <character name='Finn' color='rgb(201,164,109)' id='nokiaSmileFar' src='8_30_nokiaSmileeFar.png' > </character>
+                <character name='Finn' color='rgb(201,164,109)' id='nokiaBagSmileClose' src='8_30_nokiaBagSmileClose.png' > </character>
+                <character name='Finn' color='rgb(201,164,109)' id='nokiaBagSeriousClose' src='8_30_nokiaBagSeriousClose.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einSmileDressClose-up' src='8_30_einSmileDressClose-up.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einNormalDressClose-up' src='8_30_einNormalDressClose-up.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einNormalDressFar' src='8_30_einNormalDressFar.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einSmileDressFar' src='8_30_einSmileDressFar.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einNormalWinterFar' src='8_30_einNormalWinterFar.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einSmileWinterFar' src='8_30_einSmileWinterFar.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einLickDressClose-up' src='8_30_einLickDressClose-up.png' > </character>
+                <character name='Planck' color='rgb(208,223,162)' id='planckNoFace' src='' > </character>
+                <character name='???' color='rgb(208,223,162)' id='planckNoNameNoFace' src='' > </character>
+                <character name='Planck' color='rgb(208,223,162)' id='planckSeriousCoatFar' src='8_30_planckSeriousCoatFar.png' > </character>
+                <character name='Planck' color='rgb(208,223,162)' id='planckSlyCoatFar' src='8_30_planckSlyCoatFar.png' > </character>
+                <character name='Planck' color='rgb(208,223,162)' id='planckSmileCoatFar' src='8_30_planckSmileCoatFar.png' > </character>
+                <character name='Planck' color='rgb(208,223,162)' id='planckBoringCoatFar' src='8_30_planckBoringCoatFar.png' > </character>
+                <character name='Planck' color='rgb(208,223,162)' id='planckSadCoatFar' src='8_30_planckSadCoatFar.png' > </character>
+                <character name='Planck' color='rgb(208,223,162)' id='planckNormalCoatFar' src='8_30_planckNormalCoatFar.png' > </character>
+                <character name='Planck' color='rgb(208,223,162)' id='planckSmileClose-up' src='8_30_planckSmileClose-up.png' > </character>
+                <character name='Planck' color='rgb(208,223,162)' id='planckSlyClose-up' src='8_30_planckSlyClose-up.png' > </character>
+                <character name='Planck' color='rgb(208,223,162)' id='planckNormalClose-up' src='8_30_planckNormalClose-up.png' > </character>
+                <character name='Planck' color='rgb(208,223,162)' id='planckEinFar' src='8_30_planckEinFar.png' > </character>
+                <character name='Schrodinger' color='rgb(161,135,121)' id='schroNoFace' src='' > </character>
+                <character name='Schrodinger' color='rgb(161,135,121)' id='schroNormalEmFar' src='8_30_schroNormalEmFar.png' > </character>
+                <character name='Schrodinger' color='rgb(161,135,121)' id='schroNormalAhFar' src='8_30_schroNormalAhFar.png' > </character>
+                <character name='Schrodinger' color='rgb(161,135,121)' id='schroNormalAhClose-up' src='8_30_schroNormalAhClose-up.png' > </character>
+                <character name='Schrodinger' color='rgb(161,135,121)' id='schroNormalEmClose-up' src='8_30_schroNormalEmClose-up.png' > </character>
+                <character name='Planck' color='rgb(208,223,162)' id='planckSlyCoatClose-upSymme' src='9_11_planckSlyCoatClose-upSymme.png' > </character>
+                <character name='Planck' color='rgb(208,223,162)' id='planckSadCoatClose-upSymme' src='9_11_planckSadCoatClose-upSymme.png' > </character>
+                <character name='Planck' color='rgb(208,223,162)' id='planckBoringCoatClose-upSymme' src='9_11_planckBoringCoatClose-upSymme.png' > </character>
+                <character name='Planck' color='rgb(208,223,162)' id='planckSeriousCoatClose-upSymme' src='9_11_planckSeriousCoatClose-upSymme.png' > </character>
+                <character name='Planck' color='rgb(208,223,162)' id='planckNormalCoatClose-upSymme' src='9_11_planckNormalCoatClose-upSymme.png' > </character>
+                <character name='Planck' color='rgb(208,223,162)' id='planckSmileCoatClose-upSymme' src='9_11_planckSmileCoatClose-upSymme.png' > </character>
+                <character name='Planck' color='rgb(208,223,162)' id='planckNormalCoatClose-up' src='9_11_planckNormalCoatClose-up.png' > </character>
+                <character name='Planck' color='rgb(208,223,162)' id='planckSeriousCoatClose-up' src='9_11_planckSeriousCoatClose-up.png' > </character>
+                <character name='Planck' color='rgb(208,223,162)' id='planckSmileCoatClose-up' src='9_11_planckSmileCoatClose-up.png' > </character>
+                <character name='Planck' color='rgb(208,223,162)' id='planckSlyCoatClose-up' src='9_11_planckSlyCoatClose-up.png' > </character>
+                <character name='Schrodinger' color='rgb(161,135,121)' id='schroNormalEmClose-upSymme' src='9_11_schroNormalEmClose-upSymme.png' > </character>
+                <character name='Schrodinger' color='rgb(161,135,121)' id='schroNormalAhClose-upSymme' src='9_11_schroNormalAhClose-upSymme.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltSurpriseWinterClose-up' src='9_11_weltSurpriseWinterClose-up.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltShyWinterClose-up' src='9_11_weltShyWinterClose-up.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltNormalWinterClose-up' src='9_11_weltNormalWinterClose-up.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltDarkWinterClose-up' src='9_11_weltDarkWinterClose-up.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltShameWinterClose-up' src='9_11_weltShameWinterClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaNormalGlassWinterClose-up' src='9_11_teslaNormalGlassWinterClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaBoringGlassWinterClose-up' src='9_11_teslaBoringGlassWinterClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaEmbarraGlassWinterClose-up' src='9_11_teslaEmbarraGlassWinterClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaSnickerGlassWinterClose-up' src='9_11_teslaSnickerGlassWinterClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaAngryGlassWinterClose-up' src='9_11_teslaAngryGlassWinterClose-up.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einNormalWinterClose-up' src='9_11_einNormalWinterClose-up.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einSmileWinterClose-up' src='9_11_einSmileWinterClose-up.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einSeriousAhWinterClose-up' src='9_11_einSeriousAhWinterClose-up.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einSeriousEmWinterClose-up' src='9_11_einSeriousEmWinterClose-up.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einBlackWinterClose-up' src='9_11_einBlackWinterClose-up.png' > </character>
+                <character name='Finn' color='rgb(201,164,109)' id='nokiaSmileEmWinterClose-up' src='9_11_nokiaSmileEmWinterClose-up.png' > </character>
+                <character name='Finn' color='rgb(201,164,109)' id='nokiaSmileAhWinterClose-up' src='9_11_nokiaSmileAhWinterClose-up.png' > </character>
+                <character name='Finn' color='rgb(201,164,109)' id='nokiaSmileEmWinterClose-upSymme' src='9_11_nokiaSmileEmWinterClose-upSymme.png' > </character>
+                <character name='Finn' color='rgb(201,164,109)' id='nokiaSmileAhWinterClose-upSymme' src='9_11_nokiaSmileAhWinterClose-upSymme.png' > </character>
+                <character name='Finn' color='rgb(201,164,109)' id='nokiaSeriousEmWinterClose-upSymme' src='9_11_nokiaSeriousEmWinterClose-upSymme.png' > </character>
+                <character name='Finn' color='rgb(201,164,109)' id='nokiaSeriousAhWinterClose-up' src='9_11_nokiaSeriousAhWinterClose-up.png' > </character>
+                <character name='Nancy' color='rgb(118,141,206)' id='edisonNoFace' src='' > </character>
+                <character name='Welt' color='#ffffff' id='weltTes tired' src='9_25_weltTes tired.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltTes normal' src='9_25_weltTes normal.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltTes surprise' src='9_25_weltTes surprise.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltTes normal close' src='9_25_weltTes normal close.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltTes normal close-up' src='9_25_weltTes normal close-up.png' > </character>
+                <character name='Schrodinger' color='rgb(161,135,121)' id='schroNormalEmClose' src='9_26_schroNormalEmClose.png' > </character>
+                <character name='Schrodinger' color='rgb(161,135,121)' id='schroNormalAhClose' src='9_26_schroNormalAhClose.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltTiredWinterFar' src='9_25_weltTiredWinterFar.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltSurpriseWinterClose' src='9_26_weltSurpriseWinterClose.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltNormalWinterClose' src='9_26_weltNormalWinterClose.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltScaredWinterClose-up' src='9_26_weltScaredWinterClose-up.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltTiredWinterClose-up' src='9_26_weltTiredWinterClose-up.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltBlackWinterlose-up' src='9_26_weltBlackWinterlose-up.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltShameWinterClose' src='9_27_weltShameWinterClose.png' > </character>
+                <character name='Planck' color='rgb(208,223,162)' id='planckNormalCoatClose' src='9_26_planckNormalCoatClose.png' > </character>
+                <character name='Planck' color='rgb(208,223,162)' id='planckSadCoatClose' src='9_26_planckSadCoatClose.png' > </character>
+                <character name='Planck' color='rgb(208,223,162)' id='planckSeriousCoatClose' src='9_26_planckSeriousCoatClose.png' > </character>
+                <character name='Planck' color='rgb(208,223,162)' id='planckSmileCoatClose' src='9_26_planckSmileCoatClose.png' > </character>
+                <character name='Planck' color='rgb(208,223,162)' id='planckBoringCoatClose' src='9_26_planckBoringCoatClose.png' > </character>
+                <character name='Planck' color='rgb(208,223,162)' id='planckSadCoatClose-up' src='9_26_planckSadCoatClose-up.png' > </character>
+                <character name='Planck' color='rgb(208,223,162)' id='planckBoringCoatClose-up' src='9_26_planckBoringCoatClose-up.png' > </character>
+                <character name='Planck' color='rgb(208,223,162)' id='planckBlackClose-up' src='9_26_planckBlackClose-up.png' > </character>
+                <character name='Planck' color='rgb(208,223,162)' id='planckSlyCoatClose' src='9_27_planckSlyCoatClose.png' > </character>
+                <character name='Edison' color='rgb(118,141,206)' id='edisonNeckWinterFar' src='9_26_edisonNeckWinterFar.png' > </character>
+                <character name='Edison' color='rgb(118,141,206)' id='edisonSeriousWinterFar' src='9_26_edisonSeriousWinterFar.png' > </character>
+                <character name='Edison' color='rgb(118,141,206)' id='edisonSighWinterFar' src='9_26_edisonSighWinterFar.png' > </character>
+                <character name='Edison' color='rgb(118,141,206)' id='edisonSlyWinterFar' src='9_26_edisonSlyWinterFar.png' > </character>
+                <character name='Edison' color='rgb(118,141,206)' id='edisonSmileWinterFar' src='9_26_edisonSmileWinterFar.png' > </character>
+                <character name='Edison' color='rgb(118,141,206)' id='edisonSmileWinterClose' src='9_26_edisonSmileWinterClose.png' > </character>
+                <character name='Edison' color='rgb(118,141,206)' id='edisonSeriousWinterClose-up' src='9_26_edisonSeriousWinterClose-up.png' > </character>
+                <character name='Edison' color='rgb(118,141,206)' id='edisonNeckWinteClose-up' src='9_26_edisonNeckWinteClose-up.png' > </character>
+                <character name='Edison' color='rgb(118,141,206)' id='edisonLaughWinterFar' src='9_29_edisonLaughWinterFar.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einSeriousEmWinterClose' src='9_26_einSeriousEmWinterClose.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einSeriousAhWinterClose' src='9_26_einSeriousAhWinterClose.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einNormalWinterClose' src='9_26_einNormalWinterClose.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einSmileWinterClose' src='9_27_einSmileWinterClose.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einSleepWinterClose' src='9_29_einSleepWinterClose.png' > </character>
+                <character name='Finn' color='rgb(201,164,109)' id='nokiaSmileEmWinterClose' src='9_26_nokiaSmileEmWinterClose.png' > </character>
+                <character name='Finn' color='rgb(201,164,109)' id='nokiaSmileAhWinterClose' src='9_26_nokiaSmileAhWinterClose.png' > </character>
+                <character name='Finn' color='rgb(201,164,109)' id='nokiaJokerWinterClose-up' src='9_29_nokiaJokerWinterClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaAngryGlassWinterFar' src='9_26_teslaAngryGlassWinterFar.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaBoringGlassWinterClose' src='9_26_teslaBoringGlassWinterClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaBoringGlassWinterFar' src='9_26_teslaBoringGlassWinterFar.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaEmbarraGlassWinterFar' src='9_26_teslaEmbarraGlassWinterFar.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaNormalGlassWinterClose' src='9_26_teslaNormalGlassWinterClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaNormalGlassWinterFar' src='9_26_teslaNormalGlassWinterFar.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaEmbarraGlassWinterClose' src='9_26_teslaEmbarraGlassWinterClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaAngryGlassWinterClose' src='9_26_teslaAngryGlassWinterClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaSnickerGlassWinterClose' src='9_26_teslaSnickerGlassWinterClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaStarGlassWinterClose' src='9_29_teslaStarGlassWinterClose.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einFoolWinterClose' src='10_12_einFoolWinterClose.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einSeriousAhWinterFar' src='10_12_einSeriousAhWinterFar.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einSeriousEmWinterFar' src='10_12_einSeriousEmWinterFar.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einFoolWinterFar' src='10_12_einFoolWinterFar.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaSmileGlassWinterClose' src='10_12_teslaSmileGlassWinterClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaShameGlassWinterClose' src='10_12_teslaShameGlassWinterClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaSnickerGlassWinterFar' src='10_12_teslaSnickerGlassWinterFar.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaBlackGlassWinterClose-up' src='10_20_teslaBlackGlassWinterClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaShameGlassWinterClose-up' src='10_20_teslaShameGlassWinterClose-up.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltScaredWinterClose' src='10_12_weltScaredWinterClose.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltTiredWinterClose' src='10_12_weltTiredWinterClose.png' > </character>
+                <character name='Youthful big sister' color='rgb(208,223,162)' id='planckSisterNoFace' src='' > </character>
+                <character name='Youthful big sister' color='rgb(208,223,162)' id='planckSisterBlackClose-up' src='9_26_planckBlackClose-up.png' > </character>
+                <character name='Manager' color='rgb(165,150,153)' id='nekoNoFace' src='' > </character>
+                <character name='Manager' color='rgb(165,150,153)' id='staffGalleryNormalClose' src='10_20_staffGalleryNormalClose.png' > </character>
+                <character name='Manager' color='rgb(165,150,153)' id='staffGallerySweatClose' src='10_20_staffGallerySweatClose.png' > </character>
+                <character name='Manager' color='rgb(165,150,153)' id='staffGallerySeriousClose' src='10_20_staffGallerySeriousClose.png' > </character>
+                <character name='Manager' color='rgb(165,150,153)' id='staffGallerySmileClose' src='10_20_staffGallerySmileClose.png' > </character>
+                <character name='Manager' color='rgb(165,150,153)' id='staffGalleryBlackClose-up' src='10_20_staffGalleryBlackClose-up.png' > </character>
+                <character name='Manager' color='rgb(165,150,153)' id='staffGallerySmileClose-up' src='10_20_staffGallerySmileClose-up.png' > </character>
+                <character name='Manager' color='rgb(165,150,153)' id='staffGallerySweatClose-up' src='10_20_staffGallerySweatClose-up.png' > </character>
+                <character name='Manager' color='rgb(165,150,153)' id='staffGalleryNormalClose-up' src='10_20_staffGalleryNormalClose-up.png' > </character>
+                <character name='Manager' color='rgb(165,150,153)' id='staffGallerySeriousClose-up' src='10_20_staffGallerySeriousClose-up.png' > </character>
+                <character name='Manager' color='rgb(165,150,153)' id='staffGalleryScareClose-up' src='10_20_staffGalleryScareClose-up.png' > </character>
+                <character name='Manager' color='rgb(165,150,153)' id='staffNoFace' src='' > </character>
+                <character name='Manager' color='rgb(165,150,153)' id='staffGalleryScareClose' src='10_25_staffGalleryScareClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaDisgustedGlassNoiseWinterClose' src='10_25_teslaDisgustedGlassNoiseWinterClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaAstonishGlassNoiseWinterClose' src='10_25_teslaAstonishGlassNoiseWinterClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaBiteGlassWinterClose' src='10_25_teslaBiteGlassWinterClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaDisgustedGlassWinterClose' src='10_25_teslaDisgustedGlassWinterClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaAstonishGlassWinterClose' src='10_25_teslaAstonishGlassWinterClose.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einSlyWinterClose' src='10_25_einSlyWinterClose.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einLeftWeltCloseWinterClose' src='10_25_einLeftWeltCloseWinterClose.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einLeftWeltOpenWinterClose' src='10_25_einLeftWeltOpenWinterClose.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einLeftWeltSmileWinterClose' src='10_25_einLeftWeltSmileWinterClose.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einSlyWinterFar' src='10_25_einSlyWinterFar.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einSlyWinterClose-up' src='10_25_einSlyWinterClose-up.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einFoolWinterClose-up' src='10_25_einFoolWinterClose-up.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einLveWinterClose-up' src='10_25_einLveWinterClose-up.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltScaredWinterFar' src='10_25_weltScaredWinterFar.png' > </character>
+                <character name='Ada' color='rgb(249,222,230)' id='adaNoFace' src='' > </character>
+                <character name='Ada' color='rgb(249,222,230)' id='adaDimFar' src='10_25_adaDimFar.png' > </character>
+                <character name='Ada' color='rgb(249,222,230)' id='adaSpot' src='10_25_adaSpot.png' > </character>
+                <character name='Ada' color='rgb(249,222,230)' id='adaNormalFar' src='10_25_adaNormalFar.png' > </character>
+                <character name='Ada' color='rgb(249,222,230)' id='adaSmileAhFar' src='10_25_adaSmileAhFar.png' > </character>
+                <character name='Ada' color='rgb(249,222,230)' id='adaSmileFar' src='10_25_adaSmileFar.png' > </character>
+                <character name='H.A' color='rgb(221,149,235)' id='haNoFace' src='' > </character>
+                <character name='???' color='rgb(221,149,235)' id='haNoNameNoFace' src='' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaNormalDrunkWinterClose' src='11_02_teslaNormalDrunkWinterClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaAstonishDrunkWinterClose' src='11_02_teslaAstonishDrunkWinterClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaFoolDrunkWinterClose' src='11_02_teslaFoolDrunkWinterClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaBiteDrunkWinterClose' src='11_02_teslaBiteDrunkWinterClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaLveDrunkWinterClose' src='11_02_teslaLveDrunkWinterClose.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltShyWinterClose' src='11_02_weltShyWinterClose.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einBagaVestClose-up' src='11_02_einBagaVestClose-up.png' > </character>
+                <character name='???' color='rgb(255,255,255)' id='abcNoFace' src='' > </character>
+                <character name='Finn' color='rgb(201,164,109)' id='nokiaSmileEmWinterFar' src='11_14_nokiaSmileEmWinterFar.png' > </character>
+                <character name='Finn' color='rgb(201,164,109)' id='nokiaSmileAhWinterFar' src='11_14_nokiaSmileAhWinterFar.png' > </character>
+                <character name='Finn' color='rgb(201,164,109)' id='nokiaSeriousAhWinterFar' src='11_14_nokiaSeriousAhWinterFar.png' > </character>
+                <character name='Finn' color='rgb(201,164,109)' id='nokiaSeriousEmWinterFar' src='11_14_nokiaSeriousEmWinterFar.png' > </character>
+                <character name='Finn' color='rgb(201,164,109)' id='nokiaSeriousEmWinterClose-up' src='11_14_nokiaSeriousEmWinterClose-up.png' > </character>
+                <character name='Finn' color='rgb(201,164,109)' id='nokiaSeriousAhWinterClose' src='11_14_nokiaSeriousAhWinterClose.png' > </character>
+                <character name='Finn' color='rgb(201,164,109)' id='nokiaSeriousEmWinterClose' src='11_14_nokiaSeriousEmWinterClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaNormalSleepyNightyClose' src='11_14_teslaNormalSleepyNightyClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaDisgustedShySleepyNightyClose' src='11_14_teslaDisgustedShySleepyNightyClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaShyHandNightyClose' src='11_14_teslaShyHandNightyClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaBiteShySleepyNightyClose' src='11_14_teslaBiteShySleepyNightyClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaSmileGlassWinterClose-up' src='11_14_teslaSmileGlassWinterClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaStarGlassWinterFar' src='11_14_teslaStarGlassWinterFar.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaShameGlassWinterFar' src='11_14_teslaShameGlassWinterFar.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaShoutWinterClose-up' src='11_14_teslaShoutWinterClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaAstonishGlassWinterClose-up' src='11_14_teslaAstonishGlassWinterClose-up.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltNormalSweaterClose' src='11_14_weltNormalSweaterClose.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltTiredSweaterClose' src='11_14_weltTiredSweaterClose.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltGiggleWinterFar' src='11_14_weltGiggleWinterFar.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltSmileWinterFar' src='11_14_weltSmileWinterFar.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltGiggleShyWinterFar' src='11_14_weltGiggleShyWinterFar.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltDarkWinterFar' src='11_14_weltDarkWinterFar.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einFoolCoatClose' src='11_14_einFoolCoatClose.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einSlyCoatClose' src='11_14_einSlyCoatClose.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reannaNoFace' src='' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaNormalAhWinterFar' src='11_14_reaNormalAhWinterFar.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaSmileAhWinterFar' src='11_14_reaSmileAhWinterFar.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaSmileEmSadWinterFar' src='11_14_reaSmileEmSadWinterFar.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaNormalEmWinterFar' src='11_14_reaNormalEmWinterFar.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaSeriousWinterClose' src='11_14_reaSeriousWinterClose.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaSmileEmSadWinterClose' src='11_14_reaSmileEmSadWinterClose.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaNormalEmWinterClose' src='11_14_reaNormalEmWinterClose.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaSmileEmWinterFar' src='11_14_reaSmileEmWinterFar.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaSeriousWinterFar' src='11_14_reaSeriousWinterFar.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaNormalAhWinterClose-up' src='11_14_reaNormalAhWinterClose-up.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaSeriousWinterClose-up' src='11_14_reaSeriousWinterClose-up.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaRunWinterClose-up' src='11_14_reaRunWinterClose-up.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reannaBlackWhite' src='11_18_reannaBlackWhite.png' > </character>
+                <character name='???' color='#fff2c4' id='reannaNoNameNoFace' src='' > </character>
+                <character name='“Ghost”' color='rgb(255,255,255)' id='ghostNoFace' src='' > </character>
+                <character name='“Ghost”' color='rgb(255,255,255)' id='ghostFloatDarkFar' src='11_14_ghostFloatDarkFar.png' > </character>
+                <character name='“Ghost”' color='rgb(255,255,255)' id='ghostFloatFar' src='11_14_ghostFloatFar.png' > </character>
+                <character name='“Ghost”' color='rgb(255,255,255)' id='ghostFloatFar2' src='11_14_ghostFloatFar2.png' > </character>
+                <character name='“Ghost”' color='rgb(255,255,255)' id='ghostFloatClose-up' src='11_14_ghostFloatClose-up.png' > </character>
+                <character name='“Ghost”' color='rgb(255,255,255)' id='ghostEscapeFar' src='11_14_ghostEscapeFar.png' > </character>
+                <character name='???' color='#ccbdac' id='joaNoNameNoFace' src='' > </character>
+                <character name='Joachim' color='#ccbdac' id='joaNormalEmWinterClose' src='11_14_joaNormalEmWinterClose.png' > </character>
+                <character name='Joachim' color='#ccbdac' id='joaNormalAhWinterClose' src='11_14_joaNormalAhWinterClose.png' > </character>
+                <character name='Joachim' color='#ccbdac' id='joaScaredWinterClose-up' src='11_14_joaScaredWinterClose-up.png' > </character>
+                <character name='Tesla and co.' color='#ffffff' id='teslaJoaNoFace' src='' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaBlackRunWinterClose-up' src='11_22_reaBlackRunWinterClose-up.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaNormalEmWinterClose-up' src='11_22_reaNormalEmWinterClose-up.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaEmbarraCloseEyeWinterClose-up' src='11_22_reaEmbarraCloseEyeWinterClose-up.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaEmbarraOpenEyeWinterClose-up' src='11_22_reaEmbarraOpenEyeWinterClose-up.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaSmileAhWinterClose-up' src='11_22_reaSmileAhWinterClose-up.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einSlyWhiteClose-up' src='11_22_einSlyWhiteClose-up.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einFoolWhiteClose-up' src='11_22_einFoolWhiteClose-up.png' > </character>
+                <character name='Joachim' color='#ccbdac' id='joaNormalAhWinterClose-up' src='11_22_joaNormalAhWinterClose-up.png' > </character>
+                <character name='Joachim' color='#ccbdac' id='joaNormalEmWinterClose-up' src='11_22_joaNormalEmWinterClose-up.png' > </character>
+                <character name='Joachim' color='#ccbdac' id='joaSmileWinterClose-up' src='11_22_joaSmileWinterClose-up.png' > </character>
+                <character name='Joachim' color='#ccbdac' id='joaBlackWinterClose-up' src='11_24_joaBlackWinterClose-up.png' > </character>
+                <character name='Joachim' color='#ccbdac' id='joaNoFace' src='' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaShameEyeClose-up' src='11_24_teslaShameEyeClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaBoringEyeClose-up' src='11_24_teslaBoringEyeClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaAngryEyeClose-up' src='11_24_teslaAngryEyeClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaNormalEyeClose-up' src='11_24_teslaNormalEyeClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaEmbarraEyeClose-up' src='11_24_teslaEmbarraEyeClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaSnickerEyeClose-up' src='11_24_teslaSnickerEyeClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaSmileEyeClose-up' src='11_24_teslaSmileEyeClose-up.png' > </character>
+                <character name='Harry' color='#c34c66' id='harryNoFace' src='' > </character>
+                <character name='“Ghost”' color='rgb(255,255,255)' id='ghostBlackFloatClose-up' src='11_24_ghostBlackFloatClose-up.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltGiggleSweaterClose-up' src='11_24_weltGiggleSweaterClose-up.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltShameSweaterClose-up' src='11_24_weltShameSweaterClose-up.png' > </character>
+                <character name='???' color='rgb(221,149,235)' id='ritaNoNameNoFace' src='' > </character>
+                <character name='Rita' color='rgb(221,149,235)' id='ritaNoFace' src='' > </character>
+                <character name='Rita' color='rgb(221,149,235)' id='ritaSmileFar' src='12_08_ritaSmileFar.png' > </character>
+                <character name='Rita' color='rgb(221,149,235)' id='ritaSmileLeftFar' src='12_08_ritaSmileLeftFar.png' > </character>
+                <character name='Rita' color='rgb(221,149,235)' id='ritaNormalFar' src='12_08_ritaNormalFar.png' > </character>
+                <character name='Rita' color='rgb(221,149,235)' id='ritaNormalAhFar' src='12_08_ritaNormalAhFar.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltSurpriseSweaterClose' src='12_08_weltSurpriseSweaterClose.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltGiggleSweaterClose' src='12_08_weltGiggleSweaterClose.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einSleepWinterFar' src='12_08_einSleepWinterFar.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaAstonishGlassWinterFar' src='12_08_teslaAstonishGlassWinterFar.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaAstonishGlassNoiseWinterFar' src='12_08_teslaAstonishGlassNoiseWinterFar.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaBiteGlassWinterFar' src='12_08_teslaBiteGlassWinterFar.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaSurpriseGlassWinterClose' src='12_08_teslaSurpriseGlassWinterClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaErGlassWinterClose' src='12_08_teslaErGlassWinterClose.png' > </character>
+                <character name='Father' color='#eabea9' id='fatherNoFace' src='' > </character>
+                <character name='Father' color='#eabea9' id='fatherEmbarraClose' src='12_15_fatherEmbarraClose.png' > </character>
+                <character name='Father' color='#eabea9' id='fatherEmbarraClose-up' src='12_15_fatherEmbarraClose-up.png' > </character>
+                <character name='Father' color='#eabea9' id='fatherSmileClose' src='12_15_fatherSmileClose.png' > </character>
+                <character name='Mother' color='#b6e2f7' id='motherNoFace' src='' > </character>
+                <character name='Mother' color='#b6e2f7' id='motherSeriousClose' src='12_15_motherSeriousClose.png' > </character>
+                <character name='Mother' color='#b6e2f7' id='motherNormalClose' src='12_15_motherNormalClose.png' > </character>
+                <character name='Mother' color='#b6e2f7' id='motherSeriousClose-up' src='12_15_motherSeriousClose-up.png' > </character>
+                <character name='Mother' color='#b6e2f7' id='motherSlyClose' src='12_15_motherSlyClose.png' > </character>
+                <character name='I' color='rgb(255,255,255)' id='meEinNoFace' src='' > </character>
+                <character name='I' color='rgb(255,255,255)' id='einNormalLittleClose' src='12_15_einNormalLittleClose.png' > </character>
+                <character name='I' color='rgb(255,255,255)' id='einBoringLittleClose' src='12_15_einBoringLittleClose.png' > </character>
+                <character name='I' color='rgb(255,255,255)' id='einFretfulLittleClose' src='12_15_einFretfulLittleClose.png' > </character>
+                <character name='I' color='rgb(255,255,255)' id='einProvocativeLittleClose' src='12_15_einProvocativeLittleClose.png' > </character>
+                <character name='I' color='rgb(255,255,255)' id='einSmileLittleClose' src='12_15_einSmileLittleClose.png' > </character>
+                <character name='I' color='rgb(255,255,255)' id='einSurpriseLittleClose' src='12_15_einSurpriseLittleClose.png' > </character>
+                <character name='I' color='rgb(255,255,255)' id='einCryLittleClose' src='12_15_einCryLittleClose.png' > </character>
+                <character name='I' color='rgb(255,255,255)' id='einHappyLittleClose' src='12_15_einHappyLittleClose.png' > </character>
+                <character name='Emma' color='#d0dfa2' id='emmaNormalClose' src='12_15_emmaNormalClose.png' > </character>
+                <character name='Emma' color='#d0dfa2' id='emmaNoFace' src='' > </character>
+                <character name='Emma' color='#d0dfa2' id='emmaSmileClose' src='12_15_emmaSmileClose.png' > </character>
+                <character name='Emma' color='#d0dfa2' id='emmaPromiseSmileClose' src='12_15_emmaPromiseSmileClose.png' > </character>
+                <character name='Emma' color='#d0dfa2' id='emmaBlackClose-up' src='12_15_emmaBlackClose-up.png' > </character>
+                <character name='Emma' color='#d0dfa2' id='emmaPromiseSeriousClose' src='12_15_emmaPromiseSeriousClose.png' > </character>
+                <character name='???' color='#e39541' id='karlNoNameNoFace' src='' > </character>
+                <character name='Carl' color='#e39541' id='karlNoFace' src='' > </character>
+                <character name='Carl' color='#e39541' id='karlSmileClose' src='12_15_karlSmileClose.png' > </character>
+                <character name='Carl' color='#e39541' id='karlShameClose' src='12_15_karlShameClose.png' > </character>
+                <character name='Carl' color='#e39541' id='karlThinkingClose' src='12_15_karlThinkingClose.png' > </character>
+                <character name='Carl' color='#e39541' id='karlFoolClose' src='12_15_karlFoolClose.png' > </character>
+                <character name='Carl' color='#e39541' id='karlNormalClose' src='12_15_karlNormalClose.png' > </character>
+                <character name='Carl' color='#e39541' id='karlTiredClose' src='12_15_karlTiredClose.png' > </character>
+                <character name='Carl' color='#e39541' id='karlSlyClose' src='12_15_karlSlyClose.png' > </character>
+                <character name='???' color='#928eb0' id='fuhuaNoNameNoFace' src='' > </character>
+                <character name='Fu Hua' color='#928eb0' id='fuhuaNoFace' src='' > </character>
+                <character name='Fu Hua' color='#928eb0' id='fuhuaWatchingYouBack' src='12_29_fuhuaWatchingYouBack.png' > </character>
+                <character name='Fu Hua' color='#928eb0' id='fuhuaWatchingSeaBack' src='12_29_fuhuaWatchingSeaBack.png' > </character>
+                <character name='Fu Hua' color='#928eb0' id='fuhuaEatBack' src='12_29_fuhuaEatBack.png' > </character>
+                <character name='Fu Hua' color='#928eb0' id='fuhuaNormalOpenEyeFar' src='12_29_fuhuaNormalOpenEyeFar.png' > </character>
+                <character name='Fu Hua' color='#928eb0' id='fuhuaSmileOpenEyeFar' src='12_29_fuhuaSmileOpenEyeFar.png' > </character>
+                <character name='Fu Hua' color='#928eb0' id='fuhuaSmileCloseEyeFar' src='12_29_fuhuaSmileCloseEyeFar.png' > </character>
+                <character name='Fu Hua' color='#928eb0' id='fuhuaNormalCloseEyeFar' src='12_29_fuhuaNormalCloseEyeFar.png' > </character>
+                <character name='Fu Hua' color='#928eb0' id='fuhuaSeriousFar' src='12_29_fuhuaSeriousFar.png' > </character>
+                <character name='???' color='#fff7cd' id='ottoNoNameNoFace' src='' > </character>
+                <character name='Welt' color='#ffffff' id='weltDarkSweaterClose' src='12_29_weltDarkSweaterClose.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltShameSweaterClose' src='12_29_weltShameSweaterClose.png' > </character>
+                <character name='Rita' color='rgb(221,149,235)' id='ritaAgentClose-up' src='12_29_ritaAgentClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaEatGlassWinterClose' src='12_29_teslaEatGlassWinterClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaEatGlassWinterClose-up' src='12_29_teslaEatGlassWinterClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaShoutGlassWinterClose' src='12_29_teslaShoutGlassWinterClose.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaNormalDrunkWinterClose-up' src='12_29_teslaNormalDrunkWinterClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaAstonishDrunkWinterClose-up' src='12_29_teslaAstonishDrunkWinterClose-up.png' > </character>
+                <character name='???' color='#ffffff' id='beidou' src='12_29_beidou.png' > </character>
+                <character name='???' color='#ffffff' id='beiji' src='12_29_beiji.png' > </character>
+                <character name='???' color='#ffffff' id='northCross' src='12_29_northCross.png' > </character>
+                <character name='???' color='#ffffff' id='yufubei' src='12_29_yufubei.png' > </character>
+                <character name='???' color='#ffffff' id='liehu' src='12_29_liehu.png' > </character>
+                <character name='???' color='#ffffff' id='yufunan' src='12_29_yufunan.png' > </character>
+                <character name='???' color='#ffffff' id='chain' src='12_29_chain.png' > </character>
+                <character name='???' color='#ffffff' id='pegasus' src='12_29_pegasus.png' > </character>
+                <character name='Otto' color='#fff7cd' id='ottoNoFace' src='' > </character>
+                <character name='???' color='#ffffff' id='someoneNoFace' src='' > </character>
+                <character name='Welt' color='#ffffff' id='weltLaughNewFar' src='01_26_weltLaughNewFar.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltSurpriseRobeFar' src='01_26_weltSurpriseRobeFar.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltNervousRobeFar' src='01_26_weltNervousRobeFar.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltNervousNewFar' src='01_26_weltNervousNewFar.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltQuestionNewFar' src='01_26_weltQuestionNewFar.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltEmbarraNewFar' src='01_26_weltEmbarraNewFar.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltSBDNewFar' src='01_26_weltSBDNewFar.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltEmbarraNewClose-up' src='01_26_weltEmbarraNewClose-up.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltQuestionNewClose-up' src='01_26_weltQuestionNewClose-up.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltNervousNewClose-up' src='01_26_weltNervousNewClose-up.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltSighNewClose-up' src='01_26_weltSighNewClose-up.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltAstonishNewFar' src='01_26_weltAstonishNewFar.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltSurpriseRobeClose-up' src='01_26_weltSurpriseRobeClose-up.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltNervousRobeClose-up' src='01_26_weltNervousRobeClose-up.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltSBDNewClose-up' src='01_26_weltSBDNewClose-up.png' > </character>
+                <character name='Rita' color='rgb(221,149,235)' id='ritaNormalAhClose-up' src='01_26_ritaNormalAhClose-up.png' > </character>
+                <character name='Rita' color='rgb(221,149,235)' id='ritaNormalClose-up' src='01_26_ritaNormalClose-up.png' > </character>
+                <character name='Rita' color='rgb(221,149,235)' id='ritaSmileClose-up' src='01_26_ritaSmileClose-up.png' > </character>
+                <character name='Rita' color='rgb(221,149,235)' id='ritaSmileLeftClose-up' src='01_26_ritaSmileLeftClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaErGlassWinterFar' src='01_26_teslaErGlassWinterFar.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaShoutGlassWinterFar' src='01_26_teslaShoutGlassWinterFar.png' > </character>
+                <character name='Recording' color='#00ee00' id='oldTapeNoFace' src='' > </character>
+                <character name='Ada' color='rgb(249,222,230)' id='adaNormalRadioFar' src='03_03_adaNormalRadioFar.png' > </character>
+                <character name='Ada' color='rgb(249,222,230)' id='adaSmileRadioFar' src='03_03_adaSmileRadioFar.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaAngryGlassHeadsetWinterClose-up' src='3_16_teslaAngryGlassHeadsetWinterClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaAstonishGlassHeadsetWinterClose-up' src='3_16_teslaAstonishGlassHeadsetWinterClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaBoringGlassHeadsetWinterClose-up' src='3_16_teslaBoringGlassHeadsetWinterClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaNormalGlassHeadsetWinterClose-up' src='3_16_teslaNormalGlassHeadsetWinterClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaShameGlassHeadsetWinterClose-up' src='3_16_teslaShameGlassHeadsetWinterClose-up.png' > </character>
+                <character name='???' color='#c58c47' id='yuriNoNameNoFace' src='' > </character>
+                <character name='Yuri' color='#c58c47' id='yuriNoFace' src='' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaSmileArmedClose' src='04_04_reaSmileArmedClose.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaSeriousArmedClose' src='04_04_reaSeriousArmedClose.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaNormalArmedClose' src='04_04_reaNormalArmedClose.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaSeriousArmedClose-up' src='04_04_reaSeriousArmedClose-up.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaNormalArmedClose-up' src='04_04_reaNormalArmedClose-up.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaEmbarraArmedClose' src='04_04_reaEmbarraArmedClose.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltEmbarraNewClose' src='04_08_weltEmbarraNewClose.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltAstonishNewClose' src='04_08_weltAstonishNewClose.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaLaughArmedClose' src='04_08_reaLaughArmedClose.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaHahArmedClose' src='04_08_reaHahArmedClose.png' > </character>
+                <character name='Mbemba' color='#b4a0a0' id='mbembaClose' src='04_08_mbenbaClose.png' > </character>
+                <character name='Mbemba' color='#b4a0a0' id='mbembaClose-up' src='04_08_mbenbaClose-up.png' > </character>
+                <character name='Mbemba' color='#b4a0a0' id='mbembaNoFace' src='' > </character>
+                <character name='Alex' color='#ffdaa6' id='alexClose' src='04_08_alexClose.png' > </character>
+                <character name='Alex' color='#ffdaa6' id='alexNoFace' src='' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaDisgustedGlassWinterClose-up' src='04_08_teslaDisgustedGlassWinterClose-up.png' > </character>
+                <character name='Tank' color='#ffffff' id='tank' src='04_08_tank.png' > </character>
+                <character name='Tentacle' color='#ffffff' id='peduncle' src='04_08_peduncle.png' > </character>
+                <character name='Yuri' color='#c58c47' id='yuriSadClose' src='04_08_yuriSadClose.png' > </character>
+                <character name='Yuri' color='#c58c47' id='yuriSadClose-up' src='04_08_yuriSadClose-up.png' > </character>
+                <character name='Yuri' color='#c58c47' id='yuriSeriousClose' src='04_08_yuriSeriousClose.png' > </character>
+                <character name='Yuri' color='#c58c47' id='yuriSeriousClose-up' src='04_08_yuriSeriousClose-up.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltAstonishNewClose-up' src='04_19_weltAstonishNewClose-up.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltAstonishNewGloveClose-up' src='04_19_weltAstonishNewGloveClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaErGlassWinterClose-up' src='04_19_teslaErGlassWinterClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaBiteGlassWinterClose-up' src='04_19_teslaBiteGlassWinterClose-up.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaNormalArmedFar' src='04_19_reaNormalArmedFar.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaSmileArmedFar' src='04_19_reaSmileArmedFar.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaLaughArmedFar' src='04_19_reaLaughArmedFar.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaHahArmedFar' src='04_19_reaHahArmedFar.png' > </character>
+                <character name='???' color='#ff0000' id='elaineNoNameNoFace' src='' > </character>
+                <character name='Elaine' color='#dd0000' id='elaineNoFace' src='' > </character>
+                <character name='Elaine' color='#dd0000' id='elaineHematemesisFar' src='04_20_elaineHematemesisFar.png' > </character>
+                <character name='Elaine' color='#dd0000' id='elaineStruggleFar' src='04_20_elaineStruggleFar.png' > </character>
+                <character name='Elaine' color='#dd0000' id='elaineSmileFar' src='04_20_elaineSmileFar.png' > </character>
+                <character name='Elaine' color='#dd0000' id='elaineNormalFar' src='04_20_elaineNormalFar.png' > </character>
+                <character name='???' color='#fff7cd' id='ottoShadowNoFace' src='' > </character>
+                <character name='???' color='#fff7cd' id='ottoShadowClose-up' src='05_03_ottoShadowClose-up.png' > </character>
+                <character name='Elaine' color='#ff0000' id='elaineSmileClose' src='05_03_elaineSmileClose.png' > </character>
+                <character name='Elaine' color='#ff0000' id='elaineNormalClose' src='05_03_elaineNormalClose.png' > </character>
+                <character name='???' color='#c4c4c4' id='hellawesNoNameNoFace' src='' > </character>
+                <character name='Hellawes' color='#c4c4c4' id='hellawesNoFace' src='' > </character>
+                <character name='Hellawes' color='#c4c4c4' id='hellawesNormalClose' src='05_02_hellawesNormalClose.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltNervousNewClose' src='05_03_weltNervousNewClose.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltQuestionNewClose' src='05_03_weltQuestionNewClose.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltSorryNewClose' src='05_03_weltSorryNewClose.png' > </character>
+                <character name='???' color='#acb73b' id='percivalNoNameNoFace' src='' > </character>
+                <character name='Percival' color='#acb73b' id='percivalNoFace' src='' > </character>
+                <character name='Percival' color='#acb73b' id='percivalNormalClose' src='05_02_percivalNormalClose.png' > </character>
+                <character name='???' color='#d1b1a4' id='morganNoNameNoFace' src='' > </character>
+                <character name='Dr. Morgan' color='#d1b1a4' id='morganNoFace' src='' > </character>
+                <character name='Dr. Morgan' color='#d1b1a4' id='morganClose' src='05_04_morganClose.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einLveWinterClose' src='05_03_einLveWinterClose.png' > </character>
+                <character name='???' color='#ea6cd5' id='schroCatNoNameNoFace' src='' > </character>
+                <character name='Schrodinger' color='rgb(161,135,121)' id='schroNormalHeadsetEmClose' src='05_18_schroNormalHeadsetEmClose.png' > </character>
+                <character name='Schrodinger' color='rgb(161,135,121)' id='schroNormalHeadsetAhClose' src='05_18_schroNormalHeadsetAhClose.png' > </character>
+                <character name='Schrodinger (?)' color='#ea6cd5' id='schroCatNoFace' src='' > </character>
+                <character name='Schrodinger (?)' color='#ea6cd5' id='schroSmileCatClose' src='05_18_schroSmileCatLeftClose.png' > </character>
+                <character name='Schrodinger (?)' color='#ea6cd5' id='schroHaughtyCatClose' src='05_18_schroHaughtyCatLeftClose.png' > </character>
+                <character name='Schrodinger (?)' color='#ea6cd5' id='schroScornfulCatClose' src='05_18_schroScornfulCatLeftClose.png' > </character>
+                <character name='Schrodinger (?)' color='#ea6cd5' id='schroExcitedCatClose' src='05_18_schroExcitedCatLeftClose.png' > </character>
+                <character name='Schrodinger (?)' color='#ea6cd5' id='schroScornfulCatClose-up' src='05_18_schroScornfulCatClose-up.png' > </character>
+                <character name='Schrodinger (?)' color='#ea6cd5' id='schroExcitedCatClose-up' src='05_18_schroExcitedCatClose-up.png' > </character>
+                <character name='Schrodinger (?)' color='#ea6cd5' id='schroSmileCatClose-up' src='05_18_schroSmileCatClose-up.png' > </character>
+                <character name='Schrodinger (?)' color='#ea6cd5' id='schroHaughtyCatClose-up' src='05_18_schroHaughtyCatClose-up.png' > </character>
+                <character name='Schrodinger (?)' color='#ea6cd5' id='schroScreamCatClose-up' src='05_18_schroScreamCatClose-up.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einShockWinterEdenClose' src='05_18_einShockWinterEdenClose.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einSadWinterEdenClose' src='05_18_einSadWinterEdenClose.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einRelaxWinterEdenClose' src='05_18_einRelaxWinterEdenClose.png' > </character>
+                <character name='Welt (?)' color='#ffffff' id='weltKarlNoFace' src='' > </character>
+                <character name='Welt' color='#ffffff' id='weltNoWordsNewClose' src='05_18_weltNoWordsNewClose.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltSBDNewClose' src='05_18_weltSBDNewClose.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltSmileNewClose' src='05_18_weltSmileNewClose.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltSighNewClose' src='05_18_weltSighNewClose.png' > </character>
+                <character name='Psychologist (?)' color='#ffffff' id='karlShadowNoFace' src='' > </character>
+                <character name='Psychologist (?)' color='#ffffff' id='karlShadowFar' src='05_18_karlShadowFar.png' > </character>
+                <character name='Psychologist (?)' color='#ffffff' id='karlShadowClose' src='05_18_karlShadowClose.png' > </character>
+                <character name='Little Girl (?)' color='#ffffff' id='girlShadowNoFace' src='' > </character>
+                <character name='Little Girl (?)' color='#ffffff' id='girlShadowFar' src='05_18_girlShadowFar.png' > </character>
+                <character name='Man (?)' color='#ffffff' id='peopleAShadowNoFace' src='' > </character>
+                <character name='Man (?)' color='#ffffff' id='peopleAShadowFar' src='05_18_peopleAShadowFar.png' > </character>
+                <character name='Woman (?)' color='#ffffff' id='peopleBShadowNoFace' src='' > </character>
+                <character name='Woman (?)' color='#ffffff' id='peopleBShadowFar' src='05_18_peopleBShadowFar.png' > </character>
+                <character name='Old Man (?)' color='#ffffff' id='peopleCShadowNoFace' src='' > </character>
+                <character name='Old Man (?)' color='#ffffff' id='peopleCShadowFar' src='05_18_peopleCShadowFar.png' > </character>
+                <character name='Soldier A (?)' color='#ffffff' id='soldierAShadowNoFace' src='' > </character>
+                <character name='Soldier A (?)' color='#ffffff' id='soldierAShadowFar' src='05_18_soldierAShadowFar.png' > </character>
+                <character name='Soldier B (?)' color='#ffffff' id='soldierBShadowNoFace' src='' > </character>
+                <character name='Soldier B (?)' color='#ffffff' id='soldierBShadowFar' src='05_18_soldierBShadowFar.png' > </character>
+                <character name='Energy ball' color='#ea6cd5' id='energyBallSchroBackClose-up' src='05_18_energyBallSchroBackClose-up.png' > </character>
+                <character name='Energy ball' color='#ea6cd5' id='energyballSchroBackLeftClose' src='05_18_energyballSchroBackLeftClose.png' > </character>
+                <character name='???' color='#9dbff8' id='edisonAngelNoNameNoFace' src='' > </character>
+                <character name='Nancy (?)' color='#9dbff8' id='edisonAngelNoFace' src='' > </character>
+                <character name='Franklin（？）' color='#a6a79c' id='dollarFranklinNoFace' src='' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaLaughArmedNoLanceClose-up' src='05_31_reaLaughArmedNoLanceClose-up.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaEmbarraArmedNoLanceClose-up' src='05_31_reaEmbarraArmedNoLanceClose-up.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaSeriousArmedNoLanceClose-up' src='05_31_reaSeriousArmedNoLanceClose-up.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaNormalArmedNoLanceClose-up' src='05_31_reaNormalArmedNoLanceClose-up.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaSmileArmedNoLanceClose-up' src='05_31_reaSmileArmedNoLanceClose-up.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaHahArmedNoLanceClose-up' src='05_31_reaHahArmedNoLanceClose-up.png' > </character>
+                <character name='Schrodinger' color='rgb(161,135,121)' id='schroShrinkLanceClose-up' src='05_31_schroShrinkLanceClose-up.png' > </character>
+                <character name='Schrodinger' color='rgb(161,135,121)' id='schroNormalLanceClose-up' src='05_31_schroNormalLanceClose-up.png' > </character>
+                <character name='Schrodinger' color='rgb(161,135,121)' id='schroSmileLanceClose-up' src='05_31_schroSmileLanceClose-up.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltSorryNewClose-up' src='05_31_weltSorryNewClose-up.png' > </character>
+                <character name='Nancy (?)' color='#9dbff8' id='edisonAngelHelplessFar' src='05_31_edisonAngelHelplessFar.png' > </character>
+                <character name='Nancy (?)' color='#9dbff8' id='edisonAngelAngryFar' src='05_31_edisonAngelAngryFar.png' > </character>
+                <character name='Nancy (?)' color='#9dbff8' id='edisonAngelQuestionFar' src='05_31_edisonAngelQuestionFar.png' > </character>
+                <character name='Nancy (?)' color='#9dbff8' id='edisonAngelSeriousFar' src='05_31_edisonAngelSeriousFar.png' > </character>
+                <character name='Nancy (?)' color='#9dbff8' id='edisonAngelSmileFar' src='05_31_edisonAngelSmileFar.png' > </character>
+                <character name='Franklin (?)' color='#a6a79c' id='dollarFranklinAhFar' src='05_31_dollarFranklinAhFar.png' > </character>
+                <character name='Franklin (?)' color='#a6a79c' id='dollarFranklinEmFar' src='05_31_dollarFranklinEmFar.png' > </character>
+                <character name='???' color='#9dbff8' id='edisonNoNameNoFace' src='' > </character>
+                <character name='Tesla' color='#ffffff' id='edisonTeslaNoFace' src='' > </character>
+                <character name='Radio' color='#ffffff' id='radioNoNameNoFace' src='' > </character>
+                <character name='Nancy (?)' color='#9dbff8' id='edisonWhiteWinterClose-up' src='06_14_edisonWhiteWinterClose-up.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaTearsBigHead' src='06_12_teslaTearsBigHead.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaTearsBigHeadCloseEye' src='06_13_teslaTearsBigHeadCloseEye.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaTearsBigHeadShout' src='06_13_teslaTearsBigHeadShout.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaTearsBigHeadTeatsDown' src='06_13_teslaTearsBigHeadTeatsDown.png' > </character>
+                <character name='Tesla' color='rgb(237,118,114)' id='teslaDisgustedGlassWinterFar' src='06_12_teslaDisgustedGlassWinterFar.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaSeriousArmedNoLanceFar' src='06_12_reaSeriousArmedNoLanceFar.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einShockWinterClose-up' src='06_12_einShockWinterClose-up.png' > </character>
+                <character name='Ada' color='rgb(249,222,230)' id='adaNormalRadioClose-up' src='06_12_adaNormalRadioClose-up.png' > </character>
+                <character name='Meteor' color='#ffffff' id='starFallUp' src='06_13_starFallUp.png' > </character>
+                <character name='Meteor' color='#ffffff' id='starFallDown' src='06_13_starFallDown.png' > </character>
+                <character name='Schrodinger' color='rgb(161,135,121)' id='schroShockLanceFar' src='06_14_schroShockLanceFar.png' > </character>
+                <character name='Schrodinger' color='rgb(161,135,121)' id='schroNormalLanceFar' src='06_14_schroNormalLanceFar.png' > </character>
+                <character name='Einstein' color='rgb(181,233,247)' id='einShockWinterFar' src='06_13_einShockWinterFar.png' > </character>
+                <character name='Speed line' color='#ffffff' id='speedLine' src='06_14_speedLine.png' > </character>
+                <character name='Finn' color='rgb(201,164,109)' id='nokiaDepressedWinterFar' src='06_14_nokiaDepressedWinterFar.png' > </character>
+                <character name='Finn' color='rgb(201,164,109)' id='nokiaAnnoyedWinterFar' src='06_14_nokiaAnnoyedWinterFar.png' > </character>
+                <character name='Finn' color='rgb(201,164,109)' id='nokiaCrazyWinterFar' src='06_14_nokiaCrazyWinterFar.png' > </character>
+                <character name='???' color='#fff7cd' id='ottoChangeFar' src='06_14_ottoChangeLanceFar.png' > </character>
+                <character name='Otto' color='#fff7cd' id='ottoConfidentLanceFar' src='06_14_ottoConfidentLanceFar.png' > </character>
+                <character name='Otto' color='#fff7cd' id='ottoLaughLanceFar' src='06_14_ottoLaughLanceFar.png' > </character>
+                <character name='Otto' color='#fff7cd' id='ottoRidiculingLanceFar' src='06_14_ottoRidiculingLanceFar.png' > </character>
+                <character name='Otto' color='#fff7cd' id='ottoFrivolousLanceFar' src='06_14_ottoFrivolousLanceFar.png' > </character>
+                <character name='Margaret' color='rgb(221,149,235)' id='ritaFullNameNoFace' src='' > </character>
+                <character name='Margaret' color='rgb(221,149,235)' id='ritaSmileGunFar' src='06_29_ritaSmileGunFar.png' > </character>
+                <character name='Margaret' color='rgb(221,149,235)' id='ritaNormalGunFar' src='06_29_ritaNormalGunFar.png' > </character>
+                <character name='Margaret' color='rgb(221,149,235)' id='ritaTalkGunFar' src='06_29_ritaTalkGunFar.png' > </character>
+                <character name='Margaret' color='rgb(221,149,235)' id='ritaNodGunFar' src='06_29_ritaNodGunFar.png' > </character>
+                <character name='Emma' color='rgb(208,223,162)' id='planckYourNameNoFace' src='' > </character>
+                <character name='Crew' color='rgb(255,255,255)' id='crewNoNameNoFace' src='' > </character>
+                <character name='???' color='rgb(161,135,121)' id='schroPlasmaNoFace' src='' > </character>
+                <character name='???' color='rgb(255,255,255)' id='memoryLoading' src='06_28_memoryLoading.png' > </character>
+                <character name='Otto' color='#fff7cd' id='ottoScornfulGunFar' src='06_29_ottoScornfulGunFar.png' > </character>
+                <character name='Otto' color='#fff7cd' id='ottoHaughtyGunFar' src='06_29_ottoHaughtyGunFar.png' > </character>
+                <character name='Otto' color='#fff7cd' id='ottoConfidentGunFar' src='06_29_ottoConfidentGunFar.png' > </character>
+                <character name='Otto' color='#fff7cd' id='ottoLaughGunFar' src='06_29_ottoLaughGunFar.png' > </character>
+                <character name='Otto' color='#fff7cd' id='ottoChangeGunFar' src='06_29_ottoChangeGunFar.png' > </character>
+                <character name='???' color='#c6c0cf' id='kallenNoNameNoFace' src='' > </character>
+                <character name='???' color='#c6c0cf' id='kallenChristMemoryFar' src='07_17_kallenChristMemoryFar.png' > </character>
+                <character name='???' color='#c6c0cf' id='kallenChristMercyFar' src='07_17_kallenChristMercyFar.png' > </character>
+                <character name='???' color='#c6c0cf' id='kallenChristDeterminedFar' src='07_17_kallenChristDeterminedFar.png' > </character>
+                <character name='???' color='#c6c0cf' id='kallenChristSilentFar' src='07_17_kallenChristSilentFar.png' > </character>
+                <character name='Otto' color='#ca0823' id='ottoNoFaceRed' src='' > </character>
+                <character name='Otto' color='#2ed174' id='ottoNoFaceGreen' src='' > </character>
+                <character name='Otto' color='#fff7cd' id='ottoScornfulChainFar' src='07_18_ottoScornfulChainFar.png' > </character>
+                <character name='Otto' color='#fff7cd' id='ottoHaughtyChainFar' src='07_18_ottoHaughtyChainFar.png' > </character>
+                <character name='Otto' color='#fff7cd' id='ottoConfidentChainFar' src='07_18_ottoConfidentChainFar.png' > </character>
+                <character name='Otto' color='#fff7cd' id='ottoLaughChainFar' src='07_18_ottoLaughChainFar.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltNakedNormalFar' src='07_18_weltNakedNormalFar.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltNakedCoatNormalFar' src='07_18_weltNakedCoatNormalFar.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltNakedCoatShoutFar' src='07_18_weltNakedCoatShoutFar.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltNakedCoatSurpriseClose' src='07_19_weltNakedCoatSurpriseClose.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltNakedCoatNervousClose' src='07_19_weltNakedCoatNervousClose.png' > </character>
+                <character name='Welt' color='#ffffff' id='weltNakedCoatShoutClose' src='07_19_weltNakedCoatShoutClose.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaChangeNormalClose' src='07_19_reaChangeNormalClose.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaChangeConfidentClose' src='07_19_reaChangeConfidentClose.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaChangeSeriousClose' src='07_19_reaChangeSeriousClose.png' > </character>
+                <character name='Margaret' color='rgb(221,149,235)' id='ritaSadHeadphoneGunClose' src='07_19_ritaSadHeadphoneGunClose.png' > </character>
+                <character name='Margaret' color='rgb(221,149,235)' id='ritaNervousHeadphoneGunClose' src='07_19_ritaNervousHeadphoneGunClose.png' > </character>
+                <character name='Reanna' color='#fff2c4' id='reaChangeShoutClose' src='07_19_reaChangeShoutClose.png' > </character>
+                <character name='Newscaster' color='#ffffff' id='newsNoFace' src='' > </character>
+                <character name='John Smith' color='#b6b0bb' id='johnSmithNoFace' src='' > </character>
+                <character name='Welt Yang' color='#c58c47' id='yangNoFace' src='' > </character>
+            </div>
+            <div id="catalog_list">
+                <log id="log901" partOne="0" quotationOne="“Testing :)”" picOne="CG1" partTwo="50" quotationTwo="“But I don't believe that so-called “Child of Honkai” Theory. You can't be a Herrscher, right?”" picTwo="hospital" partThree="80" quotationThree="“So we have decided to give you a job.”" picThree="studyDay">ch0</log>
+                <log id="log1001" partOne="0" quotationOne="“Greenwich Mean Time, October 20, 22:57 — Thank you for bearing with us, little lab rat.”" picOne="CG1" partTwo="50" quotationTwo="“But I don't believe that so-called “Child of Honkai” Theory. You can't be a Herrscher, right?”" picTwo="hospital" partThree="80" quotationThree="“So we have decided to give you a job.”" picThree="studyDay">ch1</log>
+                <log id="log1101" partOne="0" quotationOne="“Oopsy-daisies, well, well, Dr Einstein, that old geezer, is he keeping well these days?”" picOne="campusImperialDay" partTwo="60" quotationTwo="“My grandfather once said, ‘Success is equal to genius plus sweat plus less spouting of nonsense.’”" picTwo="CG2" partThree="80" quotationThree="“As for work-related matters, ⵥⵙⵎ ⵋⴱⴳ ⵐⵓⴽⴸ ⵐ ⵥⵛⵌⴱⴴⵙⴸ ⵋⵓⵖⴱ ⵥⴶ ought to be able to help you, yes?”" picThree="schoolDay3">ch2</log>
+                <log id="log1201" partOne="0" quotationOne="“… You're wearing only a nightgown right now, aren't you?!”" picOne="corridorMessy" partTwo="30" quotationTwo="“How could that possibly be true … Aha ha ha …”" picTwo="CG3" partThree="50" quotationThree="“Hey! I'm speaking to you, Mophead! Just a box of chocolate is enough to win you over?!”" picThree="airportNewYork">ch3</log>
+                <log id="log1301" partOne="0" quotationOne="“God does eat chocolate.”" picOne="americaShop" partTwo="30" quotationTwo="“Aren't these just oysters … It's not something I haven't already had before. That said, these do seem a little strange.”" picTwo="barBillings" partThree="50" quotationThree="“Lieserl is such a lovely girl — as an older brother you should not bully her, ja?”" picThree="CG4">ch4</log>
+                <log id="log1401" partOne="0" quotationOne="“Destination: Yellowstone Lake — Let's go!”" picOne="CG5" partTwo="20" quotationTwo="“… I did not expect that, during the era of the Previous Civilisation, human activity was already present in North America.”" picTwo="roadMontana1" partThree="50" quotationThree="“So how about that, aren't we all very lucky today?”" picThree="CG5_2">ch5</log>
+                <log id="log1501" partOne="0" quotationOne="“You wait and see! As payback for today's events, I must re-double my efforts!”" picOne="CG6-1" partTwo="50" quotationTwo="“To the young ones who come here … I leave the last Solium to you!”" picTwo="CG6-2" partThree="90" quotationThree="“It's just some … private words … between the two of us …”" picThree="CG6-3">ch6</log>
+                <log id="log1601" partOne="0" quotationOne="“The story may have just begun.”" picOne="CG7-1" partTwo="40" quotationTwo="“I didn't expect researchers like you to be interested in damaged paintings.”" picTwo="trafalgarSquare" partThree="60" quotationThree="“To foretell the fate of humanity.” Mophead speaks in an icy-cold voice like never before." picThree="CG7-2">ch7</log>
+                <log id="log1701" partOne="0" quotationOne="“Do you wish to see him drown in his so-called ‘compassion’?”" picOne="storage2" partTwo="20" quotationTwo="“Pale Death beats equally at the poor man's gate and at the palaces of kings.”" picTwo="londonStreet" partThree="40" quotationThree="“You must also know that, the core belief of Schicksal, is to eradicate the Honkai from the face of the earth. But … unfortunately, this cannot be done.”" picThree="CG8">ch8</log>
+                <log id="log1801" partOne="0" quotationOne="Just now he had received a letter, and it was a very strange letter indeed …" picOne="CG9-1" partTwo="30" quotationTwo="“Welt! You stinky boy! If you have the courage, come and —”" picTwo="CG9-2">ch9</log>
+                <log id="log1901" partOne="0" quotationOne="“Ara ara … I'm just thinking that you're all being too serious right now, are you not?”" picOne="plankVienaSmile" partTwo="100" quotationTwo="“Did you forget about the ‘Herrscher’?”" picTwo="edisonTower" partThree="200" quotationThree="“I will bring back Abyss Flower myself, in accordance with the plan. Over and out.”" picThree="graveDayLate">ch10</log>
+                <log id="log2001" partOne="0" quotationOne="“Hey l-little kiddo … y-you've got to help me! On behalf of all men!”" picOne="studyLamp" partTwo="100" quotationTwo="“‘The Moonlight Throne Project’! What do you think of us using this name?”" picTwo="CG11-1">ch11</log>
+                <log id="log2101" partOne="0" quotationOne="“This month is already over, but we haven't been out of the city yet!”" picOne="schoolDay3" partTwo="60" quotationTwo="“ … Protect well, those who truly deserve your protection!”" picTwo="CG6-3_Rem" partThree="100" quotationThree="“Welt … are you also familiar with this song?”" picThree="CG12-1">ch12</log>
+                <log id="log2201" partOne="0" quotationOne="Everyone was probably thinking, “Anyway, there'll always be time in the future”." picOne="CG13-1">ch13</log>
+                <log id="log2301" partOne="0" quotationOne="“Wow! So sumptuous! I can't even tell which one's the main course!”" picOne="westCliffDinnerRoom" partTwo="40" quotationTwo="“Wetting themselves with spit, how much better when they can forget themselves in the rivers and lakes.”" picTwo="westCliffBeach" partThree="55" quotationThree="“Welt, this must be the first time you've seen such a clear starry sky.”" picThree="CG14-1">ch14</log>
+                <log id="log2401" partOne="0" quotationOne="“No, in fact you didn't say anything wrong. But because of this ― it makes it even more … difficult to believe you, at this very moment.”" picOne="CG15-II">ch15</log>
+                <log id="log2501" partOne="0" quotationOne="“I should sleep some more. Today could be a long day.”" picOne="CG16-1-3" partTwo="120" quotationTwo="“It is about time I tell you my real name.”" picTwo="CG16-2">ch16</log>
+                <log id="log2601" partOne="0" quotationOne="“I hope I can leave them with a complete story”" picOne="bostonCommon">ch17</log>
+                <log id="log2701" partOne="0" quotationOne="“The butterfly fell on your fingertips. You fixed its wings.”" picOne="ruinHouseBerlin" partTwo="90" quotationTwo="“Are you awake? It seems that you have had a nightmare.”" picTwo="CG18-1" partThree="120" quotationThree="“I don't want to deal with the government...”" picThree="carNight">ch18</log>
+                <log id="log2801" partOne="0" quotationOne="“Nothing that really happens in the world can be as beautiful as the partial perception of a few senses.”" picOne="streetProvidence" partTwo="50" quotationTwo="“I am the Black Abyss that swallows everything, I am the white Flower that nurtures all.”" picTwo="CG19">ch19</log>
+                <log id="log2901" partOne="0" quotationOne="“With all the things we've done that he's going to resent, shouldn't we be on our guard?”" picOne="tankInside" partTwo="20" quotationTwo="“I do this all day long, I just want to be a catcher in the wheat field.”" picTwo="connecticutRoad" partThree="60" quotationThree="“Heilige Lanze, die Welwitschie!”" picThree="CG20-1">ch20</log>
+                <log id="log3001" partOne="0" quotationOne="“Out of the way. I'm looking for the boy in the back.”" picOne="CG21">ch21</log>
+                <log id="log3101" partOne="0" quotationOne="“...It's okay. The teacher will focus on creating a surprise.”" picOne="edisonTower" partTwo="30" quotationTwo="“What...This guy's a Herrscher. Isn't that obvious?”" picTwo="CG22-1" partThree="120" quotationThree="“Bring it on! Let me witness what a Herrscher is capable of!”" picThree="CG22-2">ch22</log>
+                <log id="log3201" partOne="0" quotationOne="“-- What nonsense, children!”" picOne="CG23-1" partTwo="130" quotationTwo="“Uh...Wait, wait...The amount of information is a bit large...”" picTwo="tankInside" partThree="150" quotationThree="“Damn...There's no way to get the message out like this!”" picThree="cloudSky">ch23</log>
+                <log id="log3301" partOne="0" quotationOne="“...It's not a priority right now, Nikola.”" picOne="roadNewYork" partTwo="110" quotationTwo="“...You talk too much, fool.”" picTwo="brightonBeach" partThree="160" quotationThree="“I will not allow you to defile this body with such impunity”" picThree="CG24-4-0">ch24</log>
+                <log id="log3401" partOne="0" quotationOne="“In the face of any disaster, one can always find a stable future.”" picOne="aircraftCockpit" partTwo="40" quotationTwo="“Their brilliance cannot just be lost in darkness.”" picTwo="CG25-2">ch25</log>
+                <log id="log3501" partOne="0" quotationOne="“The world in eyes of Otto Apocalypse's was distorted.”" picOne="blackHole" partTwo="160" quotationTwo="“‘The Ship of Theseus’ was called by that name because of Theseus himself!”" picTwo="CG26-7" partThree="300" quotationThree="“He was -- Welt!”" picThree="empireStateBuilding">ch26</log>
+            </div>
+        </div>
+    </body>
+    <script>
+        function generateBoxes(start, end) {
+            for (i = start; i <= end; i++) {
+                //for each box
+                box_Id = "ch" + i + "-box"
+                box_XML_Id = i + 9 
+                box_XML_Id = "log" + box_XML_Id + "01"
+                dbg(box_XML_Id)
+                //dbg(catalog_list.xml.getElementById(box_XML_Id.attributes))
+                // <div id = 'box_Id'><h2>Chapter i</h2><p><i>Part 1 </i>quotationOne<button
+                box_HTML = "<div id = '" + box_Id + "'><h2>Chapter " + i + "</h2><p><i>Part 1 </i>" + catalog_list.querySelector("#" + box_XML_Id.toString()).attributes["quotationOne"].value + "<button onclick = ''>Go</button>" + "</div>"
+                document.getElementById("chapter-list").appendChild(elementify(box_HTML))
+            }
+        }
+
+
+
+        function on_XML_load() {
+            dbg("xml loaded!")
+            generateBoxes(0,26)
+        }
+
+
+
+
+
+
+
+
+
+
+
+        //silly xml things
+        character_data = document.querySelector("#xml #character_data")
+        cg_list = document.querySelector("#xml #cg_list")
+        catalog_list = document.querySelector("#xml #catalog_list")
+        on_XML_load()
+
+
+        function dbg(msg) {
+            console.log(msg)
+        }
+    </script>
+</html>
