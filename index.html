@@ -4,20 +4,28 @@
         <title>Anti-Entropy Visual Novel | Offline Version</title>
         <link rel="icon" href="imgs/favicon.ico" type="image/x-icon"/>
         <script src = "useful.js"></script>
+        <link rel = "stylesheet" href = "style.css" />
     </head>
     <body>
-        <div id = "menu">
+        <div id = "always-options">
+            <input type="checkbox" id = "is-portrait" name = "Portrait Mode">
+        </div>
+        <div id = "menu" class = "hide">
             <div id = "chapter-list"></div>
         </div>
-        <div id = "vn" class = "hide">
+        <div id = "vn" class = "">
             <div id = "char_imgs">
-                <div id = "left"></div>
-                <div id = "center"></div>
-                <div id = "right"></div>
+                <div id = "character-left"></div>
+                <div id = "character-center"></div>
+                <div id = "character-right"></div>
+                <div id = "character-back"></div>
+                <div id = "character-mostleft"></div>
+                <div id = "character-mostright"></div>
             </div>
-            <div id = "char_name"></div>
-            <div id = "note_icon"></div>
-            <div id = "dialogue"></div>
+            <div id = "char_name"><p>Test</p></div>
+            <div id = "note_icon" class = "hide"></div>
+            <br /><br /><br />
+            <div id = "dialogue"><p>Hello, world</p></div>
             <div id = "full_page_dialogue" class = "scroll"></div>
         </div>
     </body>

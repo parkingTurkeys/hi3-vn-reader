@@ -7,10 +7,10 @@ function generateBoxes(start, end) {
         box_XML_Id = i + 9
         box_XML_Id = "log" + box_XML_Id.toString() + "01"
         //dbg(catalog_list.xml.getElementById(box_XML_Id).attributes["quotationThree"].value)
-        // <div id = 'box_Id'><h2>Chapter i</h2><p><i>Part 1 </i>quotationOne<button onclick = 'goToScene(partOne)'>Go</button></p><p><i>Part 2 </i>quotationTwo<button onclick = 'goToScene(partTwo)'>Go</button></p><p><i>Part 3 </i>quotationThree<button onclick = 'goToScene(partThree)'>Go</button></div>
-        box_HTML = "<div id = '" + box_Id + "'><h2>Chapter " + i + "</h2><p><i>Part 1 </i>" + catalog_list.xml.getElementById(box_XML_Id).attributes["quotationOne"].value + "<button onclick = 'goToScene(" + catalog_list.xml.getElementById(box_XML_Id).attributes["partOne"].value + ")'>Go</button>"
-        try {box_HTML += "</h2><p><i>Part 2 </i>" + catalog_list.xml.getElementById(box_XML_Id).attributes["quotationTwo"].value + "<button onclick = 'goToScene(" + catalog_list.xml.getElementById(box_XML_Id).attributes["partTwo"].value + ")'>Go</button>" } catch {}
-        try {box_HTML += "</h2><p><i>Part 3 </i>" + catalog_list.xml.getElementById(box_XML_Id).attributes["quotationThree"].value + "<button onclick = 'goToScene(" + catalog_list.xml.getElementById(box_XML_Id).attributes["partThree"].value + ")'>Go</button>"} catch {}
+        // <div id = 'box_Id'><h2>Chapter i</h2><p><i>Part 1 </i>quotationOne<button onclick = 'goToScene(partOne)'>Go</button></p><p><i>Part 2 </i>quotationTwo<button onclick = 'goToScene(i, partTwo)'>Go</button></p><p><i>Part 3 </i>quotationThree<button onclick = 'goToScene(partThree)'>Go</button></div>
+        box_HTML = "<div id = '" + box_Id + "'><h2>Chapter " + i + "</h2><p><i>Part 1 </i>" + catalog_list.xml.getElementById(box_XML_Id).attributes["quotationOne"].value + "<button onclick = 'goToScene(" + i.toString() + "," + catalog_list.xml.getElementById(box_XML_Id).attributes["partOne"].value + ")'>Go</button>"
+        try {box_HTML += "</h2><p><i>Part 2 </i>" + catalog_list.xml.getElementById(box_XML_Id).attributes["quotationTwo"].value + "<button onclick = 'goToScene(" + i.toString() + "," + catalog_list.xml.getElementById(box_XML_Id).attributes["partTwo"].value + ")'>Go</button>" } catch {}
+        try {box_HTML += "</h2><p><i>Part 3 </i>" + catalog_list.xml.getElementById(box_XML_Id).attributes["quotationThree"].value + "<button onclick = 'goToScene(" + i.toString() + "," + catalog_list.xml.getElementById(box_XML_Id).attributes["partThree"].value + ")'>Go</button>"} catch {}
         box_HTML +=  + "</div>"
         document.getElementById("chapter-list").appendChild(elementify(box_HTML))
     }
@@ -18,7 +18,9 @@ function generateBoxes(start, end) {
 
 
 function goToScene(ch, scene) {
-    console.log(scene.toString())
+    dbg(ch.toString() + scene.toString())
+    document.getElementById("menu").className = "hide"
+    document.getElementById("vn").className = ""
 }
 
 

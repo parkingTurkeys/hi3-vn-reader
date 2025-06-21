@@ -1,3 +1,7 @@
+/* *{padding:0;margin:0;}*/
+
+/* p {padding: 0.5rem} */
+
 .scroll {
     overflow-y:auto;
 }
@@ -12,4 +16,20 @@
 
 .hide {
     display: none;
+}
+
+#char_name, #dialogue {
+    display: inline-block ;
+    border-style: solid;
+}
+
+#char_name, #char_name * {
+    float: left;
+    width: auto;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+
+#dialogue, #dialogue * {
+    float: left;
 }
