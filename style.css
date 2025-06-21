@@ -2,6 +2,10 @@
 
 /* p {padding: 0.5rem} */
 
+body {
+    font-size:16px;
+}
+
 .scroll {
     overflow-y:auto;
 }
@@ -25,11 +29,30 @@
 
 #char_name, #char_name * {
     float: left;
-    width: auto;
-    height: 2rem;
-    margin-bottom: 1rem;
+    min-width: 5rem;
+    text-align: center;
+}
+
+#char_name {
+    padding-top: 1rem;
+    padding-left:1rem;
+    padding-bottom: 1rem;
+    padding-right:1rem;
+    display: inline-block ;
 }
 
 #dialogue, #dialogue * {
     float: left;
+    height: 10rem;
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+}
+
+#vn {
+}
+
+#dialogue-box {
+    position:fixed;
+    bottom:0;
 }
