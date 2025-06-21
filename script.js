@@ -10,7 +10,8 @@ function generateBoxes(start, end) {
         // <div id = 'box_Id'><h2>Chapter i</h2><p><i>Part 1 </i>quotationOne<button onclick = 'goToScene(partOne)'>Go</button></p><p><i>Part 2 </i>quotationTwo<button onclick = 'goToScene(partTwo)'>Go</button></p><p><i>Part 3 </i>quotationThree<button onclick = 'goToScene(partThree)'>Go</button></div>
         box_HTML = "<div id = '" + box_Id + "'><h2>Chapter " + i + "</h2><p><i>Part 1 </i>" + catalog_list.xml.getElementById(box_XML_Id).attributes["quotationOne"].value + "<button onclick = 'goToScene(" + catalog_list.xml.getElementById(box_XML_Id).attributes["partOne"].value + ")'>Go</button>"
         try {box_HTML += "</h2><p><i>Part 2 </i>" + catalog_list.xml.getElementById(box_XML_Id).attributes["quotationTwo"].value + "<button onclick = 'goToScene(" + catalog_list.xml.getElementById(box_XML_Id).attributes["partTwo"].value + ")'>Go</button>" } catch {}
-        try {box_HTML += "</h2><p><i>Part 3 </i>" + catalog_list.xml.getElementById(box_XML_Id).attributes["quotationThree"].value + "<button onclick = 'goToScene(" + catalog_list.xml.getElementById(box_XML_Id).attributes["partThree"].value + ")'>Go</button>" + "</div>"} catch {}
+        try {box_HTML += "</h2><p><i>Part 3 </i>" + catalog_list.xml.getElementById(box_XML_Id).attributes["quotationThree"].value + "<button onclick = 'goToScene(" + catalog_list.xml.getElementById(box_XML_Id).attributes["partThree"].value + ")'>Go</button>"} catch {}
+        box_HTML +=  + "</div>"
         document.getElementById("chapter-list").appendChild(elementify(box_HTML))
     }
 }
