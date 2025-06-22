@@ -145,7 +145,7 @@
             <text>If I do my best——</text>
             <goto goto="40" change="0"/>
         </scene>
-        <scene id="40" background="black">
+        <scene id="40" background="black.jpg">
             <bgm src="8_24_war.mp3" status="stop"></bgm>
             <speak chara="ritaFullNameNoFace">Welt-sama, watch out!</speak>
             <goto goto="50" change="0"/>
@@ -263,7 +263,7 @@
             <speak chara="ottoNoFace">——Step forward and talk!</speak>
             <goto goto="125" change="0"/>
         </scene>
-        <scene id="125" background="black">
+        <scene id="125" background="black.jpg">
             <bgm src="horror.mp3" status="stop"></bgm>
             <speak chara="ritaFullNameNoFace">(Heh.)</speak>
             <goto goto="130" change="0"/>

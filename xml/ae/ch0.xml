@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <data>
     <story title="1">
-        <scene id="0" background="black" bgm="no">
+        <scene id="0" background="black.jpg" bgm="no">
             <bgm src="horror.mp3" status="start"></bgm>
             <text>hello world</text>
             <sound src="car door open.mp3"/>
@@ -11,6 +11,7 @@
             <shake position="all" time="250"></shake>
             <text>more yapping</text>
             <text>even more yapping.</text>
+            <speak chara="test">blablabla</speak>
             <goto goto="5" change="0"/>
         </scene>
         <scene id="5" background="forrestDark.jpg" bgm="no">
@@ -23,7 +24,7 @@
             <shake position="all" time="250"></shake>
             <text>more yapping</text>
             <text>even more yapping.</text>
-            <goto goto="10" />
+            <end post="U2FsdGVkX18SorRINadIetIkimT9"/>
         </scene>
     </story>
 </data>

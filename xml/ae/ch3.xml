@@ -117,7 +117,7 @@
             <speak chara="teslaNoFace">All right!</speak>
             <goto goto="20" change="0"/>
         </scene>
-        <scene id="20" background="black">
+        <scene id="20" background="black.jpg">
             <bgm src="themeTesla.mp3" status="stop"></bgm>
             <sound src="hit man.mp3"/>
             <text>Clatter scatter.</text>
@@ -737,7 +737,7 @@
             <speak chara="weltNoFace">… Don't think too much, a nightmare is just a coincidence, a stroke of bad luck, nothing else.</speak>
             <goto goto="68" change="0"/>
         </scene>
-        <scene id="68" background="black">
+        <scene id="68" background="black.jpg">
             <bgm src="serenity.mp3" status="stop"></bgm>
             <sound src="deep breath.mp3"/>
             <text>Motivating himself in this way, the young man takes a deep breath, and closes his eyes.</text>

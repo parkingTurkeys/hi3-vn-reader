@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <data>
     <story title="1">
-        <scene id="0" background="black" bgm="no">
+        <scene id="0" background="black.jpg" bgm="no">
             <bgm src="horror.mp3" status="start"></bgm>
             <text>The car has finally stopped.</text>
             <sound src="car door open.mp3"/>
@@ -300,7 +300,7 @@
             <speak chara="5">It's great to be alive indeed!</speak>
             <goto goto="75" change="0"/>
         </scene>
-        <scene id="75" background="black" bgm="no">
+        <scene id="75" background="black.jpg" bgm="no">
             <bgm src="themeWelt.mp3" status="continue"></bgm>
             <text>Munch munch.</text>
             <text>Munch munch munch munch.</text>
@@ -327,7 +327,7 @@
             <text>At this very moment, even if there were some loud commotion，it won't matter too much …</text>
             <goto goto="84" change="0"/>
         </scene>
-        <scene id="84" background="black" bgm="no">
+        <scene id="84" background="black.jpg" bgm="no">
             <bgm src="morning.mp3" status="stop"></bgm>
             <sound src="hit man.mp3"/>
             <shake position="all" time="250"></shake>

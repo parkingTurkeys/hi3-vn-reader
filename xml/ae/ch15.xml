@@ -345,7 +345,7 @@
             <speak chara="ottoNoFace">Have you ever felt that, no matter how many times you've been around the sun, you still wish to become an “Ally of Justice”?</speak>
             <goto goto="460" change="0"/>
         </scene>
-        <scene id="460" background="black">
+        <scene id="460" background="black.jpg">
             <bgm src="11_3_themeOtto.mp3" status="stop"></bgm>
             <speak chara="ottoNoFace"> … </speak>
             <bgm src="themeWelt.mp3" status="start"></bgm>
@@ -377,7 +377,7 @@
             <speak chara="ottoNoFace">Let us meet again, my friend.</speak>
             <goto goto="480" change="#ffffff"/>
         </scene>
-        <scene id="480" background="black">
+        <scene id="480" background="black.jpg">
             <bgm src="horror.mp3" status="start"></bgm>
             <speak chara="ritaNoNameNoFace">( … Mr Welt, please wait a moment.)</speak>
             <speak chara="weltNoFace"> … Who's there?</speak>

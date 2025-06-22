@@ -442,7 +442,7 @@
             <speak chara="teslaNoFace">PISS OFF!</speak>
             <goto goto="52" change="0"/>
         </scene>
-        <scene id="52" background="black">
+        <scene id="52" background="black.jpg">
             <bgm src="themeTesla.mp3" status="continue"></bgm>
             <sound src="hit man.mp3"/>
             <speak chara="weltNoFace">AAAAAAAAAHHHHHH!!!!!!!!!!!!!!!!!!!!</speak>

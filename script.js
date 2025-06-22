@@ -1,5 +1,6 @@
 let loaded = []
 tag_Index = 0;
+vn = false;
 //ch0 = "hello worldiot"
 
 function generateBoxes(start, end) {
@@ -20,12 +21,15 @@ function generateBoxes(start, end) {
 
 
 function goToScene(ch, scene) {
+    vn = true;
     dbg(ch.toString() + scene.toString())
     document.getElementById("menu").className = "hide"
     document.getElementById("vn").className = ""
     //dbg("ch" + ch.toString())
     current_Scene = window["ch" + ch.toString()].xml.getElementById(scene);
-    //dbg(current_Scene)
+    dbg(current_Scene)
+    dbg(current_Scene.attributes["background"].value.includes("jpg"))
+    if(current_Scene.attributes["background"].value.includes("jpg") === false) {document.getElementsByTagName("body")[0].style.backgroundColor = current_Scene.attributes["background"].value; document.querySelector("body").style.backgroundImage = 0} else {document.getElementsByTagName("body")[0].style.backgroundImage = "url(cgs/" + current_Scene.attributes["background"].value+ ")"}
     for (i = 0; i < current_Scene.children.length; i++) {
         processTag(current_Scene.children.item(i))
     }
@@ -35,9 +39,18 @@ function processTag(tag) {
     switch (tag.nodeName) {
         case "text":
             document.getElementById("dialogue").innerHTML = tag.innerHTML;
+            document.getElementById("dialogue").style.color = "#ffffff"
             break;
+        case "speak":
+            document.getElementById("dialogue").innerHTML = tag.innerHTML;
+            document.getElementById("dialogue").style.color = character_data.xml.getElementById(tag.attributes["chara"].value).attributes["color"].value
+            document.getElementById("char_name").style.color = character_data.xml.getElementById(tag.attributes["chara"].value).attributes["color"].value
+            document.getElementById("char_name").innerHTML = character_data.xml.getElementById(tag.attributes["chara"].value).attributes["name"].value
+            break;
+        case "goto":
+            goToScene()
         default:
-            console.log(tag)
+            //console.log(tag)
     }
 }
 
@@ -45,7 +58,7 @@ function processTag(tag) {
 function on_XML_load() {
     dbg("xml loaded!")
     generateBoxes(0,26)
-    goToScene(0, 0)
+    goToScene(2, 0)
 }
 
 
