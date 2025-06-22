@@ -1,5 +1,6 @@
 let loaded = []
-ch0 = "hello worldiot"
+tag_Index = 0;
+//ch0 = "hello worldiot"
 
 function generateBoxes(start, end) {
     for (i = start; i <= end; i++) {
@@ -22,19 +23,32 @@ function goToScene(ch, scene) {
     dbg(ch.toString() + scene.toString())
     document.getElementById("menu").className = "hide"
     document.getElementById("vn").className = ""
-    dbg("ch" + ch.toString())
-    //current_Scene = window["ch" + ch.toString()].xml.getElementById(box_XML_Id);
-    dbg(window[ch0])
+    //dbg("ch" + ch.toString())
+    current_Scene = window["ch" + ch.toString()].xml.getElementById(scene);
+    //dbg(current_Scene)
+    for (i = 0; i < current_Scene.children.length; i++) {
+        processTag(current_Scene.children.item(i))
+    }
 }
 
+function processTag(tag) {
+    switch (tag.nodeName) {
+        case "text":
+            document.getElementById("dialogue").innerHTML = tag.innerHTML;
+            break;
+        default:
+            console.log(tag)
+    }
+}
 
 
 function on_XML_load() {
     dbg("xml loaded!")
     generateBoxes(0,26)
+    goToScene(0, 0)
 }
 
-goToScene(0, 0)
+
 
 
 
