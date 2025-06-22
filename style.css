@@ -1,6 +1,6 @@
-/* *{padding:0;margin:0;}*/
+*{padding:0;margin:0;}
 
-/* p {padding: 0.5rem} */
+ p {padding: 0.5rem} 
 
 body {
     font-size:16px;
@@ -41,18 +41,23 @@ body {
     display: inline-block ;
 }
 
-#dialogue, #dialogue * {
-    float: left;
+#dialogue {
+    /*float: left;*/
     height: 10rem;
-    min-width: 100%;
-    max-width: 100%;
-    width: 100%;
+    min-width:100%;
+    /*width: 100%;*/
+    margin: 1rem;
+    padding: 1rem;
+    text-align: left;
 }
 
 #vn {
+    /*width: 100%;*/
 }
 
 #dialogue-box {
     position:fixed;
+    width: calc(97% - 2rem);
     bottom:0;
+    text-align:center;
 }

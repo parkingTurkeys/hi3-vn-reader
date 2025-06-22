@@ -1,4 +1,5 @@
 let loaded = []
+ch0 = "hello worldiot"
 
 function generateBoxes(start, end) {
     for (i = start; i <= end; i++) {
@@ -21,6 +22,9 @@ function goToScene(ch, scene) {
     dbg(ch.toString() + scene.toString())
     document.getElementById("menu").className = "hide"
     document.getElementById("vn").className = ""
+    dbg("ch" + ch.toString())
+    //current_Scene = window["ch" + ch.toString()].xml.getElementById(box_XML_Id);
+    dbg(window[ch0])
 }
 
 
@@ -30,18 +34,24 @@ function on_XML_load() {
     generateBoxes(0,26)
 }
 
+goToScene(0, 0)
 
 
 
+let xml;
 
-
-
-
+function load_an_XML(file) {
+    dbg(file)
+    window[file] = new XMLHttpRequest()
+    window[file].addEventListener("load", save_XML)
+    window[file].open("GET", "xml/ae/" + file + ".xml")
+    window[file].send()
+}
 
 
 
 //silly xml things
-character_data = new XMLHttpRequest()
+/*character_data = new XMLHttpRequest()
 character_data.addEventListener("load", save_XML)
 character_data.open("GET", "xml/ae/character_data.xml")
 character_data.send()
@@ -54,14 +64,24 @@ cg_list.send()
 catalog_list = new XMLHttpRequest()
 catalog_list.addEventListener("load", save_XML)
 catalog_list.open("GET", "xml/ae/catalog_list.xml")
-catalog_list.send()
+catalog_list.send()*/
+
+load_an_XML("character_data")
+load_an_XML("cg_list")
+load_an_XML("catalog_list")
+load_an_XML("ch0")
+
+for (i = 0; i <= 26; i++) {
+    load_an_XML("ch" + i.toString())
+    dbg("ch" + i.toString())
+}
 
 function save_XML(event) {
     this.xml = this.responseXML
     //dbg(this.xml)
     loaded.push(1)
     //dbg(loaded)
-    if (loaded.length == /*replace with as many as i'm loading*/ 3) {
+    if (loaded.length == /*replace with as many as i'm loading*/ 30) {
         on_XML_load()
     }
 }
