@@ -17,7 +17,9 @@ it's different from the other ones because it is:
 this is because the original layout wouldn't really work too well with mobile and is hard to do. also, this uses plain html/css/js. 
 
 ## progress
-nothing. :3c
+[x] - Menu
+[x] - Making text appear
+[ ] - Making it not all immediately go at once
 
 
 ## tysms
