@@ -26,9 +26,60 @@ body {
     font-family: 'Microsoft Yahei', 'Noto Sans', 'Arial', 'Helvetica', sans-serif; /* the original just had Microsoft Yahei due to it being in Chinese, i added some other fonts */
     background-size: 100% auto ;
     background-image: url(cgs/CG3.jpg); /*for testing purposes*/
+    overflow: hidden;
 }
 
+.shake {
+    animation-name: shake;
+    animation-duration: 4s;
+}
 
+#character-center,
+#character-back {
+    display: block;
+    margin: auto;
+    height: 100%;
+    position: fixed;
+    bottom: 12rem;
+    top: 3rem;
+}
+
+#character-left {
+    display: inline;
+    margin-left: 0px;
+    margin-right: 85%;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100%;
+    position: fixed;
+    left: 10px;
+     float: left;
+}
+
+#character-right {
+    display: inline;
+    margin-left: 60%;
+    margin-right: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 100%;
+    
+    float: right;
+}
+
+.chara-img {
+    display: block;
+    height: 100%;
+    position: fixed;
+    bottom: 12rem;
+    top: 3rem;
+}
+
+#char_imgs {
+    /*display: block;*/
+    height: 50vh;
+
+}
 
 .inactive {
     opacity: 0.7;

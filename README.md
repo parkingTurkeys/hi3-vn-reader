@@ -19,7 +19,13 @@ this is because the original layout wouldn't really work too well with mobile an
 ## progress
 - [x] Menu  
 - [x] Making text appear  
-- [ ] Making it not all immediately go at once  
+- [x] Making it not all immediately go at once  
+- [x] Background images
+- [x] Sound
+- [ ] Shaking
+- [ ] Character images
+- [ ] Info boxes
+- [ ] The offline [file:// url] version
 
 
 

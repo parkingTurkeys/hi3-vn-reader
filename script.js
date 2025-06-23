@@ -61,12 +61,19 @@ function processTag(tag) {
             document.getElementById("char_name").innerHTML = ""
             document.getElementById("dialogue").innerHTML = tag.innerHTML;
             document.getElementById("dialogue").style.color = "#ffffff"
+            document.getElementById("char_name").style.color = "#ffffff"
             break;
         case "speak":
             document.getElementById("dialogue").innerHTML = tag.innerHTML;
             document.getElementById("dialogue").style.color = character_data.xml.getElementById(tag.attributes["chara"].value).attributes["color"].value
             document.getElementById("char_name").style.color = character_data.xml.getElementById(tag.attributes["chara"].value).attributes["color"].value
             document.getElementById("char_name").innerHTML = character_data.xml.getElementById(tag.attributes["chara"].value).attributes["name"].value
+            if (tag.attributes["position"]) {
+                document.getElementById("character-" + tag.attributes["position"].value).src = "imgs/" + character_data.xml.getElementById(tag.attributes["chara"].value).attributes["src"].value
+            }
+            break;
+        case "show":
+            document.getElementById("character-" + tag.attributes["position"].value).src = "imgs/" + character_data.xml.getElementById(tag.attributes["chara"].value).attributes["src"].value
             break;
         case "goto":
             goToScene(ch,tag.attributes["goto"].value)
@@ -83,7 +90,7 @@ function processTag(tag) {
 function on_XML_load() {
     dbg("xml loaded!")
     generateBoxes(0,26)
-    goToScene(1, 0)
+    goToScene(2, 0)
 }
 
 document.getElementsByTagName("body")[0].addEventListener("keydown", handleKeyPress)
