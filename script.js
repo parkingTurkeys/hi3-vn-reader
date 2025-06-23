@@ -1,6 +1,9 @@
 let loaded = []
 tag_Index = 0;
 vn = false;
+bgm = document.getElementById("bgm")
+sfx = document.getElementById("sfx")
+
 //ch0 = "hello worldiot"
 
 function generateBoxes(start, end) {
@@ -21,6 +24,7 @@ function generateBoxes(start, end) {
 
 
 function goToScene(ch, scene) {
+    bgm.pause()
     vn = true;
     window.ch = ch
     window.scene = scene
@@ -41,7 +45,18 @@ function goToScene(ch, scene) {
 function processTag(tag) {
     switch (tag.nodeName) {
         case "bgm":
-
+            if (tag.attributes["status"].value == "start" ) {
+                bgm.src = "bgm/" + tag.attributes["src"].value
+                bgm.load()
+                bgm.play()
+            }
+            //nextFrame()
+            break;
+        case "sound":
+            sfx.src = "bgm/" + tag.attributes["src"].value
+            sfx.load()
+            sfx.play()
+            break;
         case "text":
             document.getElementById("char_name").innerHTML = ""
             document.getElementById("dialogue").innerHTML = tag.innerHTML;
