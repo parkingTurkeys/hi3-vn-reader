@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <data>
     <story>
-        <scene id="0" background="bg.jpg">
+        <scene id="0" background="bg.jpg" >
             <bgm src="mid-lude.mp3" status="start"></bgm>
-            <cg src="newchapter.png" bg="bg.jpg"></cg>
+            <cg src="newchapter.png" bg="bg.jpg" ></cg>
             <goto goto="10" change="#000000"/>
         </scene>
-        <scene id="10" background="dreamSky.jpg">
+        <scene id="10" background="dreamSky.jpg" >
             <bgm src="03_03_bostonNight.mp3" status="start"></bgm>
             <show chara="ottoShadowClose-up" position="center"/>
             <speak chara="ottoShadowNoFace">Let's talk about the past.</speak>
@@ -22,7 +22,7 @@
             <speak chara="ottoShadowNoFace">「As you must know, even during the great hero's voyage the ship had its parts replaced.」</speak>
             <goto goto="20" change="#ffffff"/>
         </scene>
-        <scene id="20" background="benchClinic.jpg">
+        <scene id="20" background="benchClinic.jpg" >
             <bgm src="morning.mp3" status="start"></bgm>
             <speak chara="reannaNoNameNoFace">.....</speak>
             <text>I woke up from a dream.</text>
@@ -42,7 +42,7 @@
             <text>The bright light from the morning Sun entered diagonally from a small window at the end of the hallway. The strong contrast of light and darkness gave this questionable clinic a strange atmosphere.</text>
             <goto goto="30" change="0"/>
         </scene>
-        <scene id="30" background="wallClinic.jpg">
+        <scene id="30" background="wallClinic.jpg" >
             <bgm src="lab.mp3" status="start"></bgm>
             <show chara="morganClose" position="left"/>
             <speak chara="morganNoNameNoFace">Hi.</speak>
@@ -75,7 +75,7 @@
             <speak chara="reannaNoFace">Ahaha...that..</speak>
             <goto goto="40" change="#ffffff"/>
         </scene>
-        <scene id="40" background="livingroomClinic.jpg">
+        <scene id="40" background="livingroomClinic.jpg" >
             <bgm src="lab.mp3" status="continue"></bgm>
             <show chara="einSmileWinterClose" position="left"/>
             <speak chara="einNoFace">Well...This caviar tastes really good. The texture of the bread is just right.</speak>
@@ -152,7 +152,7 @@
              <!-- Dialogue might need some revisions-->
             <goto goto="50" change="0"/>
         </scene>
-        <scene id="50" background="backdoorClinic.jpg">
+        <scene id="50" background="backdoorClinic.jpg" >
             <bgm src="lab.mp3" status="stop"></bgm>
             <sound src="11_3_mess lock.mp3"/>
             <show chara="percivalNormalClose" position="right"/>
@@ -177,7 +177,7 @@
             <speak chara="percivalNoFace">I'll leave this man to you, there's another one lying in the doorway!</speak>
             <goto goto="60" change="#ffffff"/>
         </scene>
-        <scene id="60" background="wallClinic.jpg">
+        <scene id="60" background="wallClinic.jpg" >
             <bgm src="04_20_tank.mp3" status="start"></bgm>
             <show chara="elaineNormalClose" position="right"/>
             <speak chara="elaineNoFace">...M! What is the situation?</speak>
@@ -232,7 +232,7 @@
             <speak chara="einNoFace">……</speak>
             <goto goto="70" change="#ffffff"/>
         </scene>
-        <scene id="70" background="livingroomClinic.jpg">
+        <scene id="70" background="livingroomClinic.jpg" >
             <bgm src="04_20_Brigantia.mp3" status="continue"></bgm>
             <text>After a mysterious wink, Reanna picked up the Abyss Flower and left the clinic.</text>
             <bgm src="04_20_tank.mp3" status="start"></bgm>
@@ -282,7 +282,7 @@
             </remark>
             <goto goto="80" change="#ffffff"/>
         </scene>
-        <scene id="80" background="livingroomClinic.jpg">
+        <scene id="80" background="livingroomClinic.jpg" >
             <bgm src="04_20_tank.mp3" status="continue"></bgm>
             <show chara="elaineSmileClose" position="left"/>
             <speak chara="elaineNoFace">He-hey……</speak>
@@ -356,7 +356,7 @@
             <speak chara="teslaNoFace">Well? Huh!?</speak>
             <goto goto="90" change="0"/>
         </scene>
-        <scene id="90" background="backdoorClinic.jpg">
+        <scene id="90" background="backdoorClinic.jpg" >
             <bgm src="10_25_noise.mp3" status="stop"></bgm>
             <sound src="8_24_knock_door.mp3"/>
             <text>Knock.</text>
@@ -366,7 +366,7 @@
             <text>Knock Knock Knock.</text>
             <goto goto="100" change="0"/>
         </scene>
-        <scene id="100" background="livingroomClinic.jpg">
+        <scene id="100" background="livingroomClinic.jpg" >
             <bgm src="10_25_noise.mp3" status="stop"></bgm>
             <show chara="elaineNormalClose" position="right"/>
             <speak chara="elaineNoFace">...Isn't someone knocking?</speak>
@@ -381,7 +381,7 @@
             <speak chara="mbembaNoFace">Woah!</speak>
             <goto goto="110" change="0"/>
         </scene>
-        <scene id="110" background="CG21.jpg">
+        <scene id="110" background="CG21.jpg" >
             <bgm src="8_24_war.mp3" status="start"></bgm>
             <speak chara="mbembaNoFace">W-What are you doing...?</speak>
             <speak chara="schroCatNoNameNoFace">Out of my way, weaklings.</speak>

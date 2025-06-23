@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <data>
     <story title="1">
-        <scene id="0" background="bg.jpg">
+        <scene id="0" background="bg.jpg" >
             <bgm src="mid-lude.mp3" status="start"></bgm>
-            <cg src="newChapter.png" bg="bg.jpg"></cg>
+            <cg src="newChapter.png" bg="bg.jpg" ></cg>
             <goto goto="10" change="#000000"/>
         </scene>
-        <scene id="10" background="duckLake.jpg">
+        <scene id="10" background="duckLake.jpg" >
             <bgm src="lab.mp3" status="start"></bgm>
             <show chara="schroNormalAhClose-up" position="center"/>
             <speak chara="schroNoFace">Mountain Time, 11:38 — We've arrived at Yellowstone Lake.</speak>
@@ -19,7 +19,7 @@
             <text>The local police have set up a sentry box nearby. Planck gives them a cordial and familiar greeting, then leads the group through the fence into the enclosed area.</text>
             <goto goto="20"/>
         </scene>
-        <scene id="20" background="quarry.jpg">
+        <scene id="20" background="quarry.jpg" >
             <bgm src="9_28_cave.mp3" status="start"></bgm>
             <text>Passing through the fence, it becomes clear that Duck Lake had long ago been drained of water, and the lake bed now lies in full view of everyone.</text>
             <text> Welt is puzzled as to why the scene before him resembles a stone pit or quarry instead of an actual lake — </text>
@@ -93,7 +93,7 @@
             <text>She doesn't even bother to make proper eye contact with the young man.</text>
             <goto goto="25" change="0"/>
         </scene>
-        <scene id="25" background="CG6-1.jpg">
+        <scene id="25" background="CG6-1.jpg" >
             <bgm src="themeTesla.mp3" status="start"></bgm>
             <speak chara="teslaNoFace"> … </speak>
             <text>Sniff sniff.</text>
@@ -108,7 +108,7 @@
             <speak chara="edisonNoFace">Oh?</speak>
             <goto goto="30"/>
         </scene>
-        <scene id="30" background="quarry.jpg">
+        <scene id="30" background="quarry.jpg" >
             <bgm src="horror.mp3" status="start"></bgm>
             <show chara="teslaAngryGlassWinterFar" position="left" opacity="0.7"/>
             <show chara="edisonSmileWinterFar" position="right"/>
@@ -213,7 +213,7 @@
             <speak chara="teslaNoFace"> … pervert!!!</speak>
             <goto goto="35"/>
         </scene>
-        <scene id="35" background="quarry.jpg">
+        <scene id="35" background="quarry.jpg" >
             <bgm src="lab.mp3" status="start"></bgm>
             <text>A few minutes later.</text>
             <show chara="edisonSeriousWinterFar" position="right"/>
@@ -308,7 +308,7 @@
             <speak chara="schroNoFace">Let's hurry up and enter the ruins — </speak>
             <goto goto="40"/>
         </scene>
-        <scene id="40" background="quarryDrop.jpg">
+        <scene id="40" background="quarryDrop.jpg" >
             <bgm src="8_30_wind.mp3" status="start"></bgm>
             <text remark="next">“And while we were advancing toward the centre, to which all weight is drawn — ”</text>
             <text remark="next">“I, shivering in that eternally cold shadow — ”</text>
@@ -337,7 +337,7 @@
             <speak chara="weltNoFace"> … Even you, Einstein? Even you?</speak>
             <goto goto="50"/>
         </scene>
-        <scene id="50" background="mysGate.jpg">
+        <scene id="50" background="mysGate.jpg" >
             <bgm src="themeEin.mp3" status="start"></bgm>
             <show chara="weltSurpriseWinterClose-up" position="left"/>
             <speak chara="weltNoFace">This is … </speak>
@@ -375,7 +375,7 @@
             <speak chara="planckNoFace">Shall we all enter? Everyone?</speak>
             <goto goto="60"/>
         </scene>
-        <scene id="60" background="casterCave.jpg">
+        <scene id="60" background="casterCave.jpg" >
             <bgm src="9_28_cave.mp3" status="start"></bgm>
             <text>Walking through the ruins while chewing on a meaty burger — for Welt, this is truly a novel experience.</text>
             <text remark="next">The structure of the ruins is reminiscent of the ancient city of Petra, as seen  in a certain geographic magazine; or some dwarven city as described by Tolkien.</text>
@@ -418,7 +418,7 @@
             <text>With cream-covered fingertips, Dr Nokianvirtanen attempts to pull someone over.</text>
             <goto goto="61" change="0"/>
         </scene>
-        <scene id="61" background="casterCave.jpg">
+        <scene id="61" background="casterCave.jpg" >
             <bgm src="9_28_cave.mp3" status="continue"></bgm>
             <text>One after another, the girls begin to distance themselves from this man who has cast aside all self-restraint, probably because they cannot tolerate his wild enthusiasm.</text>
             <show chara="einSeriousEmWinterClose" position="right"/>
@@ -511,25 +511,25 @@
             <text>Focused on helping Einstein, Tesla gives a few words of explanation without looking back at him.</text>
             <goto goto="63"/>
         </scene>
-        <scene id="63" background="casterCave.jpg">
+        <scene id="63" background="casterCave.jpg" >
             <bgm src="9_28_cave.mp3" status="continue"></bgm>
             <show chara="teslaNormalGlassWinterClose" position="center"/>
             <speak chara="teslaNoFace">There is a wall in front.</speak>
             <goto goto="64"/>
         </scene>
-        <scene id="64" background="casterCave.jpg">
+        <scene id="64" background="casterCave.jpg" >
             <bgm src="9_28_cave.mp3" status="continue"></bgm>
             <show chara="teslaNormalGlassWinterClose" position="center"/>
             <speak chara="teslaNoFace">Be careful of the step.</speak>
             <goto goto="65"/>
         </scene>
-        <scene id="65" background="casterCave.jpg">
+        <scene id="65" background="casterCave.jpg" >
             <bgm src="9_28_cave.mp3" status="continue"></bgm>
             <show chara="teslaEmbarraGlassWinterClose" position="center"/>
             <speak chara="teslaNoFace">Wait … this is the dead end. We need a detour.</speak>
             <goto goto="66"/>
         </scene>
-        <scene id="66" background="casterCave.jpg">
+        <scene id="66" background="casterCave.jpg" >
             <bgm src="9_28_cave.mp3" status="continue"></bgm>
             <sound src="9_28_walk in cave.mp3"/>
             <text>Following Einstein's lead, the group slowly ventures into the depths of the ruins.</text>
@@ -592,7 +592,7 @@
             </remark>
             <goto goto="68"/>
         </scene>
-        <scene id="68" background="mysAisle.jpg">
+        <scene id="68" background="mysAisle.jpg" >
             <bgm src="9_28_cave.mp3" status="continue"></bgm>
             <sound src="9_28_walk in cave.mp3"/>
             <show chara="einSleepWinterClose" position="right"/>
@@ -615,7 +615,7 @@
             <speak chara="schroNoFace"> … Nobody cares, Professor.</speak>
             <goto goto="70"/>
         </scene>
-        <scene id="70" background="mysLab.jpg">
+        <scene id="70" background="mysLab.jpg" >
             <bgm src="horror.mp3" status="start"></bgm>
             <text>On the other side of the door is an abnormally clean room.</text>
             <text>On all four walls, some material resembling plastic wallpaper has already liquefied and crumbled away; but remarkably, the ivory-coloured table in the centre of the room is almost spotless.</text>
@@ -641,7 +641,7 @@
             <text> Suddenly, the girl's eyes widen. Aided by the torchlight on someone's shoulder, she is able to notice something on the ceiling.</text>
             <goto goto="75" change="0"/>
         </scene>
-        <scene id="75" background="CG6-2.jpg">
+        <scene id="75" background="CG6-2.jpg" >
             <bgm src="8_24_war.mp3" status="start"></bgm>
             <speak chara="nokiaNoFace">No, this can't be … This … this … </speak>
             <text>The Finn, upon raising his head, exclaims in surprise.</text>
@@ -662,7 +662,7 @@
             <speak chara="teslaNoFace">It must be this H person who wants to entrust us with the data in the Soulium!</speak>
             <goto goto="80" change="0"/>
         </scene>
-        <scene id="80" background="mysLab.jpg">
+        <scene id="80" background="mysLab.jpg" >
             <bgm src="8_24_war.mp3" status="continue"></bgm>
             <show chara="schroNormalAhClose" position="right"/>
             <speak chara="schroNoFace">So … could it be some very important data?</speak>
@@ -754,7 +754,7 @@
             <text>Before introducing her proposition, she gives Tesla a sly glance.</text>
             <goto goto="90"/>
         </scene>
-        <scene id="90" background="planeNight.jpg">
+        <scene id="90" background="planeNight.jpg" >
             <bgm src="serenity.mp3" status="start"></bgm>
             <sound src="8_24_launch.mp3"/>
             <text>Late night, the next day.</text>
@@ -767,7 +767,7 @@
             <text>Einstein again has a book covering her face, and Tesla is again asleep and sprawled all over her seat. As for the Finn who was there before — he is no longer on this plane at all.</text>
             <goto goto="95"/>
         </scene>
-        <scene id="95" background="mysLab2.jpg">
+        <scene id="95" background="mysLab2.jpg" >
             <bgm src="themeWelt.mp3" status="start"></bgm>
             <show chara="planckNormalCoatClose" position="center"/>
             <speak chara="planckNoFace">After today's investigation, I suggest that we divide our troops to follow two paths.</speak>
@@ -831,7 +831,7 @@
             <speak chara="planckNoFace">As long as we continue to make such advances in our technology, our delaying tactics will not be in vain.</speak>
             <goto goto="100"/>
         </scene>
-        <scene id="100" background="planeNight.jpg">
+        <scene id="100" background="planeNight.jpg" >
             <bgm src="serenity.mp3" status="start"></bgm>
             <show chara="planckSadCoatClose-up" position="right"/>
             <speak chara="planckNoFace">Ah … so bored … </speak>
@@ -961,7 +961,7 @@
             </text>
             <goto goto="110" change="0"/>
         </scene>
-        <scene id="110" background="CG6-3.jpg">
+        <scene id="110" background="CG6-3.jpg" >
             <bgm src="serenity.mp3" status="continue"></bgm>
             <text>Before the young man can utter a sound, the slender forefinger of the Long-haired Big Sister is placed gently upon his lips. She gracefully moves her body, switches to the other side of Welt, and sits down in a more discreet location.</text>
             <text>Red lips linger near his eyes, and titillating whispers tease and tantalise his imagination. </text>

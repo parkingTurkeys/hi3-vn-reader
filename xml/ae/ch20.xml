@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <data>
     <story>
-        <scene id="0" background="bg.jpg">
+        <scene id="0" background="bg.jpg" >
             <bgm src="mid-lude.mp3" status="start"></bgm>
-            <cg src="newchapter.png" bg="bg.jpg"></cg>
+            <cg src="newchapter.png" bg="bg.jpg" ></cg>
             <goto goto="10" change="#000000"/>
         </scene>
-        <scene id="10" background="tankInside.jpg">
+        <scene id="10" background="tankInside.jpg" >
             <bgm src="mid-lude.mp3" status="stop"></bgm>
             <text>That day, around 8 o'clock in the morning.</text>
             <bgm src="04_20_tank.mp3" status="start"></bgm>
@@ -98,7 +98,7 @@
             <speak chara="teslaNoFace">You just keep driving.</speak>
             <goto goto="20" change="#ffffff"/>
         </scene>
-        <scene id="20" background="roadMontana3.jpg">
+        <scene id="20" background="roadMontana3.jpg" >
             <bgm src="8_24_war.mp3" status="start"></bgm>
             <speak chara="reannaNoFace">...That's all I know.</speak>
             <speak chara="reannaNoFace">……</speak>
@@ -121,7 +121,7 @@
             <speak chara="reannaNoFace">Yes, I'll keep in touch—— Grand Overseer.</speak>
             <goto goto="30" change="#ffffff"/>
         </scene>
-        <scene id="30" background="roadMontana1.jpg">
+        <scene id="30" background="roadMontana1.jpg" >
             <bgm src="10_25_ada.mp3" status="start"></bgm>
             <text>Reanna has felt the cold of death from many men older than her.</text>
             <text>Perhaps, for the strong, the loss of human life is just a number——</text>
@@ -167,7 +167,7 @@
             <text>I wasn't a fan of her skeptical tone... but her presence brought joy to everyone.</text>
             <goto goto="40" change="0"/>
         </scene>
-        <scene id="40" background="cloudSky.jpg">
+        <scene id="40" background="cloudSky.jpg" >
             <bgm src="10_25_ada.mp3" status="continue"></bgm>
             <text>The last time I saw her was a hundred years ago.</text>
             <text>Back then, the railroad barely reached Chicago——</text>
@@ -228,7 +228,7 @@
             </remark>
             <goto goto="50" change="0"/>
         </scene>
-        <scene id="50" background="connecticutRoad.jpg">
+        <scene id="50" background="connecticutRoad.jpg" >
             <bgm src="10_25_ada.mp3" status="continue"></bgm>
             <text>Confusion arose after a large number of people woke up from sleep and noticed the electronic anomaly caused by the energy pulse.</text>
             <text>However, unlike in panic scenes often seen in movies, order was maintained during this chaos.</text>
@@ -262,7 +262,7 @@
             <text>「The catcher in the rye」.</text>
             <goto goto="60" change="#ffffff"/>
         </scene>
-        <scene id="60" background="tankInside.jpg">
+        <scene id="60" background="tankInside.jpg" >
             <bgm src="10_25_ada.mp3" status="stop"></bgm>
             <sound src="04_20_brake.mp3"/>
             <show chara="teslaAngryGlassWinterClose-up" position="right"/>
@@ -275,7 +275,7 @@
             <speak chara="mbembaNoFace">On the side of the road... a limping person came out...</speak>
             <goto goto="70" change="#ffffff"/>
         </scene>
-        <scene id="70" background="connecticutFarm.jpg">
+        <scene id="70" background="connecticutFarm.jpg" >
             <bgm src="street.mp3" status="start"></bgm>
             <show chara="elaineStruggleFar" position="left"/>
             <speak chara="elaineNoNameNoFace">Welcome to Hartford, Connecticut!</speak>
@@ -317,7 +317,7 @@
             <speak chara="reannaNoFace">- But the "divine key" of decomposition and creation!</speak>
             <goto goto="80" change="0"/>
         </scene>
-        <scene id="80" background="CG20-1.jpg">
+        <scene id="80" background="CG20-1.jpg" >
             <bgm src="04_20_Brigantia.mp3" status="start"></bgm>
             <speak chara="reannaNoFace">I am the black rising from the abyss.</speak>
             <speak chara="reannaNoFace">I am the white descending from the heavens.</speak>
@@ -338,7 +338,7 @@
             </remark>
             <goto goto="90" change="#ffffff"/>
         </scene>
-        <scene id="90" background="connecticutFarm.jpg">
+        <scene id="90" background="connecticutFarm.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="start"></bgm>
             <show chara="elaineSmileFar" position="left"/>
             <speak chara="elaineNoNameNoFace">Hey! Are you guys a medic team from somewhere else?</speak>

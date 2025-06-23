@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <data>
     <story>
-        <scene id="0" background="bg.jpg">
+        <scene id="0" background="bg.jpg" >
             <bgm src="mid-lude.mp3" status="start"></bgm>
-            <cg src="newchapter.png" bg="bg.jpg"></cg>
+            <cg src="newchapter.png" bg="bg.jpg" ></cg>
             <goto goto="10" change="#000000"/>
         </scene>
-        <scene id="10" background="ruinHouseBerlin.jpg">
+        <scene id="10" background="ruinHouseBerlin.jpg" >
             <bgm src="03_15_ruinBerlin.mp3" status="start"></bgm>
             <text>You are lying next to a tear in the ground.</text>
             <text remark="next">You struggle to get up. As you move you look to your left, and notice the Spree River flowing.</text>
@@ -29,7 +29,7 @@
             <text>The Reaper descended into Berlin from its cloudy sky.</text>
             <goto goto="20" change="#ffffff"/>
         </scene>
-        <scene id="20" background="ruinHallBerlin.jpg">
+        <scene id="20" background="ruinHallBerlin.jpg" >
             <bgm src="03_15_ruinBerlin.mp3" status="continue"></bgm>
             <text>The streets were full of rubble.</text>
             <text>Buildings and vehicles had their shape changed, and are exhaling black smoke.</text>
@@ -43,7 +43,7 @@
             </remark>
             <goto goto="30" change="#ffffff"/>
         </scene>
-        <scene id="30" background="ruinHouseBerlin.jpg">
+        <scene id="30" background="ruinHouseBerlin.jpg" >
             <bgm src="03_15_ruinBerlin.mp3" status="continue"></bgm>
             <text>You keep walking forward, slowly, as if you were paralyzed.</text>
             <text>As far as your eyes could see, there was no one alive.</text>
@@ -68,7 +68,7 @@
             <text>Then Berlin today is a graveyard where not even wandering lost souls remain.</text>
             <goto goto="40" change="#ffffff"/>
         </scene>
-        <scene id="40" background="ruinHallBerlin.jpg">
+        <scene id="40" background="ruinHallBerlin.jpg" >
             <bgm src="03_15_ruinBerlin.mp3" status="continue"></bgm>
             <text>You keep walking forward, slowly, as if you were paralyzed.</text>
             <text>You could feel life in the distance.</text>
@@ -81,7 +81,7 @@
             <text>As if they were remains that had accepted death.</text>
             <goto goto="50" change="#ffffff"/>
         </scene>
-        <scene id="50" background="ruinHouseBerlin.jpg">
+        <scene id="50" background="ruinHouseBerlin.jpg" >
             <bgm src="03_15_ruinBerlin.mp3" status="continue"></bgm>
             <text>"Savior".</text>
             <text>You see this suspicious word burn fiercely, and fly high into the sky from the cold ground.</text>
@@ -95,7 +95,7 @@
             <text>Only a silently burning flame that calms you down to your very core.</text>
             <goto goto="60" change="#ffffff"/>
         </scene>
-        <scene id="60" background="ruinHallBerlin.jpg">
+        <scene id="60" background="ruinHallBerlin.jpg" >
             <bgm src="03_15_ruinBerlin.mp3" status="continue"></bgm>
             <text>When you looked to your side, you saw people running a few kilometers away.</text>
             <text>They're being guided by a strange group. Are the occupying forces scattering, or perhaps are they evacuating people?</text>
@@ -112,7 +112,7 @@
             <text>One ■■ had its arms stretched out. As if it was trying to protect something with its hardened ■■.</text>
             <goto goto="70" change="#ffffff"/>
         </scene>
-        <scene id="70" background="ruinHouseBerlin.jpg">
+        <scene id="70" background="ruinHouseBerlin.jpg" >
             <bgm src="03_15_ruinBerlin.mp3" status="continue"></bgm>
             <text>You should have realized it already. Below your feet only ashes could be found.</text>
             <text>But you are unwilling.</text>
@@ -127,7 +127,7 @@
             <text>As if you were a 「Savior」.</text>
             <goto goto="80" change="#ffffff"/>
         </scene>
-        <scene id="80" background="ruinHallBerlin.jpg">
+        <scene id="80" background="ruinHallBerlin.jpg" >
             <bgm src="03_15_ruinBerlin.mp3" status="continue"></bgm>
             <text>You are lying next to a tear in the ground.</text>
             <text>You are exhausted. Fatigue has reached its max and your mind has stopped thinking clearly.</text>
@@ -143,12 +143,12 @@
             <text>You will fix its broken wings.</text>
             <goto goto="90" change="#ffffff"/>
         </scene>
-        <scene id="90" background="carNight.jpg">
+        <scene id="90" background="carNight.jpg" >
             <bgm src="12_15_1946.mp3" status="start"></bgm>
             <speak chara="weltNoFace">……</speak>
             <goto goto="100" change="0"/>
         </scene>
-        <scene id="100" background="CG18-1.jpg">
+        <scene id="100" background="CG18-1.jpg" >
             <bgm src="12_15_1946.mp3" status="continue"></bgm>
             <speak chara="einNoFace">are you awake?</speak>
             <speak chara="einNoFace">You seemed to had a nightmare.</speak>
@@ -159,11 +159,11 @@
             <speak chara="weltNoFace">...What happened to me? The Divine Key...did it do something?</speak>
             <goto goto="105" change="0"/>
         </scene>
-        <scene id="105" background="CG18-2.jpg">
+        <scene id="105" background="CG18-2.jpg" >
             <speak chara="einNoFace">No... I guess not... it should have nothing to do with the "Divine Key".</speak>
             <goto goto="110" change="0"/>
         </scene>
-        <scene id="110" background="CG18-2.jpg">
+        <scene id="110" background="CG18-2.jpg" >
             <bgm src="8_24_war.mp3" status="start"></bgm>
             <speak chara="einNoFace">I'm afraid it was a natural disaster that knocked you down.</speak>
             <speak chara="weltNoFace">Natural disaster?</speak>
@@ -187,7 +187,7 @@
             <speak chara="einNoFace">In the worst case scenario... what happened in Berlin may happen again in New York.</speak>
             <goto goto="120" change="#ffffff"/>
         </scene>
-        <scene id="120" background="carNight.jpg">
+        <scene id="120" background="carNight.jpg" >
             <bgm src="11_17_tatakau.mp3" status="start"></bgm>
             <text>November 24, 1955, 4 o'clock in the morning.</text>
             <text remark="next">State Highway 1, on the Blackstone River at the border of Rhode Island and Massachusetts.</text>
@@ -218,7 +218,7 @@
             <text>——Oh my God, it really connected somewhere.</text>
             <goto goto="130" change="#ffffff"/>
         </scene>
-        <scene id="130" background="carNight.jpg">
+        <scene id="130" background="carNight.jpg" >
             <bgm src="11_17_tatakau.mp3" status="continue"></bgm>
             <show chara="teslaShameGlassHeadsetWinterClose-up" position="center"/>
             <speak chara="teslaNoFace">We are... Directly under the Schicksal Organization, Laboratory 42 of the Imperial Academy. Dr. Einstein and Dr. Tesla. You may not have heard of--</speak>

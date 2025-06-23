@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <data>
     <story title="1">
-        <scene id="0" background="bg.jpg">
+        <scene id="0" background="bg.jpg" >
             <bgm src="mid-lude.mp3" status="start"></bgm>
-            <cg src="newChapter.png" bg="bg.jpg"></cg>
+            <cg src="newChapter.png" bg="bg.jpg" ></cg>
             <goto goto="10" change="#000000"/>
         </scene>
-        <scene id="10" background="campusImperialDay.jpg">
+        <scene id="10" background="campusImperialDay.jpg" >
             <bgm src="morning.mp3" status="start"></bgm>
             <text remark="next">The Imperial Institute.</text>
             <remark post="U2FsdGVkX19nEXNXbauN7pDja052">
@@ -50,7 +50,7 @@
             </text>
             <goto goto="20"/>
         </scene>
-        <scene id="20" background="libraryDay.jpg">
+        <scene id="20" background="libraryDay.jpg" >
             <bgm src="serenity.mp3" status="continue"></bgm>
             <show chara="nokiaNoNameSmileClose" position="right"/>
             <speak chara="nokiaNoNameNoFace">Hallo.</speak>
@@ -151,7 +151,7 @@
             <text>Mr Gold-rimmed Glasses nudges his “namesake” further up the bridge of his nose, while he continues to smile in his usual manner.</text>
             <goto goto="30"/>
         </scene>
-        <scene id="30" background="campusImperialDay.jpg">
+        <scene id="30" background="campusImperialDay.jpg" >
             <bgm src="street.mp3" status="start"></bgm>
             <sound src="walk slow.mp3"/>
             <text>“The Times” is too serious, and “the Financial Times” completely unsuited for his purpose: but it is within the pages of down-market tabloids like “The Daily Herald” and “The Daily Mirror” that he finds some items of interest.</text>
@@ -165,7 +165,7 @@
             <text>Although local British cuisine is nothing to brag about (besides their seafood), the dishes of France, Italy, Turkey, India and other countries are easy to find and eat. If we go to Chinatown, we also have the choice of Chinese food …</text>
             <goto goto="40" change="0"/>
         </scene>
-        <scene id="40" background="schoolDay3.jpg">
+        <scene id="40" background="schoolDay3.jpg" >
             <bgm src="street.mp3" status="continue"></bgm>
             <text>… Although I am penniless, since this is my job, it should be okay for me to be reimbursed, right?</text>
             <text>— And thus Welt drifts into a state of deep thought, and before long he has unknowingly returned to the small courtyard of Lab 42.</text>
@@ -176,7 +176,7 @@
             <text>… No no no, no matter what, a researcher's room can never be of that décor. Indeed, their private laboratory appears to be on the same floor.</text>
             <goto goto="50"/>
         </scene>
-        <scene id="50" background="studyNoon.jpg">
+        <scene id="50" background="studyNoon.jpg" >
             <bgm src="street.mp3" status="stop"></bgm>
             <sound src="door open.mp3"/>
             <speak chara="weltNoFace">I'm home.</speak>
@@ -257,7 +257,7 @@
             <text> She takes out a key, and begins to lock up the front door.</text>
             <goto goto="60"/>
         </scene>
-        <scene id="60" background="londonStreet.jpg">
+        <scene id="60" background="londonStreet.jpg" >
             <bgm src="street.mp3" status="start"></bgm>
             <text>…</text>
             <show chara="einNormalCoatClose-up" position="center"/>
@@ -312,15 +312,15 @@
             <text>… But what is an Italian restaurant doing with such a name?!</text>
             <goto goto="70"/> <!-- The translator does not know why the name is a source of controversy. "Caffé Concerto" sounds fine to me, if only a little corny. -->
         </scene>
-        <scene id="70" background="italianRestaurant.jpg">
+        <scene id="70" background="italianRestaurant.jpg" >
             <bgm src="lab.mp3" status="start"></bgm>
             <text>The decorative artwork, bottles of champagne, shelves of dessert … Despite bearing a corny name like “Caffé Concerto”, the place does indeed look the part of an Italian restaurant.</text>
             <text>The young man and young lady sit down at a table. The interior feels pleasantly warm, so the pair immediately take off their coats.</text>
             <goto goto="72" change="0"/>
         </scene>
-        <scene id="72" background="CG2.jpg">
+        <scene id="72" background="CG2.jpg" >
             <bgm src="lab.mp3" status="continue"></bgm>
-            <speak chara="einNoFace">Ah! I rather fancy that strawberry cake!</speak>
+            <speak chara="einNoFace">Ah! I rather fancy that strawberry cake!</speak> 
             <speak chara="einNoFace">… Um, just that one. That'll be enough.</speak>
             <speak chara="weltNoFace">I'll have …</speak>
             <speak chara="weltNoFace">… Wait, didn't you say you wanted to eat pasta?</speak>
@@ -338,7 +338,7 @@
             </text>
             <goto goto="75" change="0"/>
         </scene>
-        <scene id="75" background="italianRestaurant.jpg">
+        <scene id="75" background="italianRestaurant.jpg" >
             <bgm src="lab.mp3" status="continue"></bgm>
             <show chara="weltShySweaterClose-up" position="left"/>
             <speak chara="weltNoFace">Eins …</speak>
@@ -450,7 +450,7 @@
             <text>And for a brief moment, Welt catches a glimpse of a devilish grin.</text>
             <goto goto="80"/>
         </scene>
-        <scene id="80" background="schoolDay3.jpg">
+        <scene id="80" background="schoolDay3.jpg" >
             <bgm src="street.mp3" status="start"></bgm>
             <show chara="nokiaNoNameSmileClose" position="mostright"/>
             <text>…</text>

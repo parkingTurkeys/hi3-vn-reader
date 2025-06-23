@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <data>
     <story title="1">
-        <scene id="0" background="bg.jpg">
+        <scene id="0" background="bg.jpg" >
             <bgm src="mid-lude.mp3" status="start"></bgm>
-            <cg src="newchapter.png" bg="bg.jpg"></cg>
+            <cg src="newchapter.png" bg="bg.jpg" ></cg>
             <goto goto="10" change="#000000"/>
         </scene>
-        <scene id="10" background="storage2.jpg">
+        <scene id="10" background="storage2.jpg" >
             <bgm src="10_25_noise.mp3" status="start"></bgm>
             <show chara="staffGalleryScareClose" position="center"/>
             <speak chara="staffNoFace">You … you lot … </speak>
@@ -68,7 +68,7 @@
             </text>
             <goto goto="15" change="#ffffff"/>
         </scene>
-        <scene id="15" background="storage2.jpg">
+        <scene id="15" background="storage2.jpg" >
             <bgm src="themeWelt.mp3" status="start"></bgm>
             <show chara="einLeftWeltOpenWinterClose" position="center"/>
             <speak chara="einNoFace"> … You … didn't have to do that. </speak>
@@ -164,7 +164,7 @@
             <text>Irate, she strides off without once looking back. </text>
             <goto goto="20" change="#ffffff"/>
         </scene>
-        <scene id="20" background="carNoon.jpg">
+        <scene id="20" background="carNoon.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="start"></bgm>
             <show chara="weltTiredWinterClose-up" position="left"/>
             <speak chara="weltNoFace"> … </speak>
@@ -204,7 +204,7 @@
             <speak chara="weltNoFace"> … </speak>
             <goto goto="30" change="#ffffff"/>
         </scene>
-        <scene id="30" background="carMorning.jpg">
+        <scene id="30" background="carMorning.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="continue"></bgm>
             <text>The taxi makes a turn near a golden statue, and continues along the avenue on the north side. </text> <!-- The Victoria Memorial -->
             <text> Outside the window to the left is a box-shaped piece of classical architecture, a building atop of which is planted a flag whose colours cannot be seen clearly by Welt. </text>
@@ -264,7 +264,7 @@
             <text>The girl smiles vaguely, and refuses to give any further answers. </text>
             <goto goto="35" change="#ffffff"/>
         </scene>
-        <scene id="35" background="londonStreet.jpg">
+        <scene id="35" background="londonStreet.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="continue"></bgm>
             <text>The taxi passes by the Wellington Arch and continues west along Knightsbridge. </text>
             <text>On this twilight of late autumn, the cool glow of waning sunlight is reflected by the roadside puddles; upon seeing this scene, one cannot help but be reminded of an ominous verse from more than 2,000 years ago — </text>
@@ -278,7 +278,7 @@
             <text>They have returned to the familiar Imperial Institute. </text>
             <goto goto="40" change="#ffffff"/>
         </scene>
-        <scene id="40" background="studyDay.jpg">
+        <scene id="40" background="studyDay.jpg" >
             <bgm src="serenity.mp3" status="start"></bgm>
             <sound src="key.mp3"/>
             <text>Lab 42's door is firmly locked, and the suitcases of the three travellers have been haphazardly left in the centre of the entrance hall.  </text>
@@ -294,7 +294,7 @@
             <text>The one place in the lab whose purpose is not yet clear to Welt. </text>
             <goto goto="50" change="#ffffff"/>
         </scene>
-        <scene id="50" background="adaDoor.jpg">
+        <scene id="50" background="adaDoor.jpg" >
             <bgm src="lab.mp3" status="start"></bgm>
             <show chara="einSlyWinterClose" position="right"/>
             <speak chara="einNoFace">You should be feeling very concerned right now, right? </speak>
@@ -341,7 +341,7 @@
             <text>It seems that after hearing that satisfactory response, the girl turns the key with a smile. </text>
             <goto goto="60" change="#000000"/>
         </scene>
-        <scene id="60" background="adaRoom.jpg">
+        <scene id="60" background="adaRoom.jpg" >
             <bgm src="10_25_ada.mp3" status="start"></bgm>
             <show chara="adaSpot" position="center"/>
             <sound src="10_25_equipment.mp3"/>
@@ -500,7 +500,7 @@
             <text>The young man feels a chill run deep down his spine. </text>
             <goto goto="71" change="#ffffff"/>
         </scene>
-        <scene id="71" background="adaRoom.jpg">
+        <scene id="71" background="adaRoom.jpg" >
             <bgm src="lab.mp3" status="start"></bgm>
             <show chara="adaSmileAhFar" position="center"/>
             <speak chara="adaNoFace">The record in the Soulium does not need translation, Dr Einstein, Assistant Welt. </speak>
@@ -519,7 +519,7 @@
             <speak chara="adaNoFace">Okay. </speak>
             <goto goto="76" change="#ffffff"/>
         </scene>
-        <scene id="76" background="casterCave.jpg">
+        <scene id="76" background="casterCave.jpg" >
             <bgm src="10_25_ada.mp3" status="start"></bgm>
             <text article="1">
                 <p class="article-text">Before her words had even ended, Ada's image of a fairy-tale princess already disappears — to be replaced by a mirage-like landscape. </p>
@@ -535,7 +535,7 @@
             </text>
             <goto goto="82" change="0"/>
         </scene>
-        <scene id="82" background="CG8.jpg">
+        <scene id="82" background="CG8.jpg" >
             <bgm src="10_25_ada.mp3" status="continue"></bgm>
             <speak chara="haNoNameNoFace"> … It should have started recording already. </speak>
             <text>The sister in the image takes a deep breath. </text>
@@ -565,7 +565,7 @@
             <speak chara="haNoFace">Try to decipher it. Prove to me your technical skills. </speak>
             <goto goto="93" change="#ffffff"/>
         </scene>
-        <scene id="93" background="adaRoom.jpg">
+        <scene id="93" background="adaRoom.jpg" >
             <bgm src="lab.mp3" status="start"></bgm>
             <show chara="adaSmileFar" position="center"/>
             <speak chara="adaNoFace">While I was playing the video, I analysed the encryption method of the accompanying encrypted data. </speak>

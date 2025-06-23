@@ -22,22 +22,28 @@ function generateBoxes(start, end) {
 
 function goToScene(ch, scene) {
     vn = true;
+    window.ch = ch
+    window.scene = scene
+    tag_Index = 0
     dbg(ch.toString() + scene.toString())
     document.getElementById("menu").className = "hide"
     document.getElementById("vn").className = ""
     //dbg("ch" + ch.toString())
-    current_Scene = window["ch" + ch.toString()].xml.getElementById(scene);
+    window.current_Scene = window["ch" + ch.toString()].xml.getElementById(scene);
     dbg(current_Scene)
     dbg(current_Scene.attributes["background"].value.includes("jpg"))
     if(current_Scene.attributes["background"].value.includes("jpg") === false) {document.getElementsByTagName("body")[0].style.backgroundColor = current_Scene.attributes["background"].value; document.querySelector("body").style.backgroundImage = 0} else {document.getElementsByTagName("body")[0].style.backgroundImage = "url(cgs/" + current_Scene.attributes["background"].value+ ")"}
-    for (i = 0; i < current_Scene.children.length; i++) {
+    /*for (i = 0; i < current_Scene.children.length; i++) {
         processTag(current_Scene.children.item(i))
-    }
+    }*/
 }
 
 function processTag(tag) {
     switch (tag.nodeName) {
+        case "bgm":
+
         case "text":
+            document.getElementById("char_name").innerHTML = ""
             document.getElementById("dialogue").innerHTML = tag.innerHTML;
             document.getElementById("dialogue").style.color = "#ffffff"
             break;
@@ -48,9 +54,13 @@ function processTag(tag) {
             document.getElementById("char_name").innerHTML = character_data.xml.getElementById(tag.attributes["chara"].value).attributes["name"].value
             break;
         case "goto":
-            goToScene()
+            goToScene(ch,tag.attributes["goto"].value)
+            break;
+        case "end":
+            if (ch !== 26) {goToScene(ch + 1, 0)} else {alert("you're done!")}
+            break;
         default:
-            //console.log(tag)
+            dbg("OH NO... a new tag! the tag name is" + tag.nodeName)
     }
 }
 
@@ -58,10 +68,26 @@ function processTag(tag) {
 function on_XML_load() {
     dbg("xml loaded!")
     generateBoxes(0,26)
-    goToScene(2, 0)
+    goToScene(1, 0)
 }
 
+document.getElementsByTagName("body")[0].addEventListener("keydown", handleKeyPress)
 
+function handleKeyPress(event) {
+    switch (event.key) {
+        case " ":
+            nextFrame()
+            break;
+        case "Enter":
+            nextFrame()
+            break;
+    }
+}
+
+function nextFrame() {
+    processTag(current_Scene.children.item(tag_Index))
+    tag_Index++
+}
 
 
 

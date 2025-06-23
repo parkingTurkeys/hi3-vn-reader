@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <data>
     <story>
-        <scene id="0" background="bg.jpg">
+        <scene id="0" background="bg.jpg" >
             <bgm src="mid-lude.mp3" status="start"></bgm>
-            <cg src="newchapter.png" bg="bg.jpg"></cg>
+            <cg src="newchapter.png" bg="bg.jpg" ></cg>
             <goto goto="10" change="#000000"/>
         </scene>
-        <scene id="10" background="bostonCommon.jpg">
+        <scene id="10" background="bostonCommon.jpg" >
             <bgm src="03_03_bostonNight.mp3" status="start"></bgm>
             <text>November 24, 1955, Thursday, 1 am.</text>
             <text>The first quarter moon shone weakly above—— standing beyond the glare of the streetlights, one wouldn't even be able to see the fingers of their outstretched hand.</text> <!-- The moon in the First Quarter phase is typically called the Half Moon. -->
@@ -35,7 +35,7 @@
             <speak chara="adaNoFace">No problem, Dr. Einstein.</speak>
             <goto goto="20" change="#ffffff"/>
         </scene>
-        <scene id="20" background="bostonCommon.jpg">
+        <scene id="20" background="bostonCommon.jpg" >
             <bgm src="03_03_bostonNight.mp3" status="continue"></bgm>
             <speak chara="oldTapeNoFace">.....</speak>
             <speak chara="oldTapeNoFace">If people from a future civilization find this recording, I want you to learn the truth.</speak>
@@ -47,7 +47,7 @@
             <speak chara="oldTapeNoFace">But... everything that happened in the past pales in comparison to what I will talk about.</speak>
             <goto goto="25" change="#ffffff"/>
         </scene>
-        <scene id="25" background="bostonCommon.jpg">
+        <scene id="25" background="bostonCommon.jpg" >
             <bgm src="03_03_bostonNight.mp3" status="continue"></bgm>
             <show chara="weltQuestionNewFar" position="right"/>
             <speak chara="weltNoFace">...Do you know of the history he was talking about, Ada?</speak>
@@ -69,7 +69,7 @@
             <speak chara="einNoFace">The second attraction on the Freedom Trail is the "Massachusetts State House". Go through the park and walk to Lighthouse Street.</speak>
             <goto goto="30" change="#ffffff"/>
         </scene>
-        <scene id="30" background="massachusettsStateHouse.jpg">
+        <scene id="30" background="massachusettsStateHouse.jpg" >
             <bgm src="03_03_bostonNight.mp3" status="continue"></bgm>
             <show chara="weltQuestionNewFar" position="right"/>
             <speak chara="weltNoFace">...Speaking of which, why is it called the "Lighthouse Street"?</speak>
@@ -97,7 +97,7 @@
             <speak chara="einNoFace">Let's listen to the recorded content.</speak>
             <goto goto="40" change="#ffffff"/>
         </scene>
-        <scene id="40" background="massachusettsStateHouse.jpg">
+        <scene id="40" background="massachusettsStateHouse.jpg" >
             <bgm src="03_03_bostonNight.mp3" status="continue"></bgm>
             <speak chara="oldTapeNoFace">A certain girl was held prisoner on the 33rd floor of a military base.</speak>
             <speak chara="oldTapeNoFace">Although she emitted a strong Houkai energy signal, she didn't posses any special ability.</speak>
@@ -106,7 +106,7 @@
             <speak chara="oldTapeNoFace">「I want to go home.」</speak>
             <goto goto="45" change="#ffffff"/>
         </scene>
-        <scene id="45" background="massachusettsStateHouse.jpg">
+        <scene id="45" background="massachusettsStateHouse.jpg" >
             <bgm src="03_03_bostonNight.mp3" status="continue"></bgm>
             <show chara="teslaEmbarraGlassWinterFar" position="left"/>
             <speak chara="teslaNoFace" remark="next">.....「For fear, I repeat it, is at the bottom of all intolerance.」 I can already guess what happened to her.</speak>
@@ -134,7 +134,7 @@
             <speak chara="einNoFace">I'll take that as a compliment. Not passing judgement lightly is one of my strengths as a researcher.</speak>
             <goto goto="50" change="#ffffff"/>
         </scene>
-        <scene id="50" background="ParkStreet.jpg">
+        <scene id="50" background="ParkStreet.jpg" >
             <bgm src="03_03_bostonNight.mp3" status="continue"></bgm>
             <speak chara="oldTapeNoFace">One day, an assassin broke into her jail cell and mercilessly killed her.</speak>
             <speak chara="oldTapeNoFace">No one could have predicted that, at the moment of her death, her power as the 12th Herrscher would manifest.</speak>
@@ -143,7 +143,7 @@
             <speak chara="oldTapeNoFace">It didn't only affect living things but machinery as well.</speak>
             <goto goto="60" change="#ffffff"/>
         </scene>
-        <scene id="60" background="ParkStreet.jpg">
+        <scene id="60" background="ParkStreet.jpg" >
             <bgm src="03_03_bostonNight.mp3" status="continue"></bgm>
             <show chara="teslaShameGlassWinterFar" position="left"/>
             <speak chara="teslaNoFace">Hmm. So a unique virus like that exists.</speak>
@@ -156,7 +156,7 @@
             <speak chara="teslaNoFace">Well, whatever. Let's go...</speak>
             <goto goto="70" change="#ffffff"/>
         </scene>
-        <scene id="70" background="chapelBuryingGround.jpg">
+        <scene id="70" background="chapelBuryingGround.jpg" >
             <bgm src="03_03_bostonNight.mp3" status="continue"></bgm>
             <speak chara="oldTapeNoFace">It first infected the assassin, and through its biochip it gained access to various electronic systems.</speak>
             <speak chara="oldTapeNoFace">Including the military base's system.</speak>
@@ -165,7 +165,7 @@
             <speak chara="oldTapeNoFace">People and machines, both were equally instantly vaporized due to the high temperature of the explosions.</speak>
             <goto goto="80" change="#ffffff"/>
         </scene>
-        <scene id="80" background="kingsChapel.jpg">
+        <scene id="80" background="kingsChapel.jpg" >
             <bgm src="03_03_bostonNight.mp3" status="continue"></bgm>
             <speak chara="oldTapeNoFace">The base was closed off from the outside by the Herrscher.</speak>
             <speak chara="oldTapeNoFace">With every minute that went by the Herrscher gained more control.</speak>
@@ -174,7 +174,7 @@
             <speak chara="oldTapeNoFace">Quite literally living corpses.</speak>
             <goto goto="90" change="#ffffff"/>
         </scene>
-        <scene id="90" background="campusMassachusetts.jpg">
+        <scene id="90" background="campusMassachusetts.jpg" >
             <bgm src="03_03_bostonNight.mp3" status="continue"></bgm>
             <speak chara="oldTapeNoFace">We lost control for 1 hour, 8 minutes and 20 seconds.</speak>
             <speak chara="oldTapeNoFace">They were the longest 1 hour, 8 minutes and 20 seconds in human history.</speak>
@@ -183,7 +183,7 @@
             <speak chara="oldTapeNoFace">The price we paid was... the decline of humanity.</speak>
             <goto goto="100" change="#ffffff"/>
         </scene>
-        <scene id="100" background="oldCornerBookstore.jpg">
+        <scene id="100" background="oldCornerBookstore.jpg" >
             <bgm src="03_03_bostonNight.mp3" status="continue"></bgm>
             <speak chara="oldTapeNoFace">From a knowledge perspective, you could say it wasn't a painful loss.</speak>
             <speak chara="oldTapeNoFace">Thankfully there were many scholars among the survivors. They never gave up and continued fighting.</speak>
@@ -195,7 +195,7 @@
             <speak chara="oldTapeNoFace">We lost, plain and simple.</speak>
             <goto goto="110" change="#ffffff"/>
         </scene>
-        <scene id="110" background="oldSouthMeetinghouse.jpg">
+        <scene id="110" background="oldSouthMeetinghouse.jpg" >
             <bgm src="03_03_bostonNight.mp3" status="continue"></bgm>
             <speak chara="oldTapeNoFace">Which is why we plan to abandon this base and spread out.</speak>
             <speak chara="oldTapeNoFace">North America, South America, islands far away from any continent.</speak>
@@ -207,7 +207,7 @@
             <speak chara="oldTapeNoFace">Because that 「devastated island」 became a 「promised land」 for us.</speak>
             <goto goto="120" change="#ffffff"/>
         </scene>
-        <scene id="120" background="oldStateHouse.jpg">
+        <scene id="120" background="oldStateHouse.jpg" >
             <bgm src="03_03_bostonNight.mp3" status="continue"></bgm>
             <speak chara="oldTapeNoFace">Today is the day we depart.</speak>
             <speak chara="oldTapeNoFace">We had a total of 15.626 casualties at the base—— All of their names were read aloud before we left.</speak>
@@ -217,7 +217,7 @@
             <speak chara="oldTapeNoFace">For that will be the only thing left behind of them.</speak>
             <goto goto="130" change="#ffffff"/>
         </scene>
-        <scene id="130" background="bostonMassacreSite.jpg">
+        <scene id="130" background="bostonMassacreSite.jpg" >
             <bgm src="03_03_bostonNight.mp3" status="continue"></bgm>
             <show chara="teslaErGlassWinterClose" position="left"/>
             <speak chara="teslaNoFace">Uh...I know everything else...</speak>
@@ -239,7 +239,7 @@
             <speak chara="einNoFace">Ok. This is the tenth location on the "Freedom Trail" - the Boston Massacre site.</speak>
             <goto goto="140" change="#ffffff"/>
         </scene>
-        <scene id="140" background="bostonMassacreSite.jpg">
+        <scene id="140" background="bostonMassacreSite.jpg" >
             <bgm src="03_03_bostonNight.mp3" status="continue"></bgm>
             <speak chara="oldTapeNoFace">No.289 Bacab Sullivan</speak>
             <speak chara="oldTapeNoFace">No.290 Huunab Sullivan</speak>
@@ -255,7 +255,7 @@
             <speak chara="oldTapeNoFace">There were countless scratches on Shichiku's body... It seems she lost her mind before she died.</speak>
             <goto goto="150" change="#ffffff"/>
         </scene>
-        <scene id="150" background="faneuilHall.jpg">
+        <scene id="150" background="faneuilHall.jpg" >
             <bgm src="03_03_bostonNight.mp3" status="continue"></bgm>
             <speak chara="oldTapeNoFace">No.3426 Hastur Colt</speak>
             <speak chara="oldTapeNoFace">Hastur was a capable orator. He often visited military bases around the country.</speak>
@@ -265,7 +265,7 @@
             <speak chara="oldTapeNoFace">I've heard Hastur's speeches before. Thankfully I wasn't a fan of him.</speak>
             <goto goto="160" change="#ffffff"/>
         </scene>
-        <scene id="160" background="paulRevereHouse.jpg">
+        <scene id="160" background="paulRevereHouse.jpg" >
             <bgm src="03_03_bostonNight.mp3" status="continue"></bgm>
             <speak chara="oldTapeNoFace">No.5390 Ambrokino Moreau</speak>
             <speak chara="oldTapeNoFace">Ambrokino was shot dead.</speak>
@@ -276,7 +276,7 @@
             <speak chara="oldTapeNoFace">I wonder what kind of person wanted to kill him.</speak>
             <goto goto="170" change="#ffffff"/>
         </scene>
-        <scene id="170" background="oldNorthChurch.jpg">
+        <scene id="170" background="oldNorthChurch.jpg" >
             <bgm src="03_03_bostonNight.mp3" status="continue"></bgm>
             <speak chara="oldTapeNoFace">No.8421 Wendigo Karie.</speak>
             <speak chara="oldTapeNoFace">No.8422 Rowena Lauroyl.</speak>
@@ -293,7 +293,7 @@
             <speak chara="oldTapeNoFace">Before the 「Herrscher of Corruption」 appeared, they were all equal...</speak>
             <goto goto="180" change="#ffffff"/>
         </scene>
-        <scene id="180" background="coppsHillBuryingGround.jpg">
+        <scene id="180" background="coppsHillBuryingGround.jpg" >
             <bgm src="03_03_bostonNight.mp3" status="continue"></bgm>
             <speak chara="oldTapeNoFace">No.12687 Edwards Mannerheim</speak>
             <speak chara="oldTapeNoFace">No.12688 Shelly Mannerheim</speak>
@@ -305,7 +305,7 @@
             <speak chara="oldTapeNoFace">Unfortunately, we weren't able to make the typical tombstone of the Mannerheim family for them.</speak>
             <goto goto="190" change="#ffffff"/>
         </scene>
-        <scene id="190" background="bunkerHill.jpg">
+        <scene id="190" background="bunkerHill.jpg" >
             <bgm src="03_03_bostonNight.mp3" status="continue"></bgm>
             <speak chara="oldTapeNoFace">No.14936 Patrecia Singer</speak>
             <speak chara="oldTapeNoFace">I knew Patrecia personally. She was one of the few military doctors stationed at the base.</speak>
@@ -314,7 +314,7 @@
             <speak chara="oldTapeNoFace">The blood coming from her body was mixing with the red bricked floor... but we had to keep moving forward.</speak>
             <goto goto="200" change="#ffffff"/>
         </scene>
-        <scene id="200" background="bunkerHill.jpg">
+        <scene id="200" background="bunkerHill.jpg" >
             <bgm src="03_03_bostonNight.mp3" status="continue"></bgm>
             <show chara="teslaNormalGlassWinterClose-up" position="left"/>
             <speak chara="teslaNoFace">Bunker Hill Monument... So, this is the end of the "Freedom Trail"?</speak>
@@ -338,7 +338,7 @@
             <speak chara="einNoFace">That's right. This is it.</speak>
             <goto goto="210" change="#ffffff"/>
         </scene>
-        <scene id="210" background="ussConstitution.jpg">
+        <scene id="210" background="ussConstitution.jpg" >
             <bgm src="03_03_bostonNight.mp3" status="continue"></bgm>
             <text>The last stop is the ship USS Constitution. Here H.A. left her personal thoughts.</text>
             <speak chara="haNoFace">I am H.A.... I am sure you have heard my voice before.</speak>
@@ -371,7 +371,7 @@
             <speak chara="haNoFace">Because if you take action and your plan does not work, nobody will be afraid of you anymore.</speak>
             <goto goto="220" change="#ffffff"/>
         </scene>
-        <scene id="220" background="ussConstitution.jpg">
+        <scene id="220" background="ussConstitution.jpg" >
             <bgm src="03_03_bostonNight.mp3" status="continue"></bgm>
             <show chara="teslaNormalGlassWinterClose-up" position="left"/>
             <speak chara="teslaNoFace">Mophead, what do you think about this?</speak>
@@ -427,7 +427,7 @@
             <speak chara="einNoFace">It's dead at night now, should we take an "unprecedented" drive?</speak>
             <goto goto="230" change="#ffffff"/>
         </scene>
-        <scene id="230" background="lexingtonMA.jpg">
+        <scene id="230" background="lexingtonMA.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="start"></bgm>
             <text>The "Rolls Royce" with the license plate H6D626 ran for more than ten miles on Massachusetts Avenue (with the yelling of excitement from Miss Tesla), and finally stopped with a sudden brake.</text>
             <text>What the group of people now face at this moment is a small triangular park by the side of the road——</text>
@@ -439,7 +439,7 @@
             </remark>
             <goto goto="240" change="#ffffff"/>
         </scene>
-        <scene id="240" background="lexingtonMA.jpg">
+        <scene id="240" background="lexingtonMA.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="continue"></bgm>
             <show chara="einNormalWinterFar" position="right"/>
             <speak chara="einNoFace">Ada.</speak>
@@ -462,7 +462,7 @@
             <speak chara="adaNoFace">The objective should be right in front of you, please accept it.</speak>
             <goto goto="250" change="#ffffff"/>
         </scene>
-        <scene id="250" background="CG17-1.jpg">
+        <scene id="250" background="CG17-1.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="continue"></bgm>
             <text>It stood out greatly——</text>
             <text>It was as bright as the Moon.</text>
@@ -473,7 +473,7 @@
             <speak chara="adaNoFace">Understood, Dr. Einstein.</speak>
             <goto goto="260" change="#ffffff"/>
         </scene>
-        <scene id="260" background="CG17-2.jpg">
+        <scene id="260" background="CG17-2.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="continue"></bgm>
             <text>The golden sphere opened slowly.</text>
             <text>It was about the size of a single person, and opened outwards as if it were a lotus flower. The transparent case inside was gradually exposed.</text>

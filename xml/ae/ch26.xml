@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <data>
     <story>
-        <scene id="0" background="bg.jpg">
+        <scene id="0" background="bg.jpg" >
             <bgm src="mid-lude.mp3" status="start"></bgm>
-            <cg src="lastChapter.png" bg="bg.jpg"></cg>
+            <cg src="lastChapter.png" bg="bg.jpg" ></cg>
             <goto goto="10" change="#000000"/>
         </scene>
-        <scene id="10" background="blackHole.jpg">
+        <scene id="10" background="blackHole.jpg" >
             <bgm src="03_15_ruinBerlin.mp3" status="start"></bgm>
             <text>The world reflecting in Otto Apocalypse's eyes was bending.</text>
             <text>He felt as if all of creation was being unraveled in front of him.</text>
@@ -37,7 +37,7 @@
             </text>
             <goto goto="20" change="#000000"/>
         </scene>
-        <scene id="20" background="dreamSky.jpg">
+        <scene id="20" background="dreamSky.jpg" >
             <bgm src="11_17_memory.mp3" status="start"></bgm>
             <show chara="kallenChristMemoryFar" position="center"/>
             <speak chara="kallenNoNameNoFace">「Life's but a walking shadow, a poor player」</speak>
@@ -134,7 +134,7 @@
             <speak chara="ottoNoFace">...Yes, not even I can't stop myself anymore!</speak>
             <goto goto="30" change="#ffffff"/>
         </scene>
-        <scene id="30" background="blackHole.jpg">
+        <scene id="30" background="blackHole.jpg" >
             <bgm src="8_24_war.mp3" status="continue"></bgm>
             <text>「Otto」's body was no longer able to keep its human shape.</text>
             <text>The skin made out of liquid metal had peeled off, and the machine underneath can be seen.</text>
@@ -145,18 +145,18 @@
             <text>If I do my best——</text>
             <goto goto="40" change="0"/>
         </scene>
-        <scene id="40" background="black.jpg">
+        <scene id="40" background="black.jpg" >
             <bgm src="8_24_war.mp3" status="stop"></bgm>
             <speak chara="ritaFullNameNoFace">Welt-sama, watch out!</speak>
             <goto goto="50" change="0"/>
         </scene>
-        <scene id="50" background="CG26-2.jpg">
+        <scene id="50" background="CG26-2.jpg" >
             <bgm src="8_24_war.mp3" status="stop"></bgm>
             <sound src="05_18_smash.mp3"/>
             <cg src="CG26-2.jpg" bg="CG26-2.jpg" fadeIn="0" fadeOut="1"></cg>
             <goto goto="60" change="0"/>
         </scene>
-        <scene id="60" background="blackCloud.jpg">
+        <scene id="60" background="blackCloud.jpg" >
             <bgm src="11_17_tatakau.mp3" status="start"></bgm>
             <show chara="ottoLaughChainFar" position="center"/>
             <speak chara="ottoNoFace">Creating a black hole... What a barbaric ability.</speak>
@@ -166,7 +166,7 @@
             <speak chara="ottoNoFace">But that also means that as long as you don't cross the point of no return, you can escape even without going at the speed of the light.</speak>
             <goto goto="70" change="0"/>
         </scene>
-        <scene id="70" background="CG26-3-1.jpg">
+        <scene id="70" background="CG26-3-1.jpg" >
             <bgm src="11_17_tatakau.mp3" status="continue"></bgm>
             <speak chara="ottoNoFace">...You were careless, Herrscher.</speak>
             <speak chara="ottoNoFace">Since when were you under the impression that 「Divine Keys」 are unbreakable?</speak>
@@ -180,12 +180,12 @@
             <speak chara="ottoNoFace">This is our difference in battle experience——</speak>
             <goto goto="80" change="0"/>
         </scene>
-        <scene id="80" background="CG26-3-2.jpg">
+        <scene id="80" background="CG26-3-2.jpg" >
             <bgm src="11_17_tatakau.mp3" status="continue"></bgm>
             <speak chara="ottoNoFace">——Regret coming at me unprepared!</speak>
             <goto goto="90" change="#ffffff"/>
         </scene>
-        <scene id="90" background="blackCloud.jpg">
+        <scene id="90" background="blackCloud.jpg" >
             <bgm src="horror.mp3" status="start"></bgm>
             <text article="1">
                 <p class="article-text">In just a moment,</p>
@@ -223,7 +223,7 @@
             </text>
             <goto goto="100" change="#ffffff"/>
         </scene>
-        <scene id="100" background="blackCloud.jpg">
+        <scene id="100" background="blackCloud.jpg" >
             <bgm src="horror.mp3" status="continue"></bgm>
             <show chara="ottoLaughChainFar" position="center"/>
             <speak chara="ottoNoFace">There is a saying that goes 「You can wear out iron shoes in fruitless searching, and yet by chance you may find the lost thing without even looking for it」.</speak>
@@ -239,13 +239,13 @@
             <speak chara="ottoNoFace">...Shall I start with the little kid?</speak>
             <goto goto="110" change="0"/>
         </scene>
-        <scene id="110" background="bloodWhite.jpg">
+        <scene id="110" background="bloodWhite.jpg" >
             <bgm src="horror.mp3" status="stop"></bgm>
             <sound src="05_18_claw.mp3"/>
             <speak chara="ottoNoFace">...Hm?</speak>
             <goto goto="120" change="0"/>
         </scene>
-        <scene id="120" background="blackCloud.jpg">
+        <scene id="120" background="blackCloud.jpg" >
             <bgm src="horror.mp3" status="start"></bgm>
             <show chara="ottoHaughtyChainFar" position="center"/>
             <speak chara="ottoNoFace">Oh, so you plan to sacrifice yourself in his place?</speak>
@@ -263,18 +263,18 @@
             <speak chara="ottoNoFace">——Step forward and talk!</speak>
             <goto goto="125" change="0"/>
         </scene>
-        <scene id="125" background="black.jpg">
+        <scene id="125" background="black.jpg" >
             <bgm src="horror.mp3" status="stop"></bgm>
             <speak chara="ritaFullNameNoFace">(Heh.)</speak>
             <goto goto="130" change="0"/>
         </scene>
-        <scene id="130" background="CG26-4-2.jpg">
+        <scene id="130" background="CG26-4-2.jpg" >
             <bgm src="11_17_tatakau.mp3" status="start"></bgm>
             <cg src="CG26-4-1.jpg" bg="CG26-4-2.jpg" fadeIn="0" fadeOut="1"></cg>
             <speak chara="ritaFullNameNoFace">You are the one who lowered his guard, Otto!</speak>
             <goto goto="140" change="0"/>
         </scene>
-        <scene id="140" background="errorBlack.jpg">
+        <scene id="140" background="errorBlack.jpg" >
             <bgm src="11_17_tatakau.mp3" status="continue"></bgm>
             <speak chara="ottoNoFace">(W-What is this!)</speak>
             <speak chara="ottoNoFace">(What happened? Was the signal cut?)</speak>
@@ -287,7 +287,7 @@
             <speak chara="ritaFullNameNoFace">Get rid of this piece of garbage right now!</speak>
             <goto goto="150" change="#ffffff"/>
         </scene>
-        <scene id="150" background="nebula.jpg">
+        <scene id="150" background="nebula.jpg" >
             <bgm src="04_20_Brigantia.mp3" status="continue"></bgm>
             <show chara="weltNakedNormalFar" position="center"/>
             <speak chara="weltNoFace">...Emergency hemostasis of my wounds—— Complete.</speak>
@@ -297,20 +297,20 @@
             <speak chara="weltNoFace">My fist, become an 「Oath of Judah」 that's not inferior to the real thing!</speak>
             <goto goto="160" change="0"/>
         </scene>
-        <scene id="160" background="CG26-5.jpg">
+        <scene id="160" background="CG26-5.jpg" >
             <bgm src="04_20_Brigantia.mp3" status="continue"></bgm>
             <sound src="05_18_smash.mp3"/>
             <speak chara="weltNoFace">Get out of Reanna-san's body, you damn smug clown!</speak>
             <goto goto="170" change="#ffffff"/>
         </scene>
-        <scene id="170" background="CG26-6-1.jpg">
+        <scene id="170" background="CG26-6-1.jpg" >
             <bgm src="04_20_Brigantia.mp3" status="continue"></bgm>
             <speak chara="ottoNoFaceRed">(...Hmph. Idiot.)</speak>
             <speak chara="ottoNoFaceRed">(This is just a borrowed body——)</speak>
             <speak chara="ottoNoFaceRed">(——destroying it to take you all out won't hurt me at all.)</speak>
             <goto goto="180" change="0"/>
         </scene>
-        <scene id="180" background="errorWhite.jpg">
+        <scene id="180" background="errorWhite.jpg" >
             <bgm src="04_20_Brigantia.mp3" status="continue"></bgm>
             <speak chara="ottoNoFaceGreen">...?</speak>
             <speak chara="ottoNoFaceGreen">(What is the meaning of this?)</speak>
@@ -320,7 +320,7 @@
             <speak chara="ottoNoFaceGreen">Y-You are....</speak>
             <goto goto="190" change="0"/>
         </scene>
-        <scene id="190" background="CG26-6-2.jpg">
+        <scene id="190" background="CG26-6-2.jpg" >
             <bgm src="04_20_Brigantia.mp3" status="continue"></bgm>
             <speak chara="reannaNoNameNoFace">What's wrong? Have you forgotten already the voice of the body you stole control from?</speak>
             <speak chara="reannaNoNameNoFace">...By the way, did you ever imagine things would end up like this the first time you remodeled my body using the 「Void Archive」? </speak>
@@ -329,7 +329,7 @@
             <speak chara="reannaNoNameNoFace">But... did you know?</speak>
             <goto goto="200" change="0"/>
         </scene>
-        <scene id="200" background="CG26-7.jpg">
+        <scene id="200" background="CG26-7.jpg" >
             <bgm src="04_20_Brigantia.mp3" status="continue"></bgm>
             <sound src="05_18_claw.mp3"/>
             <cg src="CG26-7.jpg" bg="CG26-7.jpg" fadeIn="0" fadeOut="1"></cg>
@@ -344,7 +344,7 @@
             </remark>
             <goto goto="210" change="0"/>
         </scene>
-        <scene id="210" background="blackCloud.jpg">
+        <scene id="210" background="blackCloud.jpg" >
             <bgm src="04_20_tank.mp3" status="start"></bgm>
             <show chara="weltNakedCoatSurpriseClose" position="center"/>
             <speak chara="weltNoFace">R-Reanna-san!?</speak>
@@ -374,13 +374,13 @@
             <speak chara="reannaNoFace">Don't play dumb! If the 「Void Archive」 is the 「1st Key」, then you as the 「1st Herrscher」 should be able to do the same!</speak>
             <goto goto="215" change="0"/>
         </scene>
-        <scene id="215" background="CG26-8.jpg">
+        <scene id="215" background="CG26-8.jpg" >
             <bgm src="04_20_tank.mp3" status="continue"></bgm>
             <cg src="CG26-8.jpg" bg="CG26-8.jpg" fadeIn="0" fadeOut="1"></cg>
             <speak chara="reannaNoFace">If you don't understand what I'm saying take a look at my data!</speak>
             <goto goto="220" change="0"/>
         </scene>
-        <scene id="220" background="dreamSky.jpg">
+        <scene id="220" background="dreamSky.jpg" >
             <bgm src="04_20_tank.mp3" status="continue"></bgm>
             <text>.....</text>
             <text>The Earth's atmosphere is like a Mille-feuille.</text>
@@ -408,13 +408,13 @@
             <text>——Such a machine can be made even with one hand.</text>
             <goto goto="230" change="#ffffff"/>
         </scene>
-        <scene id="230" background="radarScreen.jpg">
+        <scene id="230" background="radarScreen.jpg" >
             <bgm src="04_20_tank.mp3" status="continue"></bgm>
             <speak chara="ritaFullNameNoFace">.....</speak>
             <speak chara="reannaNoFace">.....</speak>
             <goto goto="240" change="0"/>
         </scene>
-        <scene id="240" background="blackCloud.jpg">
+        <scene id="240" background="blackCloud.jpg" >
             <bgm src="04_20_tank.mp3" status="continue"></bgm>
             <show chara="ritaNervousHeadphoneGunClose" position="left"/>
             <speak chara="ritaFullNameNoFace">Is this... an intercontinental ballistic missile?</speak>
@@ -452,7 +452,7 @@
             <speak chara="reannaNoFace">To protect everyone... I'll need your help, Welt.</speak>
             <goto goto="250" change="#ffffff"/>
         </scene>
-        <scene id="250" background="blackCloud.jpg">
+        <scene id="250" background="blackCloud.jpg" >
             <bgm src="07_20_amazingGrace.mp3" status="start"></bgm>
             <text article="1">
                 <p class="article-text">Reanna explained the plan in a calm manner.</p>
@@ -493,7 +493,7 @@
             </text>
             <goto goto="260" change="#ffffff"/>
         </scene>
-        <scene id="260" background="blackCloud.jpg">
+        <scene id="260" background="blackCloud.jpg" >
             <bgm src="07_20_amazingGrace.mp3" status="continue"></bgm>
             <show chara="weltNakedCoatSurpriseClose" position="left"/>
             <speak chara="weltNoFace">But then... you will...</speak>
@@ -529,7 +529,7 @@
             <speak chara="reannaNoFace">That's all there is to it.</speak>
             <goto goto="270" change="#ffffff"/>
         </scene>
-        <scene id="270" background="blackCloud.jpg">
+        <scene id="270" background="blackCloud.jpg" >
             <bgm src="07_20_amazingGrace.mp3" status="continue"></bgm>
             <text article="1">
                 <p class="article-text">Reanna inserted her fingers in the liquefied Soulium in her waist.</p>
@@ -544,7 +544,7 @@
             <speak chara="weltNoFace">I'll make sure to do it properly.</speak>
             <goto goto="280" change="#000000"/>
         </scene>
-        <scene id="280" background="darkEnergyFade.jpg">
+        <scene id="280" background="darkEnergyFade.jpg" >
             <bgm src="07_20_amazingGrace.mp3" status="continue"></bgm>
             <speak chara="adaNoFace">That day, we tried to stop a frightening Anti-Honkai missile.</speak>
             <speak chara="adaNoFace">Me and Margaret-sama——</speak>
@@ -552,7 +552,7 @@
             <speak chara="adaNoFace">Nobody would had opposed to this crazy plan.</speak>
             <goto goto="290" change="0"/>
         </scene>
-        <scene id="290" background="landscapeSunset.jpg">
+        <scene id="290" background="landscapeSunset.jpg" >
             <bgm src="07_20_amazingGrace.mp3" status="continue"></bgm>
             <speak chara="adaNoFace">I say crazy plan because in the previous civilization——</speak>
             <speak chara="adaNoFace">Even they who had used the core of the 「1st Herrscher」 to make the 「Void Archive」, had seemingly never once created anything of this scale out of nothing.</speak>
@@ -566,7 +566,7 @@
             <speak chara="adaNoFace">Because he knew it would be possible if he did his best.</speak>
             <goto goto="295" change="#ffffff"/>
         </scene>
-        <scene id="295" background="callaLily.jpg">
+        <scene id="295" background="callaLily.jpg" >
             <bgm src="07_20_amazingGrace.mp3" status="continue"></bgm>
             <speak chara="adaNoFace">Winter has passed and Spring has come. Professor Einstein and Tesla woke up one after the other from their hospital beds.</speak>
             <speak chara="adaNoFace">It was a bit surprising...</speak>
@@ -577,7 +577,7 @@
             <speak chara="adaNoFace">...That was enough for us.</speak>
             <goto goto="297" change="0"/>
         </scene>
-        <scene id="297" background="landscapeSunset.jpg">
+        <scene id="297" background="landscapeSunset.jpg" >
             <bgm src="07_20_amazingGrace.mp3" status="continue"></bgm>
             <speak chara="adaNoFace">And the price we had to pay for that was... the boy who was once known as Joachim...</speak>
             <speak chara="adaNoFace">...Rather than healing, the wounds in his heart only grew bigger.</speak>
@@ -585,7 +585,7 @@
             <speak chara="adaNoFace">——but also, the innocence of his childhood.</speak>
             <goto goto="300" change="#ffffff"/>
         </scene>
-        <scene id="300" background="oldTVNewYork.jpg">
+        <scene id="300" background="oldTVNewYork.jpg" >
             <bgm src="morning.mp3" status="start"></bgm>
             <speak chara="newsNoFace">Today is a very special day.</speak>
             <speak chara="newsNoFace">For the 53-year-old Architect, John Smith, today is the first Thanksgiving Day he has celebrated in 22 years.</speak>
@@ -609,7 +609,7 @@
             <speak chara="newsNoFace">However, the panic brought by this disaster still affected the economy, causing the Dow Jones Index to drop below——</speak>
             <goto goto="310" change="0"/>
         </scene>
-        <scene id="310" background="hotelLivingroom.jpg">
+        <scene id="310" background="hotelLivingroom.jpg" >
             <bgm src="07_20_bellaCiao.mp3" status="start"></bgm>
             <speak chara="yangNoFace">...Let's go back.</speak>
             <speak chara="adaNoFace">...We are going back?</speak>
@@ -637,7 +637,7 @@
             <speak chara="yangNoFace">And when necessary, to change my body into the one of that hero.</speak>
             <goto goto="320" change="#ffffff"/>
         </scene>
-        <scene id="320" background="cloudSky.jpg">
+        <scene id="320" background="cloudSky.jpg" >
             <bgm src="07_20_bellaCiao.mp3" status="continue"></bgm>
             <speak chara="yangNoFace">Like I told Professor Planck the day I left home——</speak>
             <speak chara="yangNoFace">This shouldn't have been my burden to carry. Not at all.</speak>
@@ -651,7 +651,7 @@
             <speak chara="yangNoFace">Never.</speak>
             <goto goto="330" change="#ffffff"/>
         </scene>
-        <scene id="330" background="empireStateBuilding.jpg">
+        <scene id="330" background="empireStateBuilding.jpg" >
             <bgm src="07_20_bellaCiao.mp3" status="continue"></bgm>
             <speak chara="yangNoFace">Staten Island.</speak>
             <speak chara="yangNoFace">Queens.</speak>

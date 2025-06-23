@@ -4,12 +4,12 @@
         <image src="re_doHisDuty.jpg" type="background"/>
     </img>
     <story title="1">
-        <scene id="0" background="bg.jpg">
+        <scene id="0" background="bg.jpg" >
             <bgm src="mid-lude.mp3" status="start"></bgm>
-            <cg src="newChapter.png" bg="bg.jpg"></cg>
+            <cg src="newChapter.png" bg="bg.jpg" ></cg>
             <goto goto="10" change="#000000"/>
         </scene>
-        <scene id="10" background="londonStreet.jpg">
+        <scene id="10" background="londonStreet.jpg" >
             <bgm src="10_20_londonderry_p.mp3" status="start"></bgm>
             <show chara="teslaAngryGlassWinterClose" position="left"/>
             <speak chara="teslaNoFace">You two, what are you on about, whispering like that?!</speak>
@@ -84,7 +84,7 @@
             <speak chara="einNoFace">Twenty years ago … how old were you yourself … </speak>
             <goto goto="15" change="#000000"/>
         </scene>
-        <scene id="15" background="londonStreet2.jpg">
+        <scene id="15" background="londonStreet2.jpg" >
             <bgm src="10_20_londonderry_b.mp3" status="start"></bgm>
             <show chara="planckSisterBlackClose-up" position="center"/>
             <speak chara="planckSisterNoFace">According to the itinerary, today we will rest here for a day — then we will cross the Atlantic. </speak>
@@ -96,7 +96,7 @@
             <speak chara="planckSisterNoFace"> … Let's go, we shall climb the city walls! </speak>
             <goto goto="17" change="#000000"/>
         </scene>
-        <scene id="17" background="londonStreet.jpg">
+        <scene id="17" background="londonStreet.jpg" >
             <bgm src="10_20_londonderry_p.mp3" status="start"></bgm>
             <show chara="einFoolWinterClose" position="right" opacity="0.7"/>
             <show chara="teslaBoringGlassWinterClose" position="left"/>
@@ -137,7 +137,7 @@
             </text>
             <goto goto="20" change="#ffffff"/>
         </scene>
-        <scene id="20" background="derryWall.jpg">
+        <scene id="20" background="derryWall.jpg" >
             <bgm src="10_20_londonderry_p.mp3" status="continue"></bgm>
             <show chara="einNormalWinterFar" position="center"/>
             <speak chara="einNoFace">Londonderry was originally only called Derry. </speak>
@@ -218,7 +218,7 @@
             <speak chara="einNoFace">Right here! </speak>
             <goto goto="25" change="0"/>
         </scene>
-        <scene id="25" background="CG7-1.jpg">
+        <scene id="25" background="CG7-1.jpg" >
             <bgm src="themeEin.mp3" status="start"></bgm>
             <text>What was originally a mere “jaunt” around the one mile that is the Derry City Wall — </text>
             <text> — has now evolved into something more, as Mophead suddenly lies down in front of a cannon on the wall, taking out a flashlight from her pocket and holding it in her mouth. </text>
@@ -253,7 +253,7 @@
             <speak chara="einNoFace">The story may have just begun. </speak>
             <goto goto="33" change="#ffffff"/>
         </scene>
-        <scene id="33" background="CG7-1.jpg">
+        <scene id="33" background="CG7-1.jpg" >
             <bgm src="themeEin.mp3" status="continue"></bgm>
             <speak chara="einNoFace">Here. </speak>
             <text>After some length of time, Mophead, who had already been lying flat on the ground, points her finger towards a position on the underside of the cannon, and both companions also notice an abnormally-painted layer of black pitch. </text>
@@ -266,7 +266,7 @@
             </text>
             <goto goto="34" change="0"/>
         </scene>
-        <scene id="34" background="derryWall.jpg">
+        <scene id="34" background="derryWall.jpg" >
             <bgm src="10_20_londonderry_p.mp3" status="start"></bgm>
             <show chara="weltSurpriseWinterClose" position="right"/>
             <speak chara="weltNoFace">Queen? Is this someone from British history? </speak>
@@ -318,7 +318,7 @@
             <speak chara="einNoFace"> — Tomorrow we shall be making a visit to the National Gallery. </speak>
             <goto goto="40" change="#ffffff"/>
         </scene>
-        <scene id="40" background="trafalgarSquare.jpg">
+        <scene id="40" background="trafalgarSquare.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="start"></bgm>
             <text>The next day. </text>
             <text>Ascending slowly up a flight of steps, and leaving Charing Cross Underground Station via a narrow exit, the group find themselves greeted by that iconic landmark of the Empire — Trafalgar Square. </text>
@@ -360,7 +360,7 @@
             <speak chara="weltNoFace">Ugh … </speak>
             <goto goto="45" change="#ffffff"/>
         </scene>
-        <scene id="45" background="trafalgarSquare.jpg">
+        <scene id="45" background="trafalgarSquare.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="continue"></bgm>
             <text article="1">
                 <p class="article-text">The National Gallery sits to the north, facing south, with a set of weathered, darkened Roman columns standing across the street from Trafalgar Square — silently narrating the glorious bygone days of the old Empire. </p>
@@ -430,7 +430,7 @@
             <text>She gives him a hard flick on his forehead. </text>
             <goto goto="50" change="#ffffff"/>
         </scene>
-        <scene id="50" background="gallery.jpg">
+        <scene id="50" background="gallery.jpg" >
             <bgm src="street.mp3" status="start"></bgm>
             <show chara="staffGalleryNormalClose" position="left"/>
             <speak chara="nekoNoFace">I didn't expect researchers like you to be interested in damaged paintings. </speak>
@@ -495,7 +495,7 @@
             <speak chara="teslaNoFace">Wha-wha-what — What is that stench? ! </speak>
             <goto goto="60" change="#ffffff"/>
         </scene>
-        <scene id="60" background="storage.jpg">
+        <scene id="60" background="storage.jpg" >
             <bgm src="serenity.mp3" status="start"></bgm>
             <text>As the heavy door slowly opened with a creaking sound, a thick musty scent even heavier than the door instantly permeates into everybody's nostrils.</text>
             <text> Even Tesla, who had once visited a century-old wine cellar in Vienna, is taken aback by the pungent odour.</text>
@@ -517,14 +517,14 @@
             <text>With a meek smile, the fat uncle makes a statement even more demoralising than the thick musty smell enveloping them. </text>
             <goto goto="65" change="#ffffff"/>
         </scene>
-        <scene id="65" background="storage.jpg">
+        <scene id="65" background="storage.jpg" >
             <bgm src="serenity.mp3" status="continue"></bgm>
             <text article="1">
                 <p class="article-text">Despite having sustained flood damage, the cultural relics are still cultural relics after all. The Fat Uncle takes great pains to shout orders so that Welt's actions can be synchronised with his own. There is still considerable weight in the picture frames — and the action of carefully lifting up and putting down each frame, repeated dozens of times, has already given both men sore hips and aching backs, their bodies dripping with sweat. </p>
             </text>
             <goto goto="70" change="#ffffff"/>
         </scene>
-        <scene id="70" background="storage.jpg">
+        <scene id="70" background="storage.jpg" >
             <bgm src="serenity.mp3" status="continue"></bgm>
             <show chara="staffGalleryBlackClose-up" position="center"/>
             <text article="1">
@@ -532,7 +532,7 @@
             </text>
             <goto goto="75" change="#ffffff"/>
         </scene>
-        <scene id="75" background="storage.jpg">
+        <scene id="75" background="storage.jpg" >
             <bgm src="serenity.mp3" status="continue"></bgm>
             <show chara="teslaBlackGlassWinterClose-up" position="center"/>
             <text article="1">
@@ -540,7 +540,7 @@
             </text>
             <goto goto="80" change="#ffffff"/>
         </scene>
-        <scene id="80" background="storage2.jpg">
+        <scene id="80" background="storage2.jpg" >
             <bgm src="serenity.mp3" status="continue"></bgm>
             <show chara="teslaBlackGlassWinterClose-up" position="center"/>
             <text article="1">
@@ -558,7 +558,7 @@
             </text>
             <goto goto="85" change="#ffffff"/>
         </scene>
-        <scene id="85" background="storage2.jpg">
+        <scene id="85" background="storage2.jpg" >
             <bgm src="themeWelt.mp3" status="start"></bgm>
             <text>A board-shaped object, larger than the warehouse door, is lifted shakily from its stand. </text>
             <text>The burlap cloth wrapped around the painting flutters about, raining down annoying puffs of dust — both hands occupied, Welt tries to hold back his sneeze, his facial features contorted to resemble a twisted pretzel. </text> <!-- In Chinese, they instead use mahua (麻花) as the metaphor - this is a northern Chinese snack made of fried dough that is also twisted in shape. -->
@@ -569,7 +569,7 @@
             <speak chara="nekoNoFace">This … This is it?! </speak>
             <goto goto="90" change="#ffffff"/>
         </scene>
-        <scene id="90" background="CG7-2.jpg">
+        <scene id="90" background="CG7-2.jpg" >
             <bgm src="themeEin.mp3" status="start"></bgm>
             <text>As soon as the old sleeve cloth is peeled open, a bright ivory white comes into view of the four around the painting. </text>
             <text>Upon a dim background, an innocent girl in a white dress is blindfolded, and an old man dressed as a priest leads her towards a cruel-looking chopping block. </text> <!-- The Chinese says 断头台, or guillotine platform, whereas the painting clearly shows a more traditional chopping block. -->
@@ -585,7 +585,7 @@
             <text>Of course Fat Uncle didn't understand what Tesla meant by “strange”. </text>
             <goto goto="100" change="0"/>
         </scene>
-        <scene id="100" background="storage2.jpg">
+        <scene id="100" background="storage2.jpg" >
             <bgm src="themeEin.mp3" status="continue"></bgm>
             <show chara="teslaNormalGlassWinterClose-up" position="right"/>
             <speak chara="teslaNoFace">Do you remember where this painting was previously displayed? </speak>

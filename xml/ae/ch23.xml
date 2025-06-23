@@ -1,58 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <data>
     <story>
-        <scene id="0" background="bg.jpg">
+        <scene id="0" background="bg.jpg" >
             <bgm src="mid-lude.mp3" status="start"></bgm>
-            <cg src="newchapter.png" bg="bg.jpg"></cg>
+            <cg src="newchapter.png" bg="bg.jpg" ></cg>
             <goto goto="10" change="#000000"/>
         </scene>
-        <scene id="10" background="CG22-2.jpg">
+        <scene id="10" background="CG22-2.jpg" >
             <bgm src="04_20_Brigantia.mp3" status="start"></bgm>
             <speak chara="schroCatNoFace">...This power... it's certainly different than before...</speak>
             <goto goto="20" change="0"/>
         </scene>
-        <scene id="20" background="schroFadeAway1.jpg">
+        <scene id="20" background="schroFadeAway1.jpg" >
             <bgm src="04_20_Brigantia.mp3" status="continue"></bgm>
             <speak chara="schroCatNoFace">Heh... Betting on what little time we had left was the right move...</speak>
             <goto goto="30" change="0"/>
         </scene>
-        <scene id="30" background="schroFadeAway2.jpg">
+        <scene id="30" background="schroFadeAway2.jpg" >
             <bgm src="04_20_Brigantia.mp3" status="continue"></bgm>
             <speak chara="schroCatNoFace">The first Herrscher of this era has been born... Congratulations... You are no longer 「Its」 puppet...</speak>
             <goto goto="40" change="0"/>
         </scene>
-        <scene id="40" background="schroFadeAway3.jpg">
+        <scene id="40" background="schroFadeAway3.jpg" >
             <bgm src="04_20_Brigantia.mp3" status="continue"></bgm>
             <speak chara="schroCatNoFace">Hehe... which means I won this bet...</speak>
             <goto goto="50" change="#ffffff"/>
         </scene>
-        <scene id="50" background="white.jpg">
+        <scene id="50" background="white.jpg" >
             <bgm src="04_20_Brigantia.mp3" status="stop"></bgm>
             <sound src="04_20_fell.mp3"/>
             <speak chara="reannaNoNameNoFace">——That's enough, you two!</speak>
             <goto goto="60" change="0"/>
         </scene>
-        <scene id="60" background="white.jpg">
+        <scene id="60" background="white.jpg" >
             <bgm src="11_17_tatakau.mp3" status="start"></bgm>
             <cg src="CG23-1.jpg" fadeIn="0" fadeOut="1"></cg>
             <goto goto="70" change="0"/>
         </scene>
-        <scene id="70" background="CG23-2-1.jpg">
+        <scene id="70" background="CG23-2-1.jpg" >
             <bgm src="11_17_tatakau.mp3" status="continue"></bgm>
             <speak chara="reannaNoFace">Darker than Hell.</speak>
             <goto goto="72" change="0"/>
         </scene>
-        <scene id="72" background="CG23-2-2.jpg">
+        <scene id="72" background="CG23-2-2.jpg" >
             <bgm src="11_17_tatakau.mp3" status="continue"></bgm>
             <speak chara="reannaNoFace">Whiter than Heaven.</speak>
             <goto goto="74" change="0"/>
         </scene>
-        <scene id="74" background="CG23-2.jpg">
+        <scene id="74" background="CG23-2.jpg" >
             <bgm src="11_17_tatakau.mp3" status="continue"></bgm>
             <speak chara="reannaNoFace">Divine Key 「Abyss Flower」, 2nd level output——</speak>
             <goto goto="80" change="0"/>
         </scene>
-        <scene id="80" background="white.jpg">
+        <scene id="80" background="white.jpg" >
             <bgm src="11_17_tatakau.mp3" status="continue"></bgm>
             <cg src="shengqiangBack.png" bg="white.jpg" fadeIn="0" fadeOut="0"></cg>
             <bgm src="11_17_tatakau.mp3" status="stop"></bgm>
@@ -60,7 +60,7 @@
             <cg src="niliuStab.png" bg="CG23-3.jpg" fadeIn="0" fadeOut="1000"></cg>
             <goto goto="90" change="#000000"/>
         </scene>
-        <scene id="90" background="scienceEngineWarning.jpg">
+        <scene id="90" background="scienceEngineWarning.jpg" >
             <bgm src="10_25_noise.mp3" status="start"></bgm>
             <text>About seven hours ago, Edison, New Jersey——</text>
             <speak chara="schroNoFace">... The reactor power is rising abnormally!</speak>
@@ -74,20 +74,20 @@
             <speak chara="edisonNoFace">There's no time! Get out of here!</speak>
             <goto goto="100" change="#000000"/>
         </scene>
-        <scene id="100" background="CG23-3.jpg">
+        <scene id="100" background="CG23-3.jpg" >
             <bgm src="11_17_memory.mp3" status="start"></bgm>
             <speak chara="schroCatNoFace">W-Why... are you here?</speak>
             <speak chara="reannaNoFace">Shhh... stay still.</speak>
             <speak chara="reannaNoFace">Soon... it'll be all over.</speak>
             <goto goto="110" change="#ffffff"/>
         </scene>
-        <scene id="110" background="cloudSky.jpg">
+        <scene id="110" background="cloudSky.jpg" >
             <bgm src="11_17_memory.mp3" status="continue"></bgm>
             <text>……</text>
             <text>Half an hour later, in a hoodless luxury sports car——</text>
             <goto goto="120" change="0"/>
         </scene>
-        <scene id="120" background="connecticutRoad.jpg">
+        <scene id="120" background="connecticutRoad.jpg" >
             <bgm src="11_17_memory.mp3" status="continue"></bgm>
             <show chara="reaLaughArmedNoLanceClose-up" position="left"/>
             <speak chara="reannaNoFace">...Come on, say something？</speak>
@@ -160,7 +160,7 @@
             <speak chara="reannaNoFace">In the physical sense.</speak>
             <goto goto="130" change="#ffffff"/>
         </scene>
-        <scene id="130" background="tankInside.jpg">
+        <scene id="130" background="tankInside.jpg" >
             <bgm src="04_20_tank.mp3" status="start"></bgm>
             <show chara="teslaAstonishGlassWinterClose-up" position="left"/>
             <speak chara="teslaNoFace">Uh...Wait, wait...</speak>
@@ -233,7 +233,7 @@
             <speak chara="teslaNoFace">That's how it works, right?</speak>
             <goto goto="140" change="#ffffff"/>
         </scene>
-        <scene id="140" background="connecticutRoad.jpg">
+        <scene id="140" background="connecticutRoad.jpg" >
             <bgm src="11_17_memory.mp3" status="start"></bgm>
             <show chara="reaNormalArmedNoLanceClose-up" position="left"/>
             <speak chara="reannaNoFace">So did Edison-san escape to the shelter before the incident happened?</speak>
@@ -278,7 +278,7 @@
             <speak chara="schroNoFace">...But I believe she has reached a domain none of us can get close to.</speak>
             <goto goto="150" change="#ffffff"/>
         </scene>
-        <scene id="150" background="cloudSky.jpg">
+        <scene id="150" background="cloudSky.jpg" >
             <bgm src="04_20_Brigantia.mp3" status="start"></bgm>
             <text>At the same time, in a certain place——</text>
             <show chara="edisonAngelHelplessFar" position="center"/>

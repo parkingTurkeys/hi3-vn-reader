@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <data>
     <story>
-        <scene id="0" background="bg.jpg">
+        <scene id="0" background="bg.jpg" >
             <bgm src="mid-lude.mp3" status="start"></bgm>
-            <cg src="newchapter.png" bg="bg.jpg"></cg>
+            <cg src="newchapter.png" bg="bg.jpg" ></cg>
             <goto goto="10" change="#000000"/>
         </scene>
-        <scene id="10" background="westCliffWomenRoom.jpg">
+        <scene id="10" background="westCliffWomenRoom.jpg" >
             <bgm src="12_15_1946.mp3" status="start"></bgm>
             <text> … </text>
             <text>Once again, no dreams today.</text>
@@ -26,7 +26,7 @@
             <text>I hope, from the bottom of my heart, that this peace will last forever.</text>
             <goto goto="20" change="0"/>
         </scene>
-        <scene id="20" background="westCliffBeach.jpg">
+        <scene id="20" background="westCliffBeach.jpg" >
             <bgm src="12_15_1946.mp3" status="continue"></bgm>
             <text remark="next">“We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness.”</text>
             <remark post="U2FsdGVkX1+V00C1bWCZ1mItXrxvd2HnHUK+zfphgA4=">
@@ -47,7 +47,7 @@
             <text>This is regardless of its leader, whether they be a political and military mastermind such as George III or Napoleon I, or a befuddled incompetent fool like Charles I or Louis XVI.</text>
             <goto goto="30" change="0"/>
         </scene>
-        <scene id="30" background="westCliff.jpg">
+        <scene id="30" background="westCliff.jpg" >
             <bgm src="12_15_1946.mp3" status="continue"></bgm>
             <text>That person, “H.A”, conveyed her views through her videos.</text>
             <text>She said that the ideals of Schicksal are fundamentally problematic.</text> <!-- RENAME: She believed Destiny's philosophy is fundamentally problematic. -->
@@ -70,7 +70,7 @@
             <text>Herself, her company, her country, the organisation of Schicksal … from her perspective, they are all just bargaining chips towards realising her goal.</text> <!-- RENAME: Herself, her company, her country, Destiny Organization …  They're all pawns she's willing to use to fulfill her goals. -->
             <goto goto="40" change="0"/>
         </scene>
-        <scene id="40" background="westCliffWomenRoom.jpg">
+        <scene id="40" background="westCliffWomenRoom.jpg" >
             <bgm src="12_15_1946.mp3" status="continue"></bgm>
             <text>It's too disagreeable.</text>
             <text>Such a life is not a joyous one.</text>
@@ -79,7 +79,7 @@
             <text>Although Tesla is also the type to let her emotions drive her decisions … her direction is completely different.</text>
             <goto goto="50" change="0"/>
         </scene>
-        <scene id="50" background="CG16-1-1.jpg">
+        <scene id="50" background="CG16-1-1.jpg" >
             <bgm src="12_15_1946.mp3" status="continue"></bgm>
             <text>By comparison, it's much cuter.</text>
             <text> … </text>
@@ -87,13 +87,13 @@
             <text>Today could be a long day.</text>
             <goto goto="60" change="#ffffff"/>
         </scene>
-        <scene id="60" background="CG16-1-2.jpg">
+        <scene id="60" background="CG16-1-2.jpg" >
             <bgm src="morning.mp3" status="start"></bgm>
             <sound src="8_24_knock_door.mp3"/>
             <speak chara="someoneNoFace">Ding dong … Ding dong … </speak>
             <goto goto="63" change="0"/>
         </scene>
-        <scene id="63" background="CG16-1-3.jpg">
+        <scene id="63" background="CG16-1-3.jpg" >
             <bgm src="morning.mp3" status="continue"></bgm>
             <sound src="Hah.mp3"/>
             <speak chara="teslaNoFace">Hmm … what time is it … who's ringing the doorbell … </speak>
@@ -104,7 +104,7 @@
             <speak chara="teslaNoFace">You're not some 80-year-old grandma, stop waking up so early … </speak>
             <goto goto="66" change="0"/>
         </scene>
-        <scene id="66" background="westCliffWomenRoom2.jpg">
+        <scene id="66" background="westCliffWomenRoom2.jpg" >
             <bgm src="morning.mp3" status="continue"></bgm>
             <sound src="8_24_knock_door.mp3"/>
             <speak chara="someoneNoFace">Ding dong … Ding dong … </speak>
@@ -117,7 +117,7 @@
             <speak chara="teslaNoFace">Let me get out of bed, you idiot!</speak>
             <goto goto="70" change="#ffffff"/>
         </scene>
-        <scene id="70" background="westCliffWomenRoom2.jpg">
+        <scene id="70" background="westCliffWomenRoom2.jpg" >
             <bgm src="themeTesla.mp3" status="continue"></bgm>
             <show chara="weltLaughNewFar" position="center"/>
             <speak chara="someoneNoFace">Good morning, Dr Tesla.</speak>
@@ -135,7 +135,7 @@
             <speak chara="ritaNoFace">The corridor is not a good place for conversation. Please follow me.</speak>
             <goto goto="90" change="#ffffff"/>
         </scene>
-        <scene id="90" background="westCliffBossRoomNight.jpg">
+        <scene id="90" background="westCliffBossRoomNight.jpg" >
             <bgm src="lab.mp3" status="start"></bgm>
             <show chara="weltSurpriseRobeClose-up" position="right" opacity="0.7"/>
             <show chara="ritaNormalAhClose-up" position="left"/>
@@ -161,7 +161,7 @@
             <speak chara="ritaNoFace">I happen to have a set of men's formal wear here … Would you like to try it out?</speak>
             <goto goto="100" change="#ffffff"/>
         </scene>
-        <scene id="100" background="westCliffBossRoomNight.jpg">
+        <scene id="100" background="westCliffBossRoomNight.jpg" >
             <bgm src="lab.mp3" status="continue"></bgm>
             <show chara="weltNervousNewClose-up" position="right" opacity="0.7"/>
             <show chara="ritaSmileClose-up" position="left"/>
@@ -209,7 +209,7 @@
             <speak chara="weltNoFace">… Why would she think I would need something like this!?</speak>
             <goto goto="110" change="#ffffff"/>
         </scene>
-        <scene id="110" background="carMorning.jpg">
+        <scene id="110" background="carMorning.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="start"></bgm>
             <show chara="teslaSnickerGlassWinterClose-up" position="left"/>
             <show chara="weltEmbarraNewClose-up" position="right" opacity="0.7"/>
@@ -281,7 +281,7 @@
             <speak chara="teslaNoFace">Don't you feel the same, Mophead?</speak>
             <goto goto="120" change="#ffffff"/>
         </scene>
-        <scene id="120" background="adaRoom.jpg">
+        <scene id="120" background="adaRoom.jpg" >
             <bgm src="10_25_ada.mp3" status="start"></bgm>
             <text>Later that day — </text>
             <show chara="adaSmileAhFar" position="center"/>
@@ -297,7 +297,7 @@
             </text>
             <goto goto="130" change="#ffffff"/>
         </scene>
-        <scene id="130" background="adaRoomRVS.jpg">
+        <scene id="130" background="adaRoomRVS.jpg" >
             <bgm src="10_25_ada.mp3" status="continue"></bgm>
             <show chara="weltQuestionNewFar" position="left"/>
             <show chara="teslaNormalGlassWinterFar" position="right" opacity="0.7"/>
@@ -315,7 +315,7 @@
             <speak chara="einNoFace"> … We should finish watching the video first.</speak>
             <goto goto="140" change="#ffffff"/>
         </scene>
-        <scene id="140" background="CG16-2.jpg">
+        <scene id="140" background="CG16-2.jpg" >
             <bgm src="10_25_ada.mp3" status="continue"></bgm>
             <text>The person in the image is obviously the mysterious H.A. — </text>
             <text>However, she seems to be older than when she recorded the last video.</text>
@@ -351,7 +351,7 @@
             <speak chara="haNoFace">“Godfather”.</speak> <!-- This term has no historical precedence. It may be in reference to the fact that LaFayette may be considered one of the Founding Fathers of America, despite being French. -->
             <goto goto="150" change="#ffffff"/>
         </scene>
-        <scene id="150" background="adaRoomRVS.jpg">
+        <scene id="150" background="adaRoomRVS.jpg" >
             <bgm src="10_25_ada.mp3" status="start"></bgm>
             <show chara="weltAstonishNewFar" position="left" opacity="0.7"/>
             <show chara="teslaAstonishGlassWinterFar" position="right"/>
@@ -377,7 +377,7 @@
             <speak chara="teslaNoFace">Anyway, let me tell you, just in Boston alone there are five roads all named “LaFayette Avenue” — think about that.</speak>
             <goto goto="160" change="0"/>
         </scene>
-        <scene id="160" background="adaRoom.jpg">
+        <scene id="160" background="adaRoom.jpg" >
             <bgm src="themeEin.mp3" status="start"></bgm>
             <show chara="einNormalWinterFar" position="center"/>
             <speak chara="einNoFace">… Ahem.</speak>

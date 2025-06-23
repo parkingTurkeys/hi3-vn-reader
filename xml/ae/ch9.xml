@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <data>
     <story title="1">
-        <scene id="0" background="bg.jpg">
+        <scene id="0" background="bg.jpg" >
             <bgm src="mid-lude.mp3" status="start"></bgm>
-            <cg src="newchapter.png" bg="bg.jpg"></cg>
+            <cg src="newchapter.png" bg="bg.jpg" ></cg>
             <goto goto="10" change="#000000"/>
         </scene>
-        <scene id="10" background="studyLamp.jpg">
+        <scene id="10" background="studyLamp.jpg" >
             <bgm src="themeWelt.mp3" status="start"></bgm>
             <speak chara="weltNoFace"> … </speak>
             <text article="1">
@@ -29,9 +29,9 @@
             <text>Just now he had received a letter, and it was a very strange letter indeed … </text>
             <goto goto="15" change="#ffffff"/>
         </scene>
-        <scene id="15" background="CG9-1.jpg">
+        <scene id="15" background="CG9-1.jpg" >
             <bgm src="11_3_themeOtto.mp3" status="start"></bgm>
-            <cg src="CG9-1.jpg"></cg>
+            <cg src="CG9-1.jpg" ></cg>
             <text article="1">
                 <p class="article-text-h">Ω: </p>
                 <br />
@@ -104,7 +104,7 @@
             </text>
             <goto goto="30" change="#ffffff"/>
         </scene>
-        <scene id="30" background="studyLamp.jpg">
+        <scene id="30" background="studyLamp.jpg" >
             <bgm src="themeWelt.mp3" status="start"></bgm>
             <text>The hour hand on the wall clock has moved 60°, and it is already early morning of the next day. </text>
             <text>Welt silently refills his eighth cup of black tea. </text>
@@ -117,7 +117,7 @@
             <text>At last, outside the door, there is that familiar sound unique to drunkards: the sound of a prodding key from one who cannot, for the life of them, find the keyhole to the lock. </text>
             <goto goto="40" change="#ffffff"/>
         </scene>
-        <scene id="40" background="studyNight.jpg">
+        <scene id="40" background="studyNight.jpg" >
             <bgm src="lab.mp3" status="start"></bgm>
             <show chara="teslaNormalDrunkWinterClose" position="center"/>
             <speak chara="teslaNoFace">Ah … you little dječak … not asleep, I see. </speak>
@@ -136,7 +136,7 @@
             <speak chara="teslaNoFace">If not you … who else is there … hmm? </speak>
             <goto goto="50" change="0"/>
         </scene>
-        <scene id="50" background="CG9-2.jpg">
+        <scene id="50" background="CG9-2.jpg" >
             <bgm src="lab.mp3" status="continue"></bgm>
             <text>The “clearly sober adult” seizes the opportunity to flop down and sprawl all over the small sofa beside him. </text>
             <speak chara="teslaNoFace"> … You haven't heard of it anyway, have you? </speak>
@@ -182,7 +182,7 @@
             <speak chara="weltNoFace">Urgh … </speak>
             <goto goto="100" change="0"/>
         </scene>
-        <scene id="100" background="studyNight.jpg">
+        <scene id="100" background="studyNight.jpg" >
             <bgm src="lab.mp3" status="continue"></bgm>
             <show chara="teslaNormalDrunkWinterClose" position="left"/>
             <show chara="weltTiredWinterClose" position="right" opacity="0.7"/>
@@ -271,7 +271,7 @@
             <speak chara="teslaNoFace"> … then how about I go help myself? </speak>
             <goto goto="120" change="0"/>
         </scene>
-        <scene id="120" background="corridorMessy.jpg">
+        <scene id="120" background="corridorMessy.jpg" >
             <bgm src="lab.mp3" status="continue"></bgm>
             <text>As she speaks, she sways and wobbles towards upstairs. </text>
             <text>Her goal is obvious — the plump, gaudy refrigerator at the end of the corridor on the top floor. </text>
@@ -395,7 +395,7 @@
             <text>Bam. </text>
             <goto goto="140" change="0"/>
         </scene>
-        <scene id="140" background="corridorMessy.jpg">
+        <scene id="140" background="corridorMessy.jpg" >
             <bgm src="themeTesla.mp3" status="start"></bgm>
             <text>From the shadows behind them, a dictionary comes flying out and hits the noisy woman squarely on the head. </text>
             <show chara="0einSeriousAhVestClose-up" position="center"/>

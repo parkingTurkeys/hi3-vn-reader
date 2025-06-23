@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <data>
     <story>
-        <scene id="0" background="bg.jpg">
+        <scene id="0" background="bg.jpg" >
             <bgm src="mid-lude.mp3" status="start"></bgm>
-            <cg src="newchapter.png" bg="bg.jpg"></cg>
+            <cg src="newchapter.png" bg="bg.jpg" ></cg>
             <goto goto="10" change="#000000"/>
         </scene>
-        <scene id="10" background="studyLamp.jpg">
+        <scene id="10" background="studyLamp.jpg" >
             <bgm src="lab.mp3" status="start"></bgm>
             <show chara="teslaShameEyeClose-up" position="left"/>
             <speak chara="teslaNoFace">Blondie! Bring me my Blazing Blade! </speak> <!-- 烈火之剑 from the Chinese title for Fire Emblem, the Blazing Blade -->
@@ -47,7 +47,7 @@
             <speak chara="weltNoFace"> …  Hey, why are you waving it in my face!? </speak>
             <goto goto="30" change="#ffffff"/>
         </scene>
-        <scene id="30" background="studyLamp.jpg">
+        <scene id="30" background="studyLamp.jpg" >
             <bgm src="lab.mp3" status="continue"></bgm>
             <text article="1">
                 <p class="article-text">How did the situation come to this … Welt can't help but sigh. </p>
@@ -65,7 +65,7 @@
             </text>
             <goto goto="40" change="#ffffff"/>
         </scene>
-        <scene id="40" background="schoolNight3.jpg">
+        <scene id="40" background="schoolNight3.jpg" >
             <text article="1">
                 <p class="article-text">Joachim had been to his father's workplace many times before; every time, the Sister with the Mophead, and the Sister with the Twintails, would always give him a variety of things to play with that other children could never get: making various brightly-coloured chemical solutions, playing music with electrical discharge coils in a dark room, and rehearsing stage shows with Miss Computer …  Stories and social capital he could use to brag to other children. </p> <!-- See https://www.youtube.com/watch?v=93T0mVddBgM for Tesla coil music -->
             </text>
@@ -111,7 +111,7 @@
             </text>
             <goto goto="60" change="#ffffff"/>
         </scene>
-        <scene id="60" background="studyLamp.jpg">
+        <scene id="60" background="studyLamp.jpg" >
             <bgm src="lab.mp3" status="continue"></bgm>
             <show chara="teslaNormalEyeClose-up" position="left"/>
             <speak chara="teslaNoFace">Really … </speak>
@@ -256,7 +256,7 @@
             <text>“AH! ”</text>
             <goto goto="80" change="0"/>
         </scene>
-        <scene id="80" background="studyLamp.jpg">
+        <scene id="80" background="studyLamp.jpg" >
             <bgm src="themeTesla.mp3" status="start"></bgm>
             <show chara="weltShameSweaterClose-up" position="right"/>
             <speak chara="weltNoFace">That hurt! </speak>
@@ -332,7 +332,7 @@
             <speak chara="schroNoFace"> — Stop! </speak>
             <goto goto="110" change="0"/>
         </scene>
-        <scene id="110" background="CG11-1.jpg">
+        <scene id="110" background="CG11-1.jpg" >
             <bgm src="horror.mp3" status="start"></bgm>
             <text>New York, the Consolidated Edison Building, Underground Laboratory</text>
             <speak chara="schroNoFace" remark="next">Harry, don't add the reflection module yet! </speak>
@@ -355,7 +355,7 @@
             </remark>
             <goto goto="120" change="#ffffff"/>
         </scene>
-        <scene id="120" background="adaRoom.jpg">
+        <scene id="120" background="adaRoom.jpg" >
             <bgm src="11_17_tatakau.mp3" status="start"></bgm>
             <show chara="nokiaSeriousEmWinterFar" position="right" opacity="0.7"/>
             <show chara="edisonSmileWinterFar" position="left"/>

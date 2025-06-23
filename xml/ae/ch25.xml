@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <data>
     <story>
-        <scene id="0" background="bg.jpg">
+        <scene id="0" background="bg.jpg" >
             <bgm src="mid-lude.mp3" status="start"></bgm>
-            <cg src="newchapter.png" bg="bg.jpg"></cg>
+            <cg src="newchapter.png" bg="bg.jpg" ></cg>
             <goto goto="10" change="#000000"/>
         </scene>
-        <scene id="10" background="beachNorfolk.jpg">
+        <scene id="10" background="beachNorfolk.jpg" >
             <bgm src="10_25_noise.mp3" status="start"></bgm>
             <sound src="8_24_launch.mp3"/>
             <text remark="next">Due to the sudden electromagnetic pulse, the aircraft had to land at the Naval Station Norfolk.</text>
@@ -24,7 +24,7 @@
             <text>No matter the disaster, people will be able to find a place that isn't affected by it.</text>
             <goto goto="20" change="#ffffff"/>
         </scene>
-        <scene id="20" background="aircraftCockpit.jpg">
+        <scene id="20" background="aircraftCockpit.jpg" >
             <bgm src="04_20_tank.mp3" status="start"></bgm>
             <speak chara="ritaFullNameNoFace">Professor, we seem to have passed over Raritan Bay.</speak>
             <speak chara="ritaFullNameNoFace">Do you wish to perform recon?</speak>
@@ -39,13 +39,13 @@
             <speak chara="planckYourNameNoFace">...!?</speak>
             <goto goto="30" change="0"/>
         </scene>
-        <scene id="30" background="CG25-1.jpg">
+        <scene id="30" background="CG25-1.jpg" >
             <bgm src="04_20_tank.mp3" status="continue"></bgm>
             <text>The meteorite that suddenly appeared was certainly interesting.</text>
             <text>But what surprised me the most was this kid who came all the way here without making a sound hidden in a box.</text>
             <goto goto="40" change="#ffffff"/>
         </scene>
-        <scene id="40" background="darkEnergy.jpg">
+        <scene id="40" background="darkEnergy.jpg" >
             <bgm src="04_20_tank.mp3" status="stop"></bgm>
             <text>.....</text>
             <bgm src="03_03_bostonNight.mp3" status="start"></bgm>
@@ -67,21 +67,21 @@
             <text>As the only person left standing I have the responsibility to keep fighting.</text>
             <goto goto="50" change="#ffffff"/>
         </scene>
-        <scene id="50" background="CG25-2.jpg">
+        <scene id="50" background="CG25-2.jpg" >
             <bgm src="8_24_war.mp3" status="start"></bgm>
             <speak chara="ottoNoFace">...Fool.</speak>
             <speak chara="ottoNoFace">...Your direct attack failed so now you are trying to deceive me with clones?</speak>
             <speak chara="ottoNoFace">Very well. Let's settle this. Let's see for ourselves who is worthy of obtaining infinite possibilities.</speak>
             <goto goto="60" change="0"/>
         </scene>
-        <scene id="60" background="CG25-3.jpg">
+        <scene id="60" background="CG25-3.jpg" >
             <bgm src="8_24_war.mp3" status="continue"></bgm>
             <speak chara="ottoNoFace">There is no need for eternity in this world.</speak>
             <speak chara="ottoNoFace">The dream turns into bubbles, and bursts in the blink of an eye. Everything is true.</speak>
             <speak chara="ottoNoFace">「1st Divine Key」, 7th Divine Key Reproduction——</speak>
             <goto goto="70" change="0"/>
         </scene>
-        <scene id="70" background="CG25-3.jpg">
+        <scene id="70" background="CG25-3.jpg" >
             <bgm src="8_24_war.mp3" status="continue"></bgm>
             <cg src="xuKongWanZang.png" bg="CG25-3.jpg" fadeIn="0" fadeOut="0"></cg>
             <bgm src="8_24_war.mp3" status="stop"></bgm>
@@ -89,24 +89,24 @@
             <cg src="yuZhongTianHua.png" bg="CG25-4.jpg" fadeIn="0"></cg>
             <goto goto="90" change="#000000"/>
         </scene>
-        <scene id="90" background="brightonBeach.jpg">
+        <scene id="90" background="brightonBeach.jpg" >
             <bgm src="04_20_tank.mp3" status="start"></bgm>
             <show chara="ottoScornfulGunFar" position="center"/>
             <speak chara="ottoNoFace">...Was that all you can do?</speak>
             <goto goto="100" change="0"/>
         </scene>
-        <scene id="100" background="CG25-5.jpg">
+        <scene id="100" background="CG25-5.jpg" >
             <bgm src="04_20_tank.mp3" status="stop"></bgm>
             <sound src="05_18_claw.mp3"/>
             <cg src="CG25-5.jpg" bg="CG25-5.jpg" fadeIn="0" fadeOut="1"></cg>
             <goto goto="110" change="0"/>
         </scene>
-        <scene id="110" background="brightonBeach.jpg">
+        <scene id="110" background="brightonBeach.jpg" >
             <bgm src="morning.mp3" status="start"></bgm>
             <speak chara="ritaNoNameNoFace">...Tch. So it didn't work.</speak>
             <goto goto="120" change="0"/>
         </scene>
-        <scene id="120" background="brightonBeach.jpg">
+        <scene id="120" background="brightonBeach.jpg" >
             <bgm src="morning.mp3" status="continue"></bgm>
             <show chara="ottoChangeGunFar" position="center"/>
             <speak chara="ottoNoFace">...Hmph.</speak>
@@ -149,7 +149,7 @@
             <speak chara="ottoNoFace">——All I'm trying to do today is to get rid of an obstacle.</speak>
             <goto goto="150" change="#ffffff"/>
         </scene>
-        <scene id="150" background="darkEnergy.jpg">
+        <scene id="150" background="darkEnergy.jpg" >
             <bgm src="11_17_tatakau.mp3" status="start"></bgm>
             <text>Alright... We managed to buy enough time.</text>
             <text>I didn't think I would receive help from such an unexpected helper...</text>
@@ -159,19 +159,19 @@
             <text>...Pass the baton to him.</text>
             <goto goto="160" change="#ffffff"/>
         </scene>
-        <scene id="160" background="CG25-6.jpg">
+        <scene id="160" background="CG25-6.jpg" >
             <bgm src="11_17_tatakau.mp3" status="continue"></bgm>
             <speak chara="ottoNoFace">...Hm?</speak>
             <goto goto="170" change="0"/>
         </scene>
-        <scene id="170" background="CG25-7.jpg">
+        <scene id="170" background="CG25-7.jpg" >
             <bgm src="11_17_tatakau.mp3" status="continue"></bgm>
             <speak chara="schroPlasmaNoFace">Reconstruction of consciousness completed. Expressing Houkai energy.</speak>
             <speak chara="schroPlasmaNoFace">Defining Maxwell distribution and detaching all particles.</speak>
             <speak chara="schroPlasmaNoFace">Performing unitary elimination of basic dimensions.</speak>
             <goto goto="180" change="0"/>
         </scene>
-        <scene id="180" background="CG25-8.jpg">
+        <scene id="180" background="CG25-8.jpg" >
             <bgm src="11_17_tatakau.mp3" status="continue"></bgm>
             <cg src="heiYuanBaiHuaDiLingGongLv.png" bg="CG25-8.jpg" fadeIn="0" fadeOut="0"></cg>
             <bgm src="11_17_tatakau.mp3" status="stop"></bgm>
@@ -179,7 +179,7 @@
             <cg src="jieXianTuPoQiangZhiZhanKai.png" bg="CG25-8-2.jpg" fadeIn="0" fadeOut="1"></cg>
             <goto goto="900" change="#ffffff"/>
         </scene>
-        <scene id="900" background="cloudSky.jpg">
+        <scene id="900" background="cloudSky.jpg" >
             <bgm src="themeWelt.mp3" status="start"></bgm>
             <text>You wake up from your sleep.</text>
             <text>You feel a familiar breathing in you. No, it's energy. It's disappearing as fast as it came.</text>
@@ -200,7 +200,7 @@
             <text>Everything that has happened over the past month has become an irreplaceable treasure to me.</text>
             <goto goto="1000" change="#ffffff"/>
         </scene>
-        <scene id="1000" background="studyNight.jpg">
+        <scene id="1000" background="studyNight.jpg" >
             <bgm src="10_20_londonderry_p.mp3" status="start"></bgm>
             <show chara="memoryLoading" position="center"/>
             <show chara="einSmileClose" position="back"/>
@@ -208,14 +208,14 @@
             <speak chara="einSmileClose">I think this name suits you well. </speak>
             <goto goto="1010" change="#ffffff"/>
         </scene>
-        <scene id="1010" background="weltRoomDay2.jpg">
+        <scene id="1010" background="weltRoomDay2.jpg" >
             <bgm src="10_20_londonderry_p.mp3" status="continue"></bgm>
             <show chara="memoryLoading" position="center"/>
             <show chara="teslaAngryCloseNoName" position="back"/>
             <speak chara="teslaAngryCloseNoName">Really, are you deaf?! I called you a few times! Fortunately, I was kind enough to break in.</speak>
             <goto goto="1015" change="#ffffff"/>
         </scene>
-        <scene id="1015" background="italianRestaurant.jpg">
+        <scene id="1015" background="italianRestaurant.jpg" >
             <bgm src="10_20_londonderry_p.mp3" status="continue"></bgm>
             <show chara="memoryLoading" position="center"/>
             <show chara="0einSlyVestClose-up" position="back"/>
@@ -223,7 +223,7 @@
             <speak chara="einNoFace">As my grandfather said, "Success is equal to genius plus sweat and less nonsense."</speak>
             <goto goto="1020" change="#ffffff"/>
         </scene>
-        <scene id="1020" background="barBillings.jpg">
+        <scene id="1020" background="barBillings.jpg" >
             <bgm src="10_20_londonderry_p.mp3" status="continue"></bgm>
             <show chara="memoryLoading" position="center"/>
             <show chara="planckSlyClose-up" position="back"/>
@@ -232,7 +232,7 @@
             <speak chara="schroNoFace">Professor, she prefers to eat this. I don't know if you can get used to it.</speak>
             <goto goto="1030" change="#ffffff"/>
         </scene>
-        <scene id="1030" background="CG6-1.jpg">
+        <scene id="1030" background="CG6-1.jpg" >
             <bgm src="10_20_londonderry_p.mp3" status="continue"></bgm>
             <show chara="memoryLoading" position="back"/>
             <speak chara="teslaNoFace">Gee. What are you doing!</speak>
@@ -240,14 +240,14 @@
             <speak chara="teslaNoFace">Einstein! Schrodinger! Planck! You're not gonna do anything about her?!</speak>
             <goto goto="1040" change="#ffffff"/>
         </scene>
-        <scene id="1040" background="CG6-2.jpg">
+        <scene id="1040" background="CG6-2.jpg" >
             <bgm src="10_20_londonderry_p.mp3" status="continue"></bgm>
             <show chara="memoryLoading" position="back"/>
             <speak chara="einNoFace">To the youngs who came here（来到这里的少年们啊）</speak>
             <speak chara="einNoFace">I leave the last Soulium to you（我把最后的魂钢托付给你们了）</speak>
             <goto goto="1050" change="#ffffff"/>
         </scene>
-        <scene id="1050" background="adaRoom.jpg">
+        <scene id="1050" background="adaRoom.jpg" >
             <bgm src="10_20_londonderry_p.mp3" status="continue"></bgm>
             <show chara="memoryLoading" position="center"/>
             <show chara="adaSmileFar" position="back"/>
@@ -256,7 +256,7 @@
             <speak chara="adaNoFace">艾——妲。</speak>
             <goto goto="1060" change="#ffffff"/>
         </scene>
-        <scene id="1060" background="corridorMessy.jpg">
+        <scene id="1060" background="corridorMessy.jpg" >
             <bgm src="10_20_londonderry_p.mp3" status="continue"></bgm>
             <show chara="memoryLoading" position="center"/>
             <show chara="teslaFoolDrunkWinterClose" position="back"/>
@@ -264,7 +264,7 @@
             <!-- ^ Not sure about this line  -->
             <goto goto="1070" change="#ffffff"/>
         </scene>
-        <scene id="1070" background="graveDayLate.jpg">
+        <scene id="1070" background="graveDayLate.jpg" >
             <bgm src="10_20_londonderry_p.mp3" status="continue"></bgm>
             <show chara="memoryLoading" position="center"/>
             <show chara="reaSmileEmWinterFar" position="back"/>
@@ -273,7 +273,7 @@
             <speak chara="reannaNoFace">Although I'm Valkyrie directly under the headquarters-but today is just like you, an ordinary person who came to sweep the grave.</speak>
             <goto goto="1080" change="#ffffff"/>
         </scene>
-        <scene id="1080" background="studyLamp.jpg">
+        <scene id="1080" background="studyLamp.jpg" >
             <bgm src="10_20_londonderry_p.mp3" status="continue"></bgm>
             <show chara="memoryLoading" position="center"/>
             <show chara="teslaBoringEyeClose-up" position="back"/>
@@ -287,7 +287,7 @@
             <speak chara="teslaNoFace">It is precisely because they are so afraid of death that they prefer to look on everything around them — no different from those Kings and Queens who believe in the "The Divine Right of Kings."</speak>
             <goto goto="1090" change="#ffffff"/>
         </scene>
-        <scene id="1090" background="CG12-1.jpg">
+        <scene id="1090" background="CG12-1.jpg" >
             <bgm src="10_20_londonderry_p.mp3" status="continue"></bgm>
             <show chara="memoryLoading" position="back"/>
             <speak chara="einNoFace">But come ye back when summer's in the meadow, （但你会回来，当夏日重临牧场）</speak>
@@ -296,14 +296,14 @@
             <speak chara="einNoFace">Oh, Danny Boy, oh Danny Boy, I love you so!（哦，丹尼少年，我是如此爱你）</speak>
             <goto goto="1100" change="#ffffff"/>
         </scene>
-        <scene id="1100" background="cloudSky.jpg">
+        <scene id="1100" background="cloudSky.jpg" >
             <bgm src="10_20_londonderry_p.mp3" status="continue"></bgm>
             <speak chara="weltNoFace">「To the thirsty I will freely give」</speak>
             <speak chara="weltNoFace">「From the fountain of the water of life.」</speak>
             <speak chara="weltNoFace">...This won't be enough.</speak>
             <goto goto="1120" change="0"/>
         </scene>
-        <scene id="1120" background="cloudSky.jpg">
+        <scene id="1120" background="cloudSky.jpg" >
             <bgm src="04_20_Brigantia.mp3" status="start"></bgm>
             <text article="1">
                 <p class="article-text">This is the day, which down the void abysm</p>
@@ -347,7 +347,7 @@
             </text>
             <goto goto="1160" change="#ffffff"/>
         </scene>
-        <scene id="1160" background="darkEnergy.jpg">
+        <scene id="1160" background="darkEnergy.jpg" >
             <bgm src="04_20_Brigantia.mp3" status="continue"></bgm>
             <text article="1">
                 <p class="article-text">To suffer woes which Hope thinks infinite;</p>
@@ -398,7 +398,7 @@
             </text>
             <goto goto="1200" change="0"/>
         </scene>
-        <scene id="1200" background="CG25-9.jpg">
+        <scene id="1200" background="CG25-9.jpg" >
             <bgm src="04_20_Brigantia.mp3" status="continue"></bgm>
             <speak chara="weltNoFace" remark="next">——This is the day, which the Earth-born's spell devours the Tyrant of False Heavens.</speak>
             <remark post="U2FsdGVkX18o9ZihHoexEPzjpmN9">

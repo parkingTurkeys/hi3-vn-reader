@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <data>
     <story>
-        <scene id="0" background="bg.jpg">
+        <scene id="0" background="bg.jpg" >
             <bgm src="mid-lude.mp3" status="start"></bgm>
-            <cg src="newchapter.png" bg="bg.jpg"></cg>
+            <cg src="newchapter.png" bg="bg.jpg" ></cg>
             <goto goto="10" change="#000000"/>
         </scene>
-        <scene id="10" background="streetProvidence.jpg">
+        <scene id="10" background="streetProvidence.jpg" >
             <bgm src="03_03_bostonNight.mp3" status="start"></bgm>
             <text>The street in front of him was throughly waterlogged.</text>
             <text>Contrary to it being the mid winter weather of November, the water was not cold at all - so much so that it even felt warm instead.</text>
@@ -64,7 +64,7 @@
             <speak chara="weltNoFace">...Miss Reanna?</speak>
             <goto goto="20" change="#ffffff"/>
         </scene>
-        <scene id="20" background="streetProvidence.jpg">
+        <scene id="20" background="streetProvidence.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="start"></bgm>
             <show chara="reaLaughArmedClose" position="right"/>
             <speak chara="reannaNoFace">...... Isn’t this dress up today a bit unrecognizable?</speak>
@@ -125,7 +125,7 @@
             <speak chara="teslaNoFace">Would you like to join us?</speak>
             <goto goto="30" change="#ffffff"/>
         </scene>
-        <scene id="30" background="universityMorning.jpg">
+        <scene id="30" background="universityMorning.jpg" >
             <bgm src="themeTesla.mp3" status="start"></bgm>
             <show chara="tank" position="back"/>
             <show chara="mbembaClose" position="left"/>
@@ -135,7 +135,7 @@
             <text>Looking back at the Valkyrie Reanna, and then looking at these "civil servants" in front of her, Tesla felt a sharp stomachache.</text>
             <goto goto="40" change="0"/>
         </scene>
-        <scene id="40" background="universityMorning.jpg">
+        <scene id="40" background="universityMorning.jpg" >
             <bgm src="10_25_noise.mp3" status="start"></bgm>
             <show chara="tank" position="back"/>
             <show chara="teslaErGlassWinterClose" position="left"/>
@@ -211,7 +211,7 @@
             <speak chara="teslaNoFace">After all, I know better how far they can go with their equipment.</speak>
             <goto goto="50" change="#ffffff"/>
         </scene>
-        <scene id="50" background="parkWaterTree.jpg">
+        <scene id="50" background="parkWaterTree.jpg" >
             <bgm src="horror.mp3" status="start"></bgm>
             <text>November 24, 1955.</text>
             <text>At 6:45 in the morning.</text>
@@ -240,7 +240,7 @@
             <speak chara="teslaNoFace">Lets go.</speak>
             <goto goto="60" change="#ffffff"/>
         </scene>
-        <scene id="60" background="parkWaterTree.jpg">
+        <scene id="60" background="parkWaterTree.jpg" >
             <bgm src="horror.mp3" status="continue"></bgm>
             <text>The late autumn morning light, through a network of veins that crisscrossed the branches, fell wet on the tracks.</text>
             <text>Yuri Armstrong drove his armored combat vehicle slowly north from Blackstone park.</text>
@@ -306,7 +306,7 @@
             <speak chara="yuriNoFace">I repeat. 「Blue Team」 has spotted the enemy, injecting chemicals now!</speak>
             <goto goto="70" change="0"/>
         </scene>
-        <scene id="70" background="graveMorning.jpg">
+        <scene id="70" background="graveMorning.jpg" >
             <bgm src="11_17_tatakau.mp3" status="continue"></bgm>
             <show chara="teslaDisgustedGlassWinterClose-up" position="center"/>
             <speak chara="teslaNoFace">Reanna!</speak>
@@ -323,35 +323,35 @@
             <speak chara="yuriNoFace">Roger!</speak>
             <goto goto="80" change="#ffffff"/>
         </scene>
-        <scene id="80" background="CG19-0-1.jpg">
+        <scene id="80" background="CG19-0-1.jpg" >
             <bgm src="11_17_tatakau.mp3" status="continue"></bgm>
             <text>The strongest Valkyrie.</text>
             <goto goto="82" change="0"/>
         </scene>
-        <scene id="82" background="CG19-0-2.jpg">
+        <scene id="82" background="CG19-0-2.jpg" >
             <bgm src="11_17_tatakau.mp3" status="continue"></bgm>
             <text>She can run over 1km in one minute using her legs alone——</text>
             <goto goto="84" change="0"/>
         </scene>
-        <scene id="84" background="CG19-0-3.jpg">
+        <scene id="84" background="CG19-0-3.jpg" >
             <bgm src="11_17_tatakau.mp3" status="continue"></bgm>
             <text>She posses potential that can't be matched by any weapon.</text>
             <goto goto="90" change="0"/>
         </scene>
-        <scene id="90" background="CG19-0-4.jpg">
+        <scene id="90" background="CG19-0-4.jpg" >
             <bgm src="11_17_tatakau.mp3" status="continue"></bgm>
             <speak chara="reannaNoFace">Ich bin das Schwarz auch das Weiß</speak>
             <speak chara="reannaNoFace">Vor dem Beginn und zwar nach der Ende</speak>
             <goto goto="95" change="0"/>
         </scene>
-        <scene id="95" background="CG19.jpg">
+        <scene id="95" background="CG19.jpg" >
             <bgm src="11_17_tatakau.mp3" status="continue"></bgm>
             <speak chara="reannaNoFace">I am the Black Abyss that devours everything, the White Flower that nurtures all.</speak>
             <speak chara="reannaNoFace">I exist before creation. I exist after annihilation.</speak>
             <speak chara="reannaNoFace">Divine Key 「Abyss Flower」, 2nd level output——</speak>
             <goto goto="100" change="0"/>
         </scene>
-        <scene id="100" background="parkWaterTree.jpg">
+        <scene id="100" background="parkWaterTree.jpg" >
             <bgm src="11_17_tatakau.mp3" status="continue"></bgm>
             <cg src="shengqiangShock.png" bg="parkWaterTree.jpg" fadeOut="0" fadeIn="0"></cg>
             <cg src="zhanfangPetal.png" bg="parkWaterTree.jpg" fadeOut="0" fadeIn="0"></cg>

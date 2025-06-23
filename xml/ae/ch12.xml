@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <data>
     <story>
-        <scene id="0" background="bg.jpg">
+        <scene id="0" background="bg.jpg" >
             <bgm src="mid-lude.mp3" status="start"></bgm>
-            <cg src="newchapter.png" bg="bg.jpg"></cg>
+            <cg src="newchapter.png" bg="bg.jpg" ></cg>
             <goto goto="10" change="#000000"/>
         </scene>
-        <scene id="10" background="schoolDay3.jpg">
+        <scene id="10" background="schoolDay3.jpg" >
             <bgm src="lab.mp3" status="start"></bgm>
             <speak chara="teslaNoFace"> … The greatest enemy in the world is Time. </speak>
             <goto goto="20" change="0"/>
         </scene>
-        <scene id="20" background="studyDay.jpg">
+        <scene id="20" background="studyDay.jpg" >
             <bgm src="lab.mp3" status="continue"></bgm>
             <show chara="einSlyCoatClose" position="left"/>
             <show chara="teslaNormalGlassWinterClose" position="right" opacity="0.7"/>
@@ -84,7 +84,7 @@
             <show chara="einSlyCoatClose" position="left" opacity="0.7"/>
             <goto goto="30" change="#ffffff"/>
         </scene>
-        <scene id="30" background="westCliff.jpg">
+        <scene id="30" background="westCliff.jpg" >
             <bgm src="street.mp3" status="start"></bgm>
             <text>Southend-on-Sea. </text>
             <text>This resort, named after its own geographical location, has been the most popular suburban resort for Londoners since the large-scale urbanisation during the Industrial Revolution of the 18th century — </text>
@@ -122,7 +122,7 @@
             <speak chara="weltNoFace">B-bean sprout?! </speak>
             <goto goto="40" change="#ffffff"/>
         </scene>
-        <scene id="40" background="westCliff.jpg">
+        <scene id="40" background="westCliff.jpg" >
             <bgm src="street.mp3" status="continue"></bgm>
             <show chara="ritaNormalAhFar" position="left"/>
             <speak chara="ritaNoNameNoFace">Ladies and gentleman! … Is this Mr Welt Joyce and his party? </speak>
@@ -149,7 +149,7 @@
             <speak chara="ritaNoFace">But … on the other hand, it will help you save on tips, isn't that right? </speak>
             <goto goto="50" change="#ffffff"/>
         </scene>
-        <scene id="50" background="westCliffWindow.jpg">
+        <scene id="50" background="westCliffWindow.jpg" >
             <bgm src="themeWelt.mp3" status="start"></bgm>
             <text article="1">
                 <p class="article-text">The accommodation provided by “West Cliff Rita” is a small villa with a seaside view. From the second floor, one can see a continuous flow of merchant ships passing through the Thames estuary. The furnishings in the villa are a mix of both Victorian and Colonial-era designs, and hanging from the light wallpaper are art portraits of dubious origin, many of which look like third-rate works commissioned for ten pounds each. </p>
@@ -170,12 +170,12 @@
             </text>
             <goto goto="55" change="#ffffff"/>
         </scene>
-        <scene id="55" background="planeNightRem.jpg">
+        <scene id="55" background="planeNightRem.jpg" >
             <bgm src="themeWelt.mp3" status="continue"></bgm>
             <text>A month ago, aboard a certain airplane.</text>
             <goto goto="60" change="0"/>
         </scene>
-        <scene id="60" background="CG6-3_Rem.jpg">
+        <scene id="60" background="CG6-3_Rem.jpg" >
             <bgm src="themeWelt.mp3" status="continue"></bgm>
             <speak chara="weltNoFace">Um … what do you mean by so-called “speaking in whispers” … </speak>
             <text>The young man named Welt asked awkwardly, all the while carefully avoiding direct eye contact with a pair of luscious red lips. </text>
@@ -184,7 +184,7 @@
             <text>The professor called Planck batted her eyes mischievously. </text>
             <goto goto="70" change="0"/>
         </scene>
-        <scene id="70" background="planeNightRem.jpg">
+        <scene id="70" background="planeNightRem.jpg" >
             <bgm src="themeWelt.mp3" status="continue"></bgm>
             <show chara="weltNormalWinterClose-up" position="right" opacity="0.7"/>
             <show chara="planckSmileCoatClose-upSymme" position="left"/>
@@ -463,12 +463,12 @@
             <speak chara="planckNoFace">Do not forget, you are resistant to Honkai … but even us scientists cannot yet explain it. </speak>
             <goto goto="80" change="#ffffff"/>
         </scene>
-        <scene id="80" background="westCliffWindow.jpg">
+        <scene id="80" background="westCliffWindow.jpg" >
             <bgm src="10_20_londonderry_p.mp3" status="start"></bgm>
             <text>As Welt finishes revisiting his memories, he notices that the splendid sound of a piano had been playing behind him, for God knows how long. </text>
             <goto goto="90" change="0"/>
         </scene>
-        <scene id="90" background="CG12-2.jpg">
+        <scene id="90" background="CG12-2.jpg" >
             <bgm src="10_20_londonderry_p.mp3" status="continue"></bgm>
             <text>Einstein's ten fingers tap nimbly upon the piano keys, and the characteristically crisp sound of the piano seems to slip out from beneath her fingertips. </text>
             <text>For a moment, Welt feels as if his entire body has erupted in goosebumps. </text>
@@ -480,7 +480,7 @@
             <speak chara="weltNoFace">It's you, it's you must go and I must bide. </speak>
             <goto goto="95" change="0"/>
         </scene>
-        <scene id="95" background="CG12-1.jpg">
+        <scene id="95" background="CG12-1.jpg" >
             <bgm src="10_20_londonderry_p.mp3" status="continue"></bgm>
             <speak chara="einNoFace">But come ye back when summer's in the meadow,</speak>
             <speak chara="einNoFace">Or when the valley's hushed and white with snow, </speak>
@@ -488,7 +488,7 @@
             <speak chara="einNoFace">Oh, Danny Boy, oh Danny Boy, I love you so! </speak>
             <goto goto="100" change="0"/>
         </scene>
-        <scene id="100" background="CG12-2.jpg">
+        <scene id="100" background="CG12-2.jpg" >
             <bgm src="10_20_londonderry_p.mp3" status="continue"></bgm>
             <speak chara="einNoFace" remark="next">Welt … are you also familiar with this song? </speak>
             <remark post="U2FsdGVkX19ZdL7hDqev2Mrxfcrrag==">

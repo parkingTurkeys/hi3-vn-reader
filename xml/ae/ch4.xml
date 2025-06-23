@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <data>
     <story title="1">
-        <scene id="0" background="bg.jpg">
+        <scene id="0" background="bg.jpg" >
             <bgm src="mid-lude.mp3" status="start"></bgm>
-            <cg src="newChapter.png" bg="bg.jpg"></cg>
+            <cg src="newChapter.png" bg="bg.jpg" ></cg>
             <goto goto="10" change="#000000"/>
         </scene>
-        <scene id="10" background="americaShop.jpg">
+        <scene id="10" background="americaShop.jpg" >
             <bgm src="street.mp3" status="start"></bgm>
             <show chara="weltNormalClose" position="left"/>
             <speak chara="weltNoFace">So, how did the situation end up like this …</speak>
@@ -208,7 +208,7 @@
             <text>As a result, when the two doctors finally emerged from the lingerie store, Welt still had not yet enquired about any of their personal hobbies or habits.</text>
             <goto goto="20"/>
         </scene>
-        <scene id="20" background="planeNight.jpg">
+        <scene id="20" background="planeNight.jpg" >
             <bgm src="serenity.mp3" status="start"></bgm>
             <sound src="8_24_launch.mp3"/>
             <show chara="einNormalDressClose-up" position="center" opacity="0.7"/>
@@ -297,7 +297,7 @@
             <text>As he reaches this line of thought, Welt decides to harden his resolve and bite the bullet.</text>
             <goto goto="25"/>
         </scene>
-        <scene id="25" background="planeNight.jpg">
+        <scene id="25" background="planeNight.jpg" >
             <bgm src="serenity.mp3" status="continue"></bgm>
             <text>…</text>
             <show chara="nokiaSmileClose-up" position="right"/>
@@ -378,7 +378,7 @@
             <speak chara="einNoFace">But God does eat chocolate.</speak>
             <goto goto="30"/>
         </scene>
-        <scene id="30" background="airportBillings.jpg">
+        <scene id="30" background="airportBillings.jpg" >
             <bgm src="themeWelt.mp3" status="start"></bgm>
             <text>By the time the airplane finally landed in Billings, Montana, the sun had already set for a while.</text>
             <text>In fact, if it weren't for the difference in timezone and location, they should probably see a bright and splendid morning sun hovering above London right now.</text>
@@ -502,7 +502,7 @@
             <text>With a poker face, she waves her right hand like a Japanese Fortune Cat, motioning them forward.</text>
             <goto goto="40"/>
         </scene>
-        <scene id="40" background="barBillings.jpg">
+        <scene id="40" background="barBillings.jpg" >
             <bgm src="serenity.mp3" status="start"></bgm>
             <show chara="teslaNormalDressClose-up" position="left"/>
             <speak chara="teslaNoFace">What is this?</speak>
@@ -559,7 +559,7 @@
             <text>Quite literally.</text>
             <goto goto="50"/>
         </scene>
-        <scene id="50" background="streetBillings.jpg">
+        <scene id="50" background="streetBillings.jpg" >
             <bgm src="serenity.mp3" status="start"></bgm>
             <sound src="8_30_wind.mp3"/>
             <text>Within the confines of a tavern, it is easy for people to ignore any “change” occurring in the outside world — in every sense of that term.</text>
@@ -567,7 +567,7 @@
             <text>There is not a trace of moonlight in the night sky — instead, snowflakes swirl and float down gently under the tangerine street lights, reflecting the shimmering brilliance of the starry sky, as if it were all some illusory dream.</text>
             <goto goto="51" change="0"/>
         </scene>
-        <scene id="51" background="CG4.jpg">
+        <scene id="51" background="CG4.jpg" >
             <bgm src="serenity.mp3" status="continue"></bgm>
             <text> Carrying a drunk-as-a-skunk Tesla on his back,  Welt laboriously lifts his head, and looks up at the night sky.</text>
             <speak chara="weltNoFace">So, this is snow …</speak>
@@ -590,7 +590,7 @@
             <speak chara="weltNoFace">No … I sort of like it when someone says something aimlessly like that, so casually and without a care in the world. At least, it's more interesting than not saying a word.</speak>
             <goto goto="60" change="0"/>
         </scene>
-        <scene id="60" background="streetBillings.jpg">
+        <scene id="60" background="streetBillings.jpg" >
             <bgm src="lab.mp3" status="start"></bgm>
             <show chara="planckSmileCoatFar" position="left"/>
             <speak chara="planckNoFace">Ah, it seems you two have quite a good relationship.</speak>

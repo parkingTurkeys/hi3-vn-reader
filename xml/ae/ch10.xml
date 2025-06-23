@@ -4,12 +4,12 @@
         <image src="mancala.png" type="background"/>
     </img>
     <story>
-        <scene id="0" background="bg.jpg">
+        <scene id="0" background="bg.jpg" >
             <bgm src="mid-lude.mp3" status="start"></bgm>
-            <cg src="newchapter.png" bg="bg.jpg"></cg>
+            <cg src="newchapter.png" bg="bg.jpg" ></cg>
             <goto goto="10" change="#000000"/>
         </scene>
-        <scene id="10" background="plankVienaNormal.jpg">
+        <scene id="10" background="plankVienaNormal.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="start"></bgm>
             <text remark="next">Vienna, 13th district, Schicksal Headquarters</text>
             <remark>
@@ -20,90 +20,90 @@
             <text> A council member anonymously berates the provocative scholar via the intercom. </text>
             <goto goto="15" change="0"/>
         </scene>
-        <scene id="15" background="plankVienaSly.jpg">
+        <scene id="15" background="plankVienaSly.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="continue"></bgm>
             <speak chara="planckNoFace">This is a part of my teaching. I do not know what you are making a fuss about. </speak>
             <goto goto="20" change="0"/>
         </scene>
-        <scene id="20" background="plankVienaSmile.jpg">
+        <scene id="20" background="plankVienaSmile.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="continue"></bgm>
             <speak chara="abcNoFace">Teaching is no excuse for violating the organisation's core principles. </speak>
             <goto goto="25" change="0"/>
         </scene>
-        <scene id="25" background="plankVienaSerious.jpg">
+        <scene id="25" background="plankVienaSerious.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="continue"></bgm>
             <speak chara="planckNoFace"> … But we are entitled to a certain degree of autonomy, aren't we, whether it is the North American branch, or Lab 42?</speak>
             <speak chara="abcNoFace">Lab 42 is a member of the European branch. They are still required to follow procedure. </speak>
             <text>Another voice in the council seems to speak in a slightly calmer tone. </text>
             <goto goto="30" change="0"/>
         </scene>
-        <scene id="30" background="plankVienaSly.jpg">
+        <scene id="30" background="plankVienaSly.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="continue"></bgm>
             <speak chara="planckNoFace">So, from which side do you wish to withdraw the right to self-autonomy? </speak>
             <goto goto="35" change="0"/>
         </scene>
-        <scene id="35" background="plankVienaSmile.jpg">
+        <scene id="35" background="plankVienaSmile.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="continue"></bgm>
             <speak chara="abcNoFace">No … please don't take it in such an extreme way. We are only investigating procedural issues, and there is no need to turn this into a larger problem than it really is. </speak> <!-- 上纲上线 = "to analyse a problem through the discourse of class struggle and dialectics". This phrase has its origins in the political theory of Communist China, but is used here in a belittling way to describe something akin to "brewing a storm in a teacup" -->
             <goto goto="40" change="0"/>
         </scene>
-        <scene id="40" background="plankVienaSly.jpg">
+        <scene id="40" background="plankVienaSly.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="continue"></bgm>
             <speak chara="planckNoFace">Then I am just here to remind you — </speak>
             <goto goto="45" change="0"/>
         </scene>
-        <scene id="45" background="plankVienaNormal.jpg">
+        <scene id="45" background="plankVienaNormal.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="continue"></bgm>
             <speak chara="planckNoFace">That the right to autonomy and self-determination is the source of vitality for research institutions. If you insist that everything has to go through procedures for approval, then in terms of academic and scientific vigour, it will be a disaster for this organisation. </speak>
             <speak chara="abcNoFace">Ahem … speaking of which, how is Edison's personal situation? </speak>
             <text>Seeing that the two sides held firm to their own positions on the issue, a third speaker shifts the topic. </text>
             <goto goto="50" change="0"/>
         </scene>
-        <scene id="50" background="plankVienaSly.jpg">
+        <scene id="50" background="plankVienaSly.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="continue"></bgm>
             <speak chara="planckNoFace">Oh, Princess Nancy? She's quite interesting. </speak>
             <goto goto="55" change="0"/>
         </scene>
-        <scene id="55" background="plankVienaSmile.jpg">
+        <scene id="55" background="plankVienaSmile.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="continue"></bgm>
             <speak chara="planckNoFace">For example, I have the exact evidence on hand — that she is helping to train an army outside of this organisation. </speak>
             <speak chara="abcNoFace">What? Is she planning to rebel? </speak>
             <goto goto="60" change="0"/>
         </scene>
-        <scene id="60" background="plankVienaSly.jpg">
+        <scene id="60" background="plankVienaSly.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="continue"></bgm>
             <speak chara="planckNoFace">No … this is a request from the US government, and both parties have signed an agreement for development of non-lethal weaponry, a matter that is difficult for us to refuse. </speak>
             <goto goto="65" change="0"/>
         </scene>
-        <scene id="65" background="plankVienaSmile.jpg">
+        <scene id="65" background="plankVienaSmile.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="continue"></bgm>
             <speak chara="abcNoFace"> …  What the hell is this, some sort of militia for civil defence and law enforcement? </speak>
             <speak chara="abcNoFace">Don't make such vile jokes in poor taste, Professor Planck. </speak>
             <goto goto="70" change="0"/>
         </scene>
-        <scene id="70" background="plankVienaSly.jpg">
+        <scene id="70" background="plankVienaSly.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="continue"></bgm>
             <speak chara="planckNoFace">Ara ara … I'm just thinking that you're all being too serious right now, are you not? </speak>
             <goto goto="75" change="0"/>
         </scene>
-        <scene id="75" background="plankVienaSmile.jpg">
+        <scene id="75" background="plankVienaSmile.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="continue"></bgm>
             <speak chara="abcNoFace"> … Of course, the council must be serious. Please do not introduce such unrefined “foreign” habits to our discussion. </speak>
             <goto goto="80" change="0"/>
         </scene>
-        <scene id="80" background="plankVienaSerious.jpg">
+        <scene id="80" background="plankVienaSerious.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="continue"></bgm>
             <speak chara="planckNoFace">Endšuldigung, I am a true “Bavarian”, born and bred. I simply cannot help it. </speak>
             <goto goto="85" change="0"/>
         </scene>
-        <scene id="85" background="plankVienaNormal.jpg">
+        <scene id="85" background="plankVienaNormal.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="continue"></bgm>
             <speak chara="abcNoFace">I say … everyone, please do not go off-topic. </speak>
             <text>A more dignified-sounding “elder” speaks. </text>
             <speak chara="abcNoFace">The trivialities of the North American branch shall be set aside for now … today we have more important matters to discuss. </speak>
             <goto goto="100" change="#ffffff"/>
         </scene>
-        <scene id="100" background="edisonTower.jpg">
+        <scene id="100" background="edisonTower.jpg" >
             <bgm src="10_25_ada.mp3" status="start"></bgm>
             <text>New York, Manhattan, the Consolidated Edison building.</text>
             <show chara="schroNormalAhFar" position="left"/>
@@ -114,7 +114,7 @@
             <text>Schrödinger, who nearly overturns an ink bottle, glares grumpily at Nancy Edison and Elias Nokianvirtanen, who have been stubbornly interrupting her own research. </text>
             <goto goto="110" change="0"/>
         </scene>
-        <scene id="110" background="edisonTower.jpg">
+        <scene id="110" background="edisonTower.jpg" >
             <bgm src="10_25_ada.mp3" status="continue"></bgm>
             <show chara="schroNormalEmClose" position="left" opacity="0.7"/>
             <show chara="nokiaSmileAhWinterClose" position="right"/>
@@ -153,7 +153,7 @@
             <speak chara="schroNoFace"> … What? </speak>
             <goto goto="120" change="0"/>
         </scene>
-        <scene id="120" background="edisonTower.jpg">
+        <scene id="120" background="edisonTower.jpg" >
             <bgm src="10_25_ada.mp3" status="continue"></bgm>
             <show chara="schroNormalEmClose-up" position="left" opacity="0.7"/>
             <show chara="nokiaSmileAhWinterClose-up" position="right"/>
@@ -169,7 +169,7 @@
             <text>The doctor in physics awkwardly takes a step back — </text>
             <goto goto="130" change="0"/>
         </scene>
-        <scene id="130" background="edisonTower.jpg">
+        <scene id="130" background="edisonTower.jpg" >
             <bgm src="10_25_ada.mp3" status="continue"></bgm>
             <show chara="nokiaSmileEmWinterClose" position="right" opacity="0.7"/>
             <show chara="schroNormalAhClose" position="left"/>
@@ -246,7 +246,7 @@
             <speak chara="schroNoFace"> … What? </speak>
             <goto goto="160" change="0"/>
         </scene>
-        <scene id="160" background="edisonTower.jpg">
+        <scene id="160" background="edisonTower.jpg" >
             <bgm src="10_25_ada.mp3" status="continue"></bgm>
             <show chara="schroNormalEmFar" position="left" opacity="0.7"/>
             <show chara="edisonSmileWinterFar" position="center"/>
@@ -273,12 +273,12 @@
             <speak chara="edisonNoFace">Did you forget about the “Herrscher”? </speak>
             <goto goto="200" change="#ffffff"/>
         </scene>
-        <scene id="200" background="campusImperialDay.jpg">
+        <scene id="200" background="campusImperialDay.jpg" >
             <bgm src="street.mp3" status="start"></bgm>
             <text>London, Kensington, Imperial Institute.</text>
             <goto goto="210" change="0"/>
         </scene>
-        <scene id="210" background="schoolDay3.jpg">
+        <scene id="210" background="schoolDay3.jpg" >
             <bgm src="street.mp3" status="continue"></bgm>
             <text article="1">
                 <p class="article-text">Maybe Einstein's dictionary attack was too powerful — but Tesla ends up sleeping through to the afternoon of the next day. </p>
@@ -287,7 +287,7 @@
             </text>
             <goto goto="220" change="0"/>
         </scene>
-        <scene id="220" background="studyNoon.jpg">
+        <scene id="220" background="studyNoon.jpg" >
             <bgm src="street.mp3" status="continue"></bgm>
             <text article="1">
                 <p class="article-text">The room has its floor heating switched on, so it is more comfortable now than before when there was a cold draft. </p>
@@ -368,7 +368,7 @@
             <speak chara="teslaNoFace">Enough! ! ! ! </speak>
             <goto goto="300" change="#ffffff"/>
         </scene>
-        <scene id="300" background="carNoon.jpg">
+        <scene id="300" background="carNoon.jpg" >
             <bgm src="lab.mp3" status="start"></bgm>
             <sound src="9_11_car away.mp3"/>
             <show chara="weltTiredWinterClose-up" position="left"/>
@@ -499,7 +499,7 @@
             <speak chara="teslaNoFace">You'll understand when you get there. </speak>
             <goto goto="400" change="#ffffff"/>
         </scene>
-        <scene id="400" background="graveAfternoon.jpg">
+        <scene id="400" background="graveAfternoon.jpg" >
             <bgm src="10_20_londonderry_b.mp3" status="start"></bgm>
             <text remark="next">Ms Elizabeth Jackson, who died in May 1839, must not have expected … </text>
             <remark>
@@ -511,7 +511,7 @@
             <text> — A unique cemetery where surrounding villas and real estate continue to fetch high prices. </text>
             <goto goto="410" change="0"/>
         </scene>
-        <scene id="410" background="catHighgate.jpg">
+        <scene id="410" background="catHighgate.jpg" >
             <bgm src="10_20_londonderry_b.mp3" status="continue"></bgm>
             <text>Naturally … in such a venue, much like a public park or garden, there are bound to be many cats. </text>
             <speak chara="teslaNoFace">Ah … it's Pandu. </speak>
@@ -527,7 +527,7 @@
             </remark>
             <goto goto="420" change="0"/>
         </scene>
-        <scene id="420" background="graveAfternoon.jpg">
+        <scene id="420" background="graveAfternoon.jpg" >
             <bgm src="themeTesla.mp3" status="start"></bgm>
             <show chara="teslaStarGlassWinterFar" position="right"/>
             <show chara="weltTiredWinterFar" position="left" opacity="0.7"/>
@@ -556,7 +556,7 @@
             <speak chara="teslaNoFace">The entire western side is entrusted to you! </speak>
             <goto goto="430" change="#ffffff"/>
         </scene>
-        <scene id="430" background="graveDayLate.jpg">
+        <scene id="430" background="graveDayLate.jpg" >
             <bgm src="10_20_londonderry_b.mp3" status="start"></bgm>
             <text remark="next">Highgate Cemetery, unlike Westminster Abbey, houses countless renowned personages of the empire — </text>
             <remark>
@@ -577,7 +577,7 @@
             </text>
             <goto goto="440" change="#ffffff"/>
         </scene>
-        <scene id="440" background="graveDayLate.jpg">
+        <scene id="440" background="graveDayLate.jpg" >
             <bgm src="10_20_londonderry_b.mp3" status="continue"></bgm>
             <show chara="reaNormalAhWinterFar" position="right"/>
             <speak chara="weltNoFace">Ah. </speak>
@@ -590,13 +590,13 @@
             <speak chara="reannaNoNameNoFace">It was last month, at the airport, wasn't it? </speak>
             <goto goto="450" change="#ffffff"/>
         </scene>
-        <scene id="450" background="airportNewYorkOld.jpg">
+        <scene id="450" background="airportNewYorkOld.jpg" >
             <bgm src="10_20_londonderry_p.mp3" status="start"></bgm>
             <show chara="blackTwo" position="center"/>
             <speak chara="weltNoFace"> … </speak>
             <goto goto="460" change="#ffffff"/>
         </scene>
-        <scene id="460" background="graveDayLate.jpg">
+        <scene id="460" background="graveDayLate.jpg" >
             <bgm src="10_20_londonderry_p.mp3" status="continue"></bgm>
             <show chara="weltScaredWinterFar" position="left"/>
             <show chara="reaSmileEmWinterFar" position="right" opacity="0.7"/>
@@ -621,7 +621,7 @@
             <speak chara="weltNoFace">I-I'm really only here to help people feed the cats … </speak>
             <goto goto="470" change="#ffffff"/>
         </scene>
-        <scene id="470" background="graveDayLate.jpg">
+        <scene id="470" background="graveDayLate.jpg" >
             <bgm src="10_20_londonderry_p.mp3" status="continue"></bgm>
             <show chara="weltTiredWinterFar" position="left" opacity="0.7"/>
             <show chara="reaSmileEmSadWinterFar" position="right"/>
@@ -658,7 +658,7 @@
             <speak chara="reannaNoFace">The child, Martha, she's a good conversationalist, and she won't despise your company. </speak>
             <goto goto="480" change="#ffffff"/>
         </scene>
-        <scene id="480" background="callaLily.jpg">
+        <scene id="480" background="callaLily.jpg" >
             <bgm src="11_17_memory.mp3" status="start"></bgm>
             <speak chara="weltNoFace"> … I wish, wherever you are, may there be no ominous darkness, nor glaring brightness. </speak>
             <speak chara="weltNoFace"> … I wish, wherever you are, may there be no raucous noise, nor frightful silence. </speak>
@@ -695,7 +695,7 @@
             <speak chara="weltNoFace"> … I-isn't that too cruel? ! </speak>
             <goto goto="490" change="0"/>
         </scene>
-        <scene id="490" background="graveDayLate.jpg">
+        <scene id="490" background="graveDayLate.jpg" >
             <bgm src="11_17_memory.mp3" status="continue"></bgm>
             <show chara="reaSeriousWinterClose" position="center"/>
             <speak chara="reannaNoFace"> … There is no alternative. That is the way of the military. </speak>
@@ -720,7 +720,7 @@
             <speak chara="reannaNoFace"> — To confront … and then … to defeat … some of the cruellest things in the world. </speak>
             <goto goto="500" change="#ffffff"/>
         </scene>
-        <scene id="500" background="graveNight.jpg">
+        <scene id="500" background="graveNight.jpg" >
             <bgm src="themeWelt.mp3" status="start"></bgm>
             <text>The sky slowly fills with stars, and the food bag slowly empties. </text>
             <text> Along the way, the cats appear to be very much gratified …  However, after hearing the story of the Valkyrie Martha, Welt felt upset and needed to vent. </text>
@@ -769,14 +769,14 @@
             <speak chara="reannaNoFace"> … Shush! </speak>
             <goto goto="520" change="0"/>
         </scene>
-        <scene id="520" background="graveNightSpeed.jpg">
+        <scene id="520" background="graveNightSpeed.jpg" >
             <bgm src="11_17_tatakau.mp3" status="continue"></bgm>
             <text>No sooner does she say this, than Reanna covers Welt's mouth with her hand, and violently pulls him into the bushes! </text>
             <show chara="ghostFloatClose-up" position="center"/>
             <text>In a direction he had not noticed before — a mysterious floating object appears out of nowhere in the night air! </text>
             <goto goto="530" change="0"/>
         </scene>
-        <scene id="530" background="CG10-2.jpg">
+        <scene id="530" background="CG10-2.jpg" >
             <bgm src="11_17_tatakau.mp3" status="continue"></bgm>
             <speak chara="weltNoFace">W-what is that? </speak>
             <speak chara="reannaNoFace"> … </speak>
@@ -794,7 +794,7 @@
             <speak chara="reannaNoFace">Also, stop yelling at me. On the battlefield, it could mean death! </speak>
             <goto goto="540" change="#ffffff"/>
         </scene>
-        <scene id="540" background="graveNight.jpg">
+        <scene id="540" background="graveNight.jpg" >
             <bgm src="11_17_tatakau.mp3" status="continue"></bgm>
             <show chara="ghostFloatFar2" position="center"/>
             <speak chara="ghostNoFace" remark="next">Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn …</speak>
@@ -846,7 +846,7 @@
             <text>Ping! </text>
             <goto goto="560" change="0"/>
         </scene>
-        <scene id="560" background="graveNight.jpg">
+        <scene id="560" background="graveNight.jpg" >
             <bgm src="horror.mp3" status="start"></bgm>
             <text>The stone hits the “ghost” and makes a crisp sound, as if it had struck  hard rock, before rolling back onto the grass. </text>
             <show chara="weltScaredWinterClose-up" position="left" opacity="0.7"/>
@@ -860,7 +860,7 @@
             <speak chara="reannaNoFace"> … How would I know?! </speak>
             <goto goto="565" change="0"/>
         </scene>
-        <scene id="565" background="graveNightSpeed.jpg">
+        <scene id="565" background="graveNightSpeed.jpg" >
             <bgm src="11_17_tatakau.mp3" status="start"></bgm>
             <show chara="ghostEscapeFar" position="center"/>
             <speak chara="ghostNoFace">Oops, I've been discovered! </speak>
@@ -887,7 +887,7 @@
             <speak chara="reannaNoFace">I repeat, I have encountered an Unidentified Flying Object, please send weapons to my location immediately in accordance with Plan 8! Mobile units, please stand by! </speak>
             <goto goto="600" change="#ffffff"/>
         </scene>
-        <scene id="600" background="graveNightRS.jpg">
+        <scene id="600" background="graveNightRS.jpg" >
             <bgm src="11_17_tatakau.mp3" status="continue"></bgm>
             <show chara="teslaBiteGlassWinterClose" position="right"/>
             <show chara="joaNormalEmWinterClose" position="left" opacity="0.7"/>
@@ -899,7 +899,7 @@
             <text>At the junction separating the east and west cemeteries, Tesla, whose expression is inexplicably tense, is communicating with a young boy — </text>
             <goto goto="610" change="0"/>
         </scene>
-        <scene id="610" background="graveNightSpeed.jpg">
+        <scene id="610" background="graveNightSpeed.jpg" >
             <bgm src="11_17_tatakau.mp3" status="continue"></bgm>
             <show chara="weltScaredWinterClose-up" position="center"/>
             <speak chara="weltNoFace">Tesla! Danger! </speak>
@@ -907,7 +907,7 @@
             <speak chara="reannaNoFace">Make way! Redhead! </speak>
             <goto goto="620" change="0"/>
         </scene>
-        <scene id="620" background="graveNightRS.jpg">
+        <scene id="620" background="graveNightRS.jpg" >
             <bgm src="11_17_tatakau.mp3" status="continue"></bgm>
             <show chara="teslaDisgustedGlassWinterClose" position="center"/>
             <speak chara="teslaNoFace">R-redhead? Who's the redhead!? </speak>
@@ -915,7 +915,7 @@
             <speak chara="teslaNoFace">Hey hey hey … what's going on?? ! </speak>
             <goto goto="630" change="0"/>
         </scene>
-        <scene id="630" background="graveNightSpeed.jpg">
+        <scene id="630" background="graveNightSpeed.jpg" >
             <bgm src="11_17_tatakau.mp3" status="continue"></bgm>
             <show chara="reaRunWinterClose-up" position="center"/>
             <speak chara="reannaNoFace">Make way if you want to live!  </speak>
@@ -926,7 +926,7 @@
             <speak chara="teslaJoaNoFace">AAARRRRGHHHH — </speak>
             <goto goto="650" change="0"/>
         </scene>
-        <scene id="650" background="graveNightRS.jpg">
+        <scene id="650" background="graveNightRS.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="continue"></bgm>
             <show chara="reannaBlackWhite" position="center"/>
             <sound src="11_17_D.mp3"/>

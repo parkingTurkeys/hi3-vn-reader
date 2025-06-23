@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <data>
     <story title="1">
-        <scene id="0" background="bg.jpg">
+        <scene id="0" background="bg.jpg" >
             <bgm src="mid-lude.mp3" status="start"></bgm>
-            <cg src="newChapter.png" bg="bg.jpg"></cg>
+            <cg src="newChapter.png" bg="bg.jpg" ></cg>
             <goto goto="10"/>
         </scene>
-        <scene id="10" background="carMorning.jpg">
+        <scene id="10" background="carMorning.jpg" >
             <bgm src="morning.mp3" status="start"></bgm>
             <show chara="planckSmileCoatClose-upSymme" position="center"/>
             <speak chara="planckNoFace">Destination: Yellowstone Lake — Let's go!</speak>
@@ -17,7 +17,7 @@
             </text>
             <goto goto="12" change="0"/>
         </scene>
-        <scene id="12" background="roadMontana1.jpg">
+        <scene id="12" background="roadMontana1.jpg" >
             <bgm src="street.mp3" status="start"></bgm>
             <text>Laurel.</text>
             <text>Park City.</text>
@@ -146,7 +146,7 @@
             <speak chara="planckNoFace">Hmph!</speak>
             <goto goto="20"/>
         </scene>
-        <scene id="20" background="CG5.jpg">
+        <scene id="20" background="CG5.jpg" >
             <bgm src="street.mp3" status="continue"></bgm>
             <text> … </text>
             <text article="1">
@@ -164,7 +164,7 @@
             <text> Without another word, the Mophead with light-coloured hair punches the Red Twintails in the head.</text>
             <goto goto="25" change="0"/>
         </scene>
-        <scene id="25" background="roadMontana2.jpg">
+        <scene id="25" background="roadMontana2.jpg" >
             <bgm src="lab.mp3" status="start"></bgm>
             <show chara="teslaEmbarraGlassWinterClose-up" position="right"/>
             <speak chara="teslaNoFace">Ah! — Ow ow ow … </speak>
@@ -184,7 +184,7 @@
             <text> A familiar frivolous voice transmits from the rear of the van. He seems quite energetic.</text>
             <goto goto="30"/>
         </scene>
-        <scene id="30" background="roadMontana2.jpg">
+        <scene id="30" background="roadMontana2.jpg" >
             <bgm src="lab.mp3" status="continue"></bgm>
             <show chara="planckSmileCoatClose-up" position="right"/>
             <speak chara="planckNoFace">Now that everyone is awake — </speak>
@@ -284,7 +284,7 @@
             <speak chara="planckNoFace">Let's get back to the main topic, shall we? We're here to get down to business, ja? Very interesting business, ja.</speak>
             <goto goto="40"/>
         </scene>
-        <scene id="40" background="roadMontana3.jpg">
+        <scene id="40" background="roadMontana3.jpg" >
             <bgm src="lab.mp3" status="continue"></bgm>
             <show chara="planckSeriousCoatClose-up" position="right"/>
             <speak chara="planckNoFace" remark="next"> … Finally, no carbon-14 could be detected in this sample.</speak>
@@ -409,7 +409,7 @@
             <speak chara="weltNoFace">I understood jack-all!</speak>
             <goto goto="50"/>
         </scene>
-        <scene id="50" background="hotSpring.jpg">
+        <scene id="50" background="hotSpring.jpg" >
             <bgm src="street.mp3" status="start"></bgm>
             <text article="1">
                 <p class="article-text"> Passing under the Roosevelt Arch, which is engraved with the words “For the Benefit and Enjoyment of the People”, the Volkswagen Type 2 camper van enters Wyoming along Route 89. The scholars enthusiastically discuss all manner of technical details — Welt, who barely understood even the most elementary of such details, can do nothing more than admire the scenery of the national park instead.</p>
@@ -442,7 +442,7 @@
             <speak chara="teslaNoFace">PISS OFF!</speak>
             <goto goto="52" change="0"/>
         </scene>
-        <scene id="52" background="black.jpg">
+        <scene id="52" background="black.jpg" >
             <bgm src="themeTesla.mp3" status="continue"></bgm>
             <sound src="hit man.mp3"/>
             <speak chara="weltNoFace">AAAAAAAAAHHHHHH!!!!!!!!!!!!!!!!!!!!</speak>
@@ -450,7 +450,7 @@
             <text>At once, a tragic mournful howl resonates throughout the entire van.</text> <!-- 惨绝人寰 = "tragic and miserable on an unprecedented scale" -->
             <goto goto="53" change="0"/>
         </scene>
-        <scene id="53" background="hotSpring.jpg">
+        <scene id="53" background="hotSpring.jpg" >
             <bgm src="street.mp3" status="start"></bgm>
             <show chara="planckSmileCoatClose-upSymme" position="left"/>
             <speak chara="planckNoFace">Ha ha ha ha … </speak>
@@ -458,7 +458,7 @@
             <text>The Long-haired Big Sister violently changes gear, and immediately slams on the accelerator — </text>
             <goto goto="54" change="0"/>
         </scene>
-        <scene id="54" background="hotSpring2.jpg">
+        <scene id="54" background="hotSpring2.jpg" >
             <show chara="planckSlyCoatClose-upSymme" position="left"/>
             <speak chara="planckNoFace">Those who are here for the first time, please look to your right!</speak>
             <hide position="left"/>
@@ -481,7 +481,7 @@
             </text>
             <goto goto="60"/>
         </scene>
-        <scene id="60" background="CG5_2.jpg">
+        <scene id="60" background="CG5_2.jpg" >
             <bgm src="lab.mp3" status="start"></bgm>
             <speak chara="teslaNoFace" remark="next">The Old Faithful geyser!</speak>
             <remark post="U2FsdGVkX18n4C50htMsi6EoUNdz">

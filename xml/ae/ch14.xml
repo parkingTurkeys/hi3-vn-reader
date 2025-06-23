@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <data>
     <story>
-        <scene id="0" background="bg.jpg">
+        <scene id="0" background="bg.jpg" >
             <bgm src="mid-lude.mp3" status="start"></bgm>
-            <cg src="newchapter.png" bg="bg.jpg"></cg>
+            <cg src="newchapter.png" bg="bg.jpg" ></cg>
             <goto goto="10" change="#000000"/>
         </scene>
-        <scene id="10" background="westCliffBossRoom.jpg">
+        <scene id="10" background="westCliffBossRoom.jpg" >
             <bgm src="horror.mp3" status="start"></bgm>
             <show chara="ritaAgentClose-up" position="center"/>
             <speak chara="ritaNoFace">This is the “Marquise”.</speak>
@@ -14,7 +14,7 @@
             <speak chara="ritaNoFace">What should I prepare for the “main dish”? Please advise.</speak>
             <goto goto="20" change="#ffffff"/>
         </scene>
-        <scene id="20" background="westCliffDinnerRoom.jpg">
+        <scene id="20" background="westCliffDinnerRoom.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="start"></bgm>
             <show chara="fuhuaEatBack" position="back"/>
             <show chara="teslaEatGlassWinterClose" position="left"/>
@@ -108,7 +108,7 @@
             <speak chara="teslaNoFace">W-what do you mean, cute?! </speak>
             <goto goto="30" change="#ffffff"/>
         </scene>
-        <scene id="30" background="westCliff.jpg">
+        <scene id="30" background="westCliff.jpg" >
             <bgm src="10_20_PeerGynt.mp3" status="continue"></bgm>
             <text>Although the guests enjoying lunch appeared to number only a few — </text>
             <text remark="next">But the cuisine supplied by “West Cliff Rita”, ranging from foie gras to oysters, from tenderloin beef to langoustine lobsters … </text>
@@ -136,7 +136,7 @@
             <text>Compared to her disgraceful history of “eating herself straight to hospital”, can this be considered a minor improvement? </text>
             <goto goto="40" change="#ffffff"/>
         </scene>
-        <scene id="40" background="westCliffBeach.jpg">
+        <scene id="40" background="westCliffBeach.jpg" >
             <bgm src="themeWelt.mp3" status="start"></bgm>
             <show chara="fuhuaWatchingSeaBack" position="back"/>
             <text>Winter, the time when the horizon is closest to us. </text>
@@ -313,7 +313,7 @@
             <speak chara="einNoFace">I have something good to show you. </speak>
             <goto goto="55" change="#ffffff"/>
         </scene>
-        <scene id="55" background="westCliffSkyNorth.jpg">
+        <scene id="55" background="westCliffSkyNorth.jpg" >
             <bgm src="11_17_memory.mp3" status="start"></bgm>
             <text>Late night.</text>
             <text>Breaking free from Tesla's exhortations to indulge in booze, Einstein and Welt languidly lie down on the beach, forming two “sand angels”. </text>
@@ -339,7 +339,7 @@
             <speak chara="weltNoFace"> … But for a layman like me, recognizing the North Star is the limit of my abilities. </speak>
             <goto goto="60" change="0"/>
         </scene>
-        <scene id="60" background="CG14-1.jpg">
+        <scene id="60" background="CG14-1.jpg" >
             <bgm src="11_17_memory.mp3" status="continue"></bgm>
             <speak chara="einNoFace">So … do you want me to introduce you to some more? </speak>
             <speak chara="weltNoFace">Ah … of course, can't get any better than that. </speak>
@@ -356,7 +356,7 @@
             <text>Even if it's just talking about nonsense. </text>
             <goto goto="65" change="0"/>
         </scene>
-        <scene id="65" background="westCliffSkyNorth.jpg">
+        <scene id="65" background="westCliffSkyNorth.jpg" >
             <bgm src="11_17_memory.mp3" status="continue"></bgm>
             <speak chara="einNoFace">Want to … gossip … ? </speak>
             <speak chara="einNoFace">Ah, that one there is the “gossiping star”. </speak>
@@ -410,7 +410,7 @@
             <speak chara="einNoFace">Now … </speak>
             <goto goto="75" change="0"/>
         </scene>
-        <scene id="75" background="westCliffSkySouth.jpg">
+        <scene id="75" background="westCliffSkySouth.jpg" >
             <bgm src="11_17_memory.mp3" status="continue"></bgm>
             <speak chara="einNoFace">Let our gaze cross the Milky Way, and divert southward. </speak>
             <speak chara="einNoFace">Do you see anything conspicuous or eye-catching? </speak>
@@ -446,7 +446,7 @@
             </remark>
             <goto goto="80" change="0"/>
         </scene>
-        <scene id="80" background="CG14-0.jpg">
+        <scene id="80" background="CG14-0.jpg" >
             <bgm src="11_17_memory.mp3" status="continue"></bgm>
             <speak chara="weltNoFace">By the way … I've noticed just now … </speak>
             <speak chara="weltNoFace">Why are all these stars called α-this, β-that? </speak>
@@ -477,7 +477,7 @@
             <speak chara="einNoFace">Atlas himself was a Titan, lifting up the western sky — He is also the namesake for the “Atlantic Ocean”. </speak>
             <goto goto="90" change="0"/>
         </scene>
-        <scene id="90" background="CG14-1.jpg">
+        <scene id="90" background="CG14-1.jpg" >
             <bgm src="11_17_memory.mp3" status="continue"></bgm>
             <speak chara="weltNoFace">Wow. </speak>
             <speak chara="weltNoFace">And I thought you were not familiar with constellations or mythologies or that sort of thing … </speak>
@@ -487,7 +487,7 @@
             <speak chara="einNoFace">But occasionally there are happy endings — indeed, there is one right in our line of sight right now. </speak>
             <goto goto="95" change="0"/>
         </scene>
-        <scene id="95" background="westCliffSkySouth.jpg">
+        <scene id="95" background="westCliffSkySouth.jpg" >
             <bgm src="11_17_memory.mp3" status="continue"></bgm>
             <show chara="yufunan" position="back"/>
             <speak chara="einNoFace">Above the Seven Sisters, to the right of Auriga. One, two, three, four — </speak>
@@ -520,7 +520,7 @@
             <speak chara="weltNoFace">N-nothing wrong with that … </speak>
             <goto goto="100" change="0"/>
         </scene>
-        <scene id="100" background="CG14-0.jpg">
+        <scene id="100" background="CG14-0.jpg" >
             <bgm src="11_17_memory.mp3" status="continue"></bgm>
             <speak chara="weltNoFace"> … Ah. </speak>
             <speak chara="weltNoFace">What's that? The southernmost, near sea level … a lonely one … </speak>
@@ -535,7 +535,7 @@
             </remark>
             <goto goto="110" change="0"/>
         </scene>
-        <scene id="110" background="CG14-1.jpg">
+        <scene id="110" background="CG14-1.jpg" >
             <bgm src="11_17_memory.mp3" status="continue"></bgm>
             <speak chara="weltNoFace"> … It looks lonely. </speak>
             <speak chara="einNoFace">All stars are lonely. </speak>
@@ -551,7 +551,7 @@
             <speak chara="einNoFace">Apologies. That seemed a bit too sentimental. </speak>
             <goto goto="120" change="#ffffff"/>
         </scene>
-        <scene id="120" background="westCliffSkySouth.jpg">
+        <scene id="120" background="westCliffSkySouth.jpg" >
             <bgm src="11_3_themeOtto.mp3" status="start"></bgm>
             <text article="1">
                 <p class="article-text">Winter is not a romantic season. </p>
@@ -560,14 +560,14 @@
             </text>
             <goto goto="160" change="0"/>
         </scene>
-        <scene id="160" background="studyLamp.jpg">
+        <scene id="160" background="studyLamp.jpg" >
             <bgm src="11_3_themeOtto.mp3" status="continue"></bgm>
             <text>The Modern Age is not like the Ancient Era, and hot spring baths are also nothing like saunas. </text>
             <text>Taking a hot bath after stargazing, of course it would be separate for men and women. </text>
             <text>It's just that — </text>
             <goto goto="170" change="0"/>
         </scene>
-        <scene id="170" background="CG14-2.jpg">
+        <scene id="170" background="CG14-2.jpg" >
             <bgm src="11_3_themeOtto.mp3" status="continue"></bgm>
             <speak chara="ottoNoNameNoFace">Hey.</speak>
             <speak chara="ottoNoNameNoFace">How have you been lately, Ω?</speak>

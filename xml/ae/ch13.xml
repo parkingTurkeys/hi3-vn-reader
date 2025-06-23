@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <data>
     <story>
-        <scene id="0" background="bg.jpg">
+        <scene id="0" background="bg.jpg" >
             <bgm src="mid-lude.mp3" status="start"></bgm>
-            <cg src="newchapter.png" bg="bg.jpg"></cg>
+            <cg src="newchapter.png" bg="bg.jpg" ></cg>
             <goto goto="10" change="#000000"/>
         </scene>
-        <scene id="10" background="westCliffWindow.jpg">
+        <scene id="10" background="westCliffWindow.jpg" >
             <bgm src="12_15_1946.mp3" status="start"></bgm>
             <text>A long, long time ago.</text>
             <text remark="next">When “Roswell” was merely a small nameless town next to the Pecos River.</text>
@@ -24,7 +24,7 @@
             <text>When I was merely half my current age.</text>
             <goto goto="20" change="#ffffff"/>
         </scene>
-        <scene id="20" background="einHomeSw.jpg">
+        <scene id="20" background="einHomeSw.jpg" >
             <bgm src="12_15_1946.mp3" status="continue"></bgm>
             <text>1946. Zürich, Switzerland.</text>
             <show chara="fatherEmbarraClose" position="right" opacity="0.7"/>
@@ -41,7 +41,7 @@
             <speak chara="meEinNoFace"> … </speak>
             <goto goto="25" change="#ffffff"/>
         </scene>
-        <scene id="25" background="westCliffWindow.jpg">
+        <scene id="25" background="westCliffWindow.jpg" >
             <bgm src="12_15_1946.mp3" status="continue"></bgm>
             <text>Hmm … let me clarify with a quick supplement.</text>
             <show chara="motherSeriousClose-up" position="center"/>
@@ -57,7 +57,7 @@
             <text>Since we're talking about a story from back then, I should also describe things from my perspective back then.</text>
             <goto goto="30" change="#ffffff"/>
         </scene>
-        <scene id="30" background="einRoomSw.jpg">
+        <scene id="30" background="einRoomSw.jpg" >
             <bgm src="12_15_1946.mp3" status="continue"></bgm>
             <show chara="einNormalLittleClose" position="right" opacity="0.7"/>
             <show chara="karlSmileClose" position="left"/>
@@ -114,7 +114,7 @@
             <speak chara="meEinNoFace">If your answer is wrong, please leave, okay?</speak>
             <goto goto="40" change="#ffffff"/>
         </scene>
-        <scene id="40" background="westCliffWindow.jpg">
+        <scene id="40" background="westCliffWindow.jpg" >
             <bgm src="12_15_1946.mp3" status="continue"></bgm>
             <text>When I thought about it afterwards … I realised this man wasn't an ordinary person.</text>
             <text>I thought I could use this problem, whose answer I could readily change on the fly, to brush him aside effortlessly — </text>
@@ -122,7 +122,7 @@
             <text>At the very least, he was already miles ahead of those four so-called “professionals” from before.</text>
             <goto goto="50" change="#ffffff"/>
         </scene>
-        <scene id="50" background="einRoomSw.jpg">
+        <scene id="50" background="einRoomSw.jpg" >
             <bgm src="12_15_1946.mp3" status="continue"></bgm>
             <show chara="einProvocativeLittleClose" position="right" opacity="0.7"/>
             <show chara="karlThinkingClose" position="left"/>
@@ -162,7 +162,7 @@
             <speak chara="meEinNoFace">Uwaaaaaaaaaaaaaaaah ― </speak>
             <goto goto="65" change="#ffffff"/>
         </scene>
-        <scene id="65" background="westCliffWindow.jpg">
+        <scene id="65" background="westCliffWindow.jpg" >
             <bgm src="12_15_1946.mp3" status="continue"></bgm>
             <text>Yes, at that point, I became a miserable bawling mess.</text>
             <text>A little girl, who felt like she had just “reunited with an old friend in a foreign land”. If my present self were to see me in that state, I wouldn't be able to keep myself from lampooning the whole situation.</text>
@@ -172,7 +172,7 @@
             <text>From such a perspective: this man, who could keep up with all my craziness … he was a truly exceptional person.</text>
             <goto goto="70" change="#ffffff"/>
         </scene>
-        <scene id="70" background="einRoomSw.jpg">
+        <scene id="70" background="einRoomSw.jpg" >
             <bgm src="12_15_1946.mp3" status="continue"></bgm>
             <show chara="einNormalLittleClose" position="right" opacity="0.7"/>
             <show chara="karlThinkingClose" position="left"/>
@@ -219,7 +219,7 @@
             <speak chara="karlNoFace">S-slow down please! D-don't grab it so suddenly! You're going to tear the book!</speak>
             <goto goto="80" change="#ffffff"/>
         </scene>
-        <scene id="80" background="westCliffWindow.jpg">
+        <scene id="80" background="westCliffWindow.jpg" >
             <bgm src="12_15_1946.mp3" status="continue"></bgm>
             <text>To tell you the truth, of all the times I spent solving problems with that man, this is the only one I could remember.</text>
             <text>It wasn't only because the answer was impressive. I'd have you know, not long after, when I raised this question with Planck ― </text>
@@ -242,7 +242,7 @@
             <text>About that … </text>
             <goto goto="100" change="#ffffff"/>
         </scene>
-        <scene id="100" background="einHomeSw.jpg">
+        <scene id="100" background="einHomeSw.jpg" >
             <bgm src="12_15_1946.mp3" status="continue"></bgm>
             <show chara="emmaNormalClose" position="left" opacity="0.7"/>
             <show chara="karlSmileClose" position="right"/>
@@ -288,7 +288,7 @@
             <speak chara="motherNoFace"> … On this point, I also have no objections.</speak>
             <goto goto="110" change="#ffffff"/>
         </scene>
-        <scene id="110" background="westCliffWindow.jpg">
+        <scene id="110" background="westCliffWindow.jpg" >
             <bgm src="12_15_1946.mp3" status="continue"></bgm>
             <text>If Carl was the one who introduced me to a new world, Emma was the ultimate navigator.</text>
             <text> … Although, at some point later in life, I started calling her “Professor Planck” for fun.</text>
@@ -299,7 +299,7 @@
             <text> … Of course, I don't mean to imply there was anything wrong with Carl. This was purely a “gender advantage”.</text>
             <goto goto="120" change="#ffffff"/>
         </scene>
-        <scene id="120" background="einRoomSw.jpg">
+        <scene id="120" background="einRoomSw.jpg" >
             <bgm src="12_15_1946.mp3" status="continue"></bgm>
             <show chara="karlSmileClose" position="left" opacity="0.7"/>
             <show chara="einNormalLittleClose" position="right"/>
@@ -368,7 +368,7 @@
             <speak chara="karlNoFace">Stay still!</speak>
             <goto goto="130" change="#ffffff"/>
         </scene>
-        <scene id="130" background="einHomeSw.jpg">
+        <scene id="130" background="einHomeSw.jpg" >
             <bgm src="12_15_1946.mp3" status="continue"></bgm>
             <show chara="karlTiredClose" position="left"/>
             <speak chara="karlNoFace">Phew … You've tired me out … </speak>
@@ -438,7 +438,7 @@
             <speak chara="karlNoFace">Aaaah w-w-where are you going with that!!!!</speak>
             <goto goto="140" change="#ffffff"/>
         </scene>
-        <scene id="140" background="westCliffWindow.jpg">
+        <scene id="140" background="westCliffWindow.jpg" >
             <bgm src="12_15_1946.mp3" status="continue"></bgm>
             <text>At the time, although I was still young, I already had a certain premonition.</text>
             <text>“It would probably be very difficult for us to meet again in the future”.</text>
@@ -452,7 +452,7 @@
             <text>That's right, Berlin. City centre.</text>
             <goto goto="150" change="#ffffff"/>
         </scene>
-        <scene id="150" background="hotelSw.jpg">
+        <scene id="150" background="hotelSw.jpg" >
             <bgm src="12_15_1946.mp3" status="continue"></bgm>
             <show chara="karlSmileClose" position="left" opacity="0.7"/>
             <show chara="emmaNormalClose" position="right"/>
@@ -484,7 +484,7 @@
             <speak chara="emmaNoFace">It just that I remember … when you were at school, you used to participate in choir, right?</speak>
             <goto goto="160" change="#ffffff"/>
         </scene>
-        <scene id="160" background="hotelSw.jpg">
+        <scene id="160" background="hotelSw.jpg" >
             <bgm src="12_15_1946.mp3" status="continue"></bgm>
             <show chara="emmaBlackClose-up" position="center"/>
             <speak chara="emmaNoFace">Mmm, I've borrowed our instruments without a hitch.</speak>
@@ -492,7 +492,7 @@
             <speak chara="emmaNoFace">What are you spacing out for? Go hurry up and grab that little brat! That foolish girl even tried to give us some “time alone”!</speak>
             <goto goto="170" change="#ffffff"/>
         </scene>
-        <scene id="170" background="CG13-1.jpg">
+        <scene id="170" background="CG13-1.jpg" >
             <bgm src="10_20_londonderry_p.mp3" status="start"></bgm>
             <speak chara="emmaNoFace">Oh, Danny Boy, the pipes, the pipes are calling</speak>
             <speak chara="emmaNoFace">From glen to glen, and down the mountain side,</speak>

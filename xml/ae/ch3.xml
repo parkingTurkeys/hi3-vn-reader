@@ -4,12 +4,12 @@
         <image src="zeta_function.png" type="background"/>
     </img>
     <story title="1">
-        <scene id="0" background="bg.jpg">
+        <scene id="0" background="bg.jpg" >
             <bgm src="mid-lude.mp3" status="start"></bgm>
-            <cg src="newChapter.png" bg="bg.jpg"></cg>
+            <cg src="newChapter.png" bg="bg.jpg" ></cg>
             <goto goto="10" change="#000000"/>
         </scene>
-        <scene id="10" background="corridorMessy.jpg">
+        <scene id="10" background="corridorMessy.jpg" >
             <bgm src="lab.mp3" status="start"></bgm>
             <text>Compared to the tidy and orderly ground floor, the private space on the top floor is quite simply Hell on Earth.</text>
             <text>A few minutes ago, Welt would never have predicted that he would find these items outside a girl's bedroom  — </text>
@@ -117,7 +117,7 @@
             <speak chara="teslaNoFace">All right!</speak>
             <goto goto="20" change="0"/>
         </scene>
-        <scene id="20" background="black.jpg">
+        <scene id="20" background="black.jpg" >
             <bgm src="themeTesla.mp3" status="stop"></bgm>
             <sound src="hit man.mp3"/>
             <text>Clatter scatter.</text>
@@ -126,7 +126,7 @@
             <text>But that is not the most important thing.</text>
             <goto goto="25" change="0"/>
         </scene>
-        <scene id="25" background="corridorMessy.jpg">
+        <scene id="25" background="corridorMessy.jpg" >
             <bgm src="lab.mp3" status="start"></bgm>
             <show chara="teslaNormalNightyClose" position="center"/>
             <speak chara="weltNoFace">T—Te — </speak>
@@ -148,7 +148,7 @@
             <text>And with a muffled sound, Welt's “Welt” comes crashing down, instantly transforming into a sea of white.</text> <!-- Remember that Welt means "World" in German.-->
             <goto goto="30"/>
         </scene>
-        <scene id="30" background="carNoon.jpg">
+        <scene id="30" background="carNoon.jpg" >
             <bgm src="street.mp3" status="start"></bgm>
             <show chara="weltTiredSweaterClose-up" position="right"/>
             <show chara="nokiaSmileHandUpClose-up" position="left" opacity="0.7"/>
@@ -162,7 +162,7 @@
             </text>
             <goto goto="32" change="0"/>
         </scene>
-        <scene id="32" background="CG3.jpg">
+        <scene id="32" background="CG3.jpg" >
             <bgm src="street.mp3" status="continue"></bgm>
             <text>Squinting at the back seat through the rearview mirror, Welt spies the source of his suffering, using her compact mirror to calmly draw on her lipstick.</text>
             <text>Welt can't understand how such a person is capable of tossing her own living space into a complete shambles.</text>
@@ -184,7 +184,7 @@
             <speak chara="einNoFace">You'll need them later.</speak>
             <goto goto="35" change="0"/>
         </scene>
-        <scene id="35" background="carNoon.jpg">
+        <scene id="35" background="carNoon.jpg" >
             <bgm src="street.mp3" status="continue"></bgm>
             <speak chara="weltNoFace">…</speak>
             <text>One of the booklets is a passport. </text>
@@ -368,7 +368,7 @@
             <speak chara="teslaNoFace">Welt, shut your trap!!</speak>
             <goto goto="50"/>
         </scene>
-        <scene id="50" background="planeNoon.jpg">
+        <scene id="50" background="planeNoon.jpg" >
             <bgm src="serenity.mp3" status="start"></bgm>
             <sound src="8_24_launch.mp3"/>
             <text>The first leg from London to New York.</text>
@@ -397,7 +397,7 @@
             <text>Feeling embarrassed, the young man decides to get on with it and move towards the restroom.</text>
             <goto goto="55"/>
         </scene>
-        <scene id="55" background="planeNoon.jpg">
+        <scene id="55" background="planeNoon.jpg" >
             <bgm src="serenity.mp3" status="continue"></bgm>
             <text>At this moment, no one is waiting in the queue, so Welt is quickly able to address his particular physiological need.</text>
             <choices>
@@ -549,7 +549,7 @@
             <text article="1">
                 <p class="article-text" style="color:rgb(181,233,247);font-style:italic;">Physical theory without mathematical notation is philosophy.</p>
                 <br />
-                <p class="article-text" style="color:rgb(181,233,247);font-style:italic;">That's why Sir Newton's masterpiece is called “The Mathematical Principles of Natural Philosophy”.</p> <!-- Or perhaps "Dame Newton", given the gender-swapping in the Honkai universe. -->
+                <p class="article-text" style="color:rgb(181,233,247);font-style:italic;">That's why Sir Newton's masterpiece is called “The Mathematical Principles of Natural Philosophy”.</p> <!-- Or perhaps "Dame Newton", given the gender-swapping in the Honkai universe. --> <!-- There is in fact an anime-girlified Newton stigmata - p-t -->
             </text>
             <show chara="weltBlackClose-up" position="center" opacity="0.7"/>
             <text article="1">
@@ -684,7 +684,7 @@
             <text>“Want to chat with me? You're a hundred years behind.”</text>
             <goto goto="70"/>
         </scene>
-        <scene id="60" background="Memory2.jpg">
+        <scene id="60" background="Memory2.jpg" >
             <bgm src="8_24_war.mp3" status="start"></bgm>
             <text post="U2FsdGVkX18wrTH4A0Mz6Lys852r">…</text>
             <text>… …</text>
@@ -711,7 +711,7 @@
             <speak chara="redNoFace">HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA!</speak>
             <goto goto="65"/>
         </scene>
-        <scene id="65" background="planeNoon.jpg">
+        <scene id="65" background="planeNoon.jpg" >
             <bgm src="serenity.mp3" status="start"></bgm>
             <shake position="all" time="250"></shake>
             <sound src="8_24_pant.mp3"/>
@@ -737,14 +737,14 @@
             <speak chara="weltNoFace">… Don't think too much, a nightmare is just a coincidence, a stroke of bad luck, nothing else.</speak>
             <goto goto="68" change="0"/>
         </scene>
-        <scene id="68" background="black.jpg">
+        <scene id="68" background="black.jpg" >
             <bgm src="serenity.mp3" status="stop"></bgm>
             <sound src="deep breath.mp3"/>
             <text>Motivating himself in this way, the young man takes a deep breath, and closes his eyes.</text>
             <text>Just go back to sleep, and wipe my mind clean of that terrible figment of my imagination.</text>
             <goto goto="70"/>
         </scene>
-        <scene id="70" background="airportNewYork.jpg">
+        <scene id="70" background="airportNewYork.jpg" >
             <bgm src="themeWelt.mp3" status="start"></bgm>
             <text>New York International Airport.</text>
             <text>Due to the flight spanning five time zones, Welt can still see the afterglow of a setting sun here, even though it has been ten hours since lunch.</text>
