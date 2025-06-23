@@ -10,6 +10,7 @@
     <body>
         <div id = "always-options">
             <input type="checkbox" id = "is-portrait" name = "is-portrait"> <label for = "is-portrait" class = "contrast">Portrait Mode</label>
+            <button onclick = "showLog()">Log</button>
         </div>
         <div id = "menu" class = "">
             <div id = "chapter-list"></div>
@@ -29,8 +30,8 @@
             <p id = "char_name">Test~~~~~~~~~~~~~~~~~~~~~~~</p>
             <div id = "note_icon" class = "hide"></div>
             <br /><br /><br />
-            <div id = "dialogue-scroll-container"><p onclick = "nextFrame()" id = "dialogue" >Hello, world</p></div>
-            <div id = "full_page_dialogue" class = "scroll"></div>
+            <p onclick = "nextFrame()" id = "dialogue" >Hello, world</p>
+            <div id = "full_page_dialogue" class = "hide"><span style = "float: right;" onclick = "showLog()">X</span></div>
             </div>
         </div>
     </body>

@@ -75,7 +75,7 @@ body:not(.portrait) #character-center {
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
 
 #char_name, #dialogue {
@@ -111,6 +111,21 @@ body:not(.portrait) #character-center {
     background-image: url(imgs/dialogue-bg.png);
     background-size: 99% 105%;
     font-size: 1.5rem; /* like the original */
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); /* copied from the original */
+    overflow: auto;
+}
+
+#full_page_dialogue {
+    height: 20rem;
+    min-width:100%;
+    /*width: 100%;*/
+    margin: 1rem;
+    padding: 1rem;
+    text-align: left;
+    background-image: url(imgs/dialogue-bg.png);
+    background-size: 99% 105%;
+    font-size: 1.5rem; /* like the original */
+    color: #ffffff;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); /* copied from the original */
     overflow: auto;
 }

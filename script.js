@@ -93,6 +93,7 @@ function processTag(tag) {
             document.getElementById("dialogue").innerHTML = tag.innerHTML;
             document.getElementById("dialogue").style.color = "#ffffff"
             document.getElementById("char_name").style.color = "#ffffff"
+            logText(tag)
             break;
         case "speak":
             document.getElementById("dialogue").innerHTML = tag.innerHTML;
@@ -105,7 +106,7 @@ function processTag(tag) {
             } else {
                 setInactive()
             }
-            
+            logText(tag)
             break;
         case "show":
             document.getElementById("character-" + tag.attributes["position"].value).src = "imgs/" + character_data.xml.getElementById(tag.attributes["chara"].value).attributes["src"].value
@@ -122,6 +123,18 @@ function processTag(tag) {
         default:
             dbg("OH NO... a new tag! the tag name is" + tag.nodeName)
     }
+}
+
+function logText(tag) {
+    log += "<br /><p>" + tag.innerHTML + "</p>"
+}
+
+function showLog() {
+    dbg(log)
+    document.getElementById("full_page_dialogue").innerHTML = '<span style = "float: right; color: red;" onclick = "showLog()">X</span>' + log 
+    document.getElementById("full_page_dialogue").classList.toggle("hide")
+    document.getElementById("dialogue").classList.toggle("hide")
+    document.getElementById("char_name").classList.toggle("hide")
 }
 
 
