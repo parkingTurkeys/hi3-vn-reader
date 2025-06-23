@@ -1,6 +1,7 @@
 let loaded = []
 tag_Index = 0;
 vn = false;
+log = ""
 bgm = document.getElementById("bgm")
 sfx = document.getElementById("sfx")
 
@@ -21,6 +22,36 @@ function generateBoxes(start, end) {
         document.getElementById("chapter-list").appendChild(elementify(box_HTML))
     }
 }
+
+function setActive(tag) {
+    array = document.getElementsByClassName("chara-img")
+    dbg(array)
+    for (i = 0; i < 6; i++) {
+        array[i].classList.remove("active")
+        array[i].classList.add("inactive")
+    }
+    document.getElementById("character-" + tag.attributes["position"].value).classList.add("active")
+}
+
+function setInactive() {
+    array = document.getElementsByClassName("chara-img")
+    dbg(array)
+    for (i = 0; i < 6; i++) {
+        array[i].classList.remove("active")
+        array[i].classList.add("inactive")
+    }
+}
+
+var checkbox = document.getElementById("is-portrait")
+
+checkbox.addEventListener('change', function() {
+  if (checkbox.checked) {
+    document.querySelector("body").className = "portrait"
+  } else {
+    document.querySelector("body").className = ""
+  }
+  checkbox.blur()
+});
 
 
 function goToScene(ch, scene) {
@@ -70,10 +101,17 @@ function processTag(tag) {
             document.getElementById("char_name").innerHTML = character_data.xml.getElementById(tag.attributes["chara"].value).attributes["name"].value
             if (tag.attributes["position"]) {
                 document.getElementById("character-" + tag.attributes["position"].value).src = "imgs/" + character_data.xml.getElementById(tag.attributes["chara"].value).attributes["src"].value
+                setActive(tag)
+            } else {
+                setInactive()
             }
+            
             break;
         case "show":
             document.getElementById("character-" + tag.attributes["position"].value).src = "imgs/" + character_data.xml.getElementById(tag.attributes["chara"].value).attributes["src"].value
+            break;
+        case "hide":
+            document.getElementById("character-" + tag.attributes["position"].value).src = ""
             break;
         case "goto":
             goToScene(ch,tag.attributes["goto"].value)

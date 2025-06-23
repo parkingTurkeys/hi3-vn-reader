@@ -66,6 +66,10 @@ body:not(.portrait) #character-center {
     opacity: 0.7;
 }
 
+.portrait .inactive {
+    display: none;
+}
+
 .active {
     opacity: 1;
 }
