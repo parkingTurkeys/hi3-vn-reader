@@ -14,6 +14,14 @@
 
 }
 
+input {
+    z-index: 101;
+}
+
+.contrast {
+    background-color: #ffffff;
+    color: #000000;
+}
 
 *{padding:0;margin:0;}
 
@@ -34,51 +42,24 @@ body {
     animation-duration: 4s;
 }
 
-#character-center,
-#character-back {
-    display: block;
-    margin: auto;
-    height: 100%;
-    position: fixed;
-    bottom: 12rem;
-    top: 3rem;
-}
-
-#character-left {
-    display: inline;
-    margin-left: 0px;
-    margin-right: 85%;
-    margin-top: auto;
-    margin-bottom: auto;
-    height: 100%;
-    position: fixed;
-    left: 10px;
-     float: left;
-}
-
-#character-right {
-    display: inline;
-    margin-left: 60%;
-    margin-right: 5px;
-    margin-top: auto;
-    margin-bottom: auto;
-    height: 100%;
-    
-    float: right;
-}
-
 .chara-img {
-    display: block;
-    height: 100%;
+    z-index: -1;
     position: fixed;
-    bottom: 12rem;
-    top: 3rem;
+    /*top: 30%;*/
+    bottom: 30%;
+    height: 70%;
 }
 
-#char_imgs {
-    /*display: block;*/
-    height: 50vh;
+body:not(.portrait) #character-right {
+    right: -15%;
+}
 
+body:not(.portrait) #character-left,body:not(.portrait) #character-mostleft {
+    right: 60%;
+}
+
+body:not(.portrait) #character-center {
+    right:20%;
 }
 
 .inactive {
@@ -133,7 +114,7 @@ body {
 
 
 #vn {
-    /*width: 100%;*/
+    width: 100vw;
 }
 
 #dialogue-box {
