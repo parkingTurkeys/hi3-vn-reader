@@ -32,6 +32,7 @@ this is because the original layout wouldn't really work too well with mobile an
 ## notes
 Any comments I made in the XML are ended with `- p-t` 
 A few images will be broken, sorry :(
+On the non-server version, you can only go to the start of a chapter
 
 ## tysms
 i took a lot of inspiration from the [original](https://event.bh3.com/avgAntiEntropy/indexAntiEntropy.php) ofc, but i did all the scripting myself! (the original was useful for figuring out what elements i needed though :D)
