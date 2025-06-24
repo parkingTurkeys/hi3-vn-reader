@@ -5,6 +5,8 @@ log = ""
 bgm = document.getElementById("bgm")
 sfx = document.getElementById("sfx")
 
+
+
 //ch0 = "hello worldiot"
 
 function generateBoxes(start, end) {
@@ -31,6 +33,7 @@ function setActive(tag) {
         array[i].classList.add("inactive")
     }
     document.getElementById("character-" + tag.attributes["position"].value).classList.add("active")
+    document.getElementById("character-" + tag.attributes["position"].value).classList.remove("inactive")
 }
 
 function setInactive() {
@@ -44,17 +47,21 @@ function setInactive() {
 
 var checkbox = document.getElementById("is-portrait")
 
-checkbox.addEventListener('change', function() {
+checkbox.addEventListener('change', portrait);
+portrait()
+function portrait() {
   if (checkbox.checked) {
     document.querySelector("body").className = "portrait"
   } else {
     document.querySelector("body").className = ""
   }
   checkbox.blur()
-});
+}
 
 
 function goToScene(ch, scene) {
+    document.getElementsByTagName("body")[0].classList.add("no-scroll")
+    log = ""
     bgm.pause()
     vn = true;
     window.ch = ch
@@ -73,20 +80,37 @@ function goToScene(ch, scene) {
     }*/
 }
 
+function showNextRemark() {
+    isRemark = false
+    n = tag_Index
+    while (isRemark == false) {
+        if (current_Scene.children.item(n).nodeName == "remark") {isRemark == true}
+    }
+    document.getElementById("note_icon").className = ""
+    remark = current_Scene.children.item(n).innerHTML
+}
+
 function processTag(tag) {
+    document.getElementById("cg").src = ""
+    if (tag.attributes["remark"]) {showNextRemark()} else {document.getElementById("note_icon").className = "hide"}
     switch (tag.nodeName) {
+        case "cg":
+            document.getElementById("cg").src = tag.attributes["src"].value
+            document.getElementsByTagName("body")[0].style.backgroundImage = tag.attributes["bg"].value
+            break;
         case "bgm":
             if (tag.attributes["status"].value == "start" ) {
                 bgm.src = "bgm/" + tag.attributes["src"].value
                 bgm.load()
                 bgm.play()
             }
-            //nextFrame()
+            setTimeout(nextFrame, 150)
             break;
         case "sound":
             sfx.src = "bgm/" + tag.attributes["src"].value
             sfx.load()
             sfx.play()
+            setTimeout(nextFrame, 150)
             break;
         case "text":
             document.getElementById("char_name").innerHTML = ""
@@ -104,15 +128,20 @@ function processTag(tag) {
                 document.getElementById("character-" + tag.attributes["position"].value).src = "imgs/" + character_data.xml.getElementById(tag.attributes["chara"].value).attributes["src"].value
                 setActive(tag)
             } else {
-                setInactive()
+                //setInactive()
             }
             logText(tag)
             break;
+        case "remark":
+
         case "show":
             document.getElementById("character-" + tag.attributes["position"].value).src = "imgs/" + character_data.xml.getElementById(tag.attributes["chara"].value).attributes["src"].value
+            setActive(tag)
+            setTimeout(nextFrame, 150)
             break;
         case "hide":
             document.getElementById("character-" + tag.attributes["position"].value).src = ""
+            setTimeout(nextFrame, 150)
             break;
         case "goto":
             goToScene(ch,tag.attributes["goto"].value)
@@ -122,6 +151,7 @@ function processTag(tag) {
             break;
         default:
             dbg("OH NO... a new tag! the tag name is" + tag.nodeName)
+            setTimeout(nextFrame, 150)
     }
 }
 
@@ -137,11 +167,18 @@ function showLog() {
     document.getElementById("char_name").classList.toggle("hide")
 }
 
+function showNote() {
+    dbg(remark)
+    document.getElementById("full_page_dialogue").innerHTML = '<span style = "float: right; color: red;" onclick = "showLog()">X</span>' + remark 
+    document.getElementById("full_page_dialogue").classList.toggle("hide")
+    document.getElementById("dialogue").classList.toggle("hide")
+    document.getElementById("char_name").classList.toggle("hide")
+}
 
 function on_XML_load() {
     dbg("xml loaded!")
     generateBoxes(0,26)
-    goToScene(2, 0)
+    //goToScene(7, 0)
 }
 
 document.getElementsByTagName("body")[0].addEventListener("keydown", handleKeyPress)
@@ -159,7 +196,7 @@ function handleKeyPress(event) {
 
 function nextFrame() {
     processTag(current_Scene.children.item(tag_Index))
-    tag_Index++
+    tag_Index = tag_Index + 1
 }
 
 

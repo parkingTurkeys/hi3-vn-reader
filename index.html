@@ -8,14 +8,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
     <body>
-        <div id = "always-options">
-            <input type="checkbox" id = "is-portrait" name = "is-portrait"> <label for = "is-portrait" class = "contrast">Portrait Mode</label>
-            <button onclick = "showLog()">Log</button>
-        </div>
+        
         <div id = "menu" class = "">
             <div id = "chapter-list"></div>
         </div>
         <div id = "vn" class = "hide">
+            <div id = "always-options">
+                <button id = "back" onclick = "window.location.reload()">Back</button>
+                <input type="checkbox" id = "is-portrait" name = "is-portrait"> <label for = "is-portrait" class = "contrast">Portrait Mode</label>
+                <button onclick = "showLog()">Log</button>
+            </div>
+            <img id = "cg"></img>
             <audio id = "bgm" loop></audio>
             <audio id = "sfx"></audio>
             
@@ -28,10 +31,10 @@
             
             <div id = "dialogue-box" >
             <p id = "char_name">Test~~~~~~~~~~~~~~~~~~~~~~~</p>
-            <div id = "note_icon" class = "hide"></div>
+            <div id = "note_icon" class = "hide" onclick = "showNote()"></div>
             <br /><br /><br />
             <p onclick = "nextFrame()" id = "dialogue" >Hello, world</p>
-            <div id = "full_page_dialogue" class = "hide"><span style = "float: right;" onclick = "showLog()">X</span></div>
+            <div id = "full_page_dialogue" class = "hide"></div>
             </div>
         </div>
     </body>

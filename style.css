@@ -33,7 +33,11 @@ body {
     font-size:19.7px; /* The original was 19.6778px for some reason :/ */
     font-family: 'Microsoft Yahei', 'Noto Sans', 'Arial', 'Helvetica', sans-serif; /* the original just had Microsoft Yahei due to it being in Chinese, i added some other fonts */
     background-size: 100% auto ;
-    background-image: url(cgs/CG3.jpg); /*for testing purposes*/
+    /*background-image: url(cgs/CG3.jpg); /*for testing purposes*/
+    
+}
+
+body.no-scroll {
     overflow: hidden;
 }
 
@@ -68,6 +72,11 @@ body:not(.portrait) #character-center {
 
 .portrait .inactive {
     display: none;
+}
+
+.portrait .active {
+    margin: auto;
+    text-align: center;
 }
 
 .active {
@@ -116,7 +125,7 @@ body:not(.portrait) #character-center {
 }
 
 #full_page_dialogue {
-    height: 20rem;
+    height: 35rem;
     min-width:100%;
     /*width: 100%;*/
     margin: 1rem;
