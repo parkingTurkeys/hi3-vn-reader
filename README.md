@@ -3,7 +3,8 @@
 this is a viewer for translations of visual novels made for the game honkai impact 3rd.   
 you can load the hi3 visual novels from the fanmade translations with this.  
 translations from [here](https://github.com/RaytheonThunder/honkai-vns)  
-images and original text are copyright of miHoYo  
+**images and original text are copyright of miHoYo**
+important: i did not write or translate *anything*
   
 please report any issues!  
 
@@ -23,9 +24,16 @@ this is because the original layout wouldn't really work too well with mobile an
 - [x] Background images
 - [x] Sound
 - [ ] Shaking
-- [ ] Character images
+- [x] Character images
 - [ ] Info boxes
-- [ ] The offline [file:// url] version
+- [ ] The offline [file:// url] version *lol haha this is still so broken*
+
+## how to run
+first, run all the powershell scripts (cgs/get-cgs.ps1, bgm/get-bgms.ps1 & imgs/get-imgs.ps1)
+then run something like `npx http-server` and open index.html.
+this should probably work. please tell me if it doesnt.
+
+__you need the server thing because it uses get requests. i'm still working on a version that doesn't.__
 
 
 

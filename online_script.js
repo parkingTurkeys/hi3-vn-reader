@@ -6,7 +6,7 @@ bgm = document.getElementById("bgm")
 sfx = document.getElementById("sfx")
 
 
-
+alert("miHoYo has the copyright for this story; see Github for the English translation credits")
 //ch0 = "hello worldiot"
 
 function generateBoxes(start, end) {
@@ -74,7 +74,7 @@ function goToScene(ch, scene) {
     window.current_Scene = window["ch" + ch.toString()].xml.getElementById(scene);
     dbg(current_Scene)
     dbg(current_Scene.attributes["background"].value.includes("jpg"))
-    if(current_Scene.attributes["background"].value.includes("jpg") === false) {document.getElementsByTagName("body")[0].style.backgroundColor = current_Scene.attributes["background"].value; document.querySelector("body").style.backgroundImage = 0} else {document.getElementsByTagName("body")[0].style.backgroundImage = "url(cgs/" + current_Scene.attributes["background"].value+ ")"}
+    if(current_Scene.attributes["background"].value.includes("jpg") === false) {document.getElementsByTagName("body")[0].style.backgroundColor = current_Scene.attributes["background"].value; document.querySelector("body").style.backgroundImage = 0} else {document.getElementsByTagName("body")[0].style.backgroundImage = "url(https://act-webstatic.mihoyo.com/event_bh3_com/avg-anti-entropy/static_CN/resources/background/" + current_Scene.attributes["background"].value+ ")"}
     /*for (i = 0; i < current_Scene.children.length; i++) {
         processTag(current_Scene.children.item(i))
     }*/
@@ -95,19 +95,19 @@ function processTag(tag) {
     if (tag.attributes["remark"]) {showNextRemark()} else {document.getElementById("note_icon").className = "hide"}
     switch (tag.nodeName) {
         case "cg":
-            document.getElementById("cg").src = tag.attributes["src"].value
+            document.getElementById("cg").src = "https://act-webstatic.mihoyo.com/event_bh3_com/avg-anti-entropy/static_CN/resources/cg/" + tag.attributes["src"].value
             document.getElementsByTagName("body")[0].style.backgroundImage = tag.attributes["bg"].value
             break;
         case "bgm":
             if (tag.attributes["status"].value == "start" ) {
-                bgm.src = "bgm/" + tag.attributes["src"].value
+                bgm.src = "https://act-webstatic.mihoyo.com/event_bh3_com/avg-anti-entropy/static_CN/resources/sound/" + tag.attributes["src"].value
                 bgm.load()
                 bgm.play()
             }
             setTimeout(nextFrame, 150)
             break;
         case "sound":
-            sfx.src = "bgm/" + tag.attributes["src"].value
+            sfx.src = "https://act-webstatic.mihoyo.com/event_bh3_com/avg-anti-entropy/static_CN/resources/sound/" + tag.attributes["src"].value
             sfx.load()
             sfx.play()
             setTimeout(nextFrame, 150)
@@ -125,7 +125,7 @@ function processTag(tag) {
             document.getElementById("char_name").style.color = character_data.xml.getElementById(tag.attributes["chara"].value).attributes["color"].value
             document.getElementById("char_name").innerHTML = character_data.xml.getElementById(tag.attributes["chara"].value).attributes["name"].value
             if (tag.attributes["position"]) {
-                document.getElementById("character-" + tag.attributes["position"].value).src = "imgs/" + character_data.xml.getElementById(tag.attributes["chara"].value).attributes["src"].value
+                document.getElementById("character-" + tag.attributes["position"].value).src = "https://act-webstatic.mihoyo.com/event_bh3_com/avg-anti-entropy/static_CN/resources/chara/" + character_data.xml.getElementById(tag.attributes["chara"].value).attributes["src"].value
                 setActive(tag)
             } else {
                 //setInactive()
@@ -135,7 +135,7 @@ function processTag(tag) {
         case "remark":
 
         case "show":
-            document.getElementById("character-" + tag.attributes["position"].value).src = "imgs/" + character_data.xml.getElementById(tag.attributes["chara"].value).attributes["src"].value
+            document.getElementById("character-" + tag.attributes["position"].value).src = "https://act-webstatic.mihoyo.com/event_bh3_com/avg-anti-entropy/static_CN/resources/chara/" + character_data.xml.getElementById(tag.attributes["chara"].value).attributes["src"].value
             setActive(tag)
             setTimeout(nextFrame, 150)
             break;
@@ -207,7 +207,7 @@ function load_an_XML(file) {
     dbg(file)
     window[file] = new XMLHttpRequest()
     window[file].addEventListener("load", save_XML)
-    window[file].open("GET", "xml/ae/" + file + ".xml")
+    window[file].open("GET", "../xml/ae/" + file + ".xml")
     window[file].send()
 }
 
@@ -216,17 +216,17 @@ function load_an_XML(file) {
 //silly xml things
 /*character_data = new XMLHttpRequest()
 character_data.addEventListener("load", save_XML)
-character_data.open("GET", "xml/ae/character_data.xml")
+character_data.open("GET", "../xml/ae/character_data.xml")
 character_data.send()
 
 cg_list = new XMLHttpRequest()
 cg_list.addEventListener("load", save_XML)
-cg_list.open("GET", "xml/ae/cg_list.xml")
+cg_list.open("GET", "../xml/ae/cg_list.xml")
 cg_list.send()
 
 catalog_list = new XMLHttpRequest()
 catalog_list.addEventListener("load", save_XML)
-catalog_list.open("GET", "xml/ae/catalog_list.xml")
+catalog_list.open("GET", "../xml/ae/catalog_list.xml")
 catalog_list.send()*/
 
 load_an_XML("character_data")
