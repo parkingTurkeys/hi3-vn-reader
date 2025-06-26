@@ -207,7 +207,7 @@ function load_an_XML(file) {
     dbg(file)
     window[file] = new XMLHttpRequest()
     window[file].addEventListener("load", save_XML)
-    window[file].open("GET", "../xml/ae/" + file + ".xml")
+    window[file].open("GET", "./xml/ae/" + file + ".xml")
     window[file].send()
 }
 
@@ -236,14 +236,14 @@ load_an_XML("ch0")
 
 for (i = 0; i <= 26; i++) {
     load_an_XML("ch" + i.toString())
-    dbg("ch" + i.toString())
+    //dbg("ch" + i.toString())
 }
 
 function save_XML(event) {
     this.xml = this.responseXML
-    //dbg(this.xml)
+    dbg(this.xml)
     loaded.push(1)
-    //dbg(loaded)
+    dbg(loaded)
     if (loaded.length == /*replace with as many as i'm loading*/ 30) {
         on_XML_load()
     }
