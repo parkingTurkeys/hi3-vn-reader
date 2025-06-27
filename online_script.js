@@ -60,6 +60,12 @@ function portrait() {
 
 
 function goToScene(ch, scene) {
+    document.getElementById("character-left").src = ""
+    document.getElementById("character-center").src = ""
+    document.getElementById("character-right").src = ""
+    document.getElementById("character-mostleft").src = ""
+    document.getElementById("character-mostright").src = ""
+    document.getElementById("character-back").src = ""
     document.getElementsByTagName("body")[0].classList.add("no-scroll")
     log = ""
     bgm.pause()
